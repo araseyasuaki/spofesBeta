@@ -1,15 +1,17 @@
 .schedule{
   position: relative;
-  padding: 15vw 15% 20vw 15%;
+  padding: 7vw 15% 20vw 15%;
   .sd-dec-box-1{
+    overflow: hidden;
     position: absolute;
     bottom: 100%;
     left: 0;
     width: 100%;
+    aspect-ratio: 4.183 / 1;
     height: fit-content;
     img{
       position: absolute;
-      left: 0.5vw;
+      left: -0.5vw;
       top: 12vw;
       z-index: 20;
       transform: rotate(-7deg);
@@ -19,12 +21,12 @@
       content: '';
       position: relative;
       width: 100%;
-      aspect-ratio: 10 / 1.23;
+      aspect-ratio: 4.183 / 1;
       bottom: -1px;
       left: 0;
       background-color: #ffffff;
       z-index: 10;
-      clip-path: polygon(0 calc(100% - 1px), 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 51.46%, 100% 0, 100% 100%, 0 100%);
     }
   }
   dl{

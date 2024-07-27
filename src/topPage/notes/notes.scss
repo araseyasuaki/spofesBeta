@@ -3,6 +3,8 @@
   padding: 7vw 13vw 70px 13vw ;
   position: relative;
   .nt-dec-box-1{
+    padding: 5.4vw 0 0 0;
+    overflow: hidden;
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -10,8 +12,8 @@
     height: fit-content;
     img{
       position: absolute;
-      right: 0.5vw;
-      bottom: 4.2vw;
+      right: -1vw;
+      bottom: 3.9vw;
       z-index: 20;
       transform: rotate(7deg);
       width: 70vw;
@@ -53,6 +55,8 @@
     background-color: #E2F3F7;
     padding: 15vw 5vw 50px 5vw ;
     .nt-dec-box-1{
+      padding: 24vw 0 0 0;
+      overflow: hidden;
       position: absolute;
       bottom: 100%;
       left: 0;

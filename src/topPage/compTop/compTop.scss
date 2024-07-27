@@ -3,6 +3,8 @@
   background-color: #E2F3F7;
   padding: 5vw 0 10vw 0;
   .ct-dec-box-1{
+    overflow: hidden;
+    padding: 7.1vw 0 0 0;
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -10,8 +12,8 @@
     height: fit-content;
     img{
       position: absolute;
-      right: 0.5vw;
-      bottom: 5.2vw;
+      right: -1vw;
+      bottom: 5vw;
       z-index: 20;
       transform: rotate(7deg);
       width: 90vw;
@@ -59,6 +61,8 @@
     position: relative;
     background-color: #E2F3F7;
     .ct-dec-box-1{
+      overflow: hidden;
+      padding: 25.4vw 0 0 0;
       position: absolute;
       bottom: 100%;
       left: 0;
@@ -66,7 +70,7 @@
       height: fit-content;
       img{
         position: absolute;
-        right: 11px;
+        right: -2vw;
         bottom: 5.2vw;
         z-index: 20;
         transform: rotate(7deg);

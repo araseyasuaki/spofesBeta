@@ -4,6 +4,8 @@
   padding: 4vw 0 4vw 0;
   background-color: #E2F3F7;
   .wu-dec-box-1{
+    padding: 4.7vw 0 0 0;
+    overflow: hidden;
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -11,8 +13,8 @@
     height: fit-content;
     img{
       position: absolute;
-      right: 0.5vw;
-      bottom: 4.1vw;
+      right: -1vw;
+      bottom: 3.9vw;
       z-index: 20;
       transform: rotate(7deg);
       width: 70vw;
@@ -32,7 +34,7 @@
   p{
     margin: 60px auto 0 auto;
     width: fit-content;
-    color: #B3DFF7;
+    color: #0055B4;
     font-size: 24px;
     padding: 0 15px;
     font-weight: bold;
@@ -57,6 +59,8 @@
     padding: 10vw 0 10vw 0;
     background-color: #E2F3F7;
     .wu-dec-box-1{
+      padding: 8.7vw 0 0 0;
+      overflow: hidden;
       position: absolute;
       bottom: 100%;
       left: 0;
@@ -64,7 +68,7 @@
       height: fit-content;
       img{
         position: absolute;
-        right: 0.5vw;
+        right: -1vw;
         bottom: 4.1vw;
         z-index: 20;
         transform: rotate(7deg);
