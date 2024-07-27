@@ -1,9 +1,9 @@
 import React from 'react'
 import './right.scss'
 
-const Right0 = ({ title, titleNumber, text, img, imgAlt }) => {
+const Right0 = ({ title, titleNumber, text, img, imgAlt, id }) => {
   return (
-    <li className='rt'>
+    <li className='rt' id={`cs-content-${id}`}>
       <div className='rt-text'>
         <h3>{title}<span>{titleNumber}</span></h3>
         <p>{text}</p>
@@ -16,9 +16,9 @@ const Right0 = ({ title, titleNumber, text, img, imgAlt }) => {
   )
 }
 
-const Right1 = ({ title, titleNumber, text, list1, img, imgAlt }) => {
+const Right1 = ({ title, titleNumber, text, list1, img, imgAlt, id }) => {
   return (
-    <li className='rt'>
+    <li className='rt' id={`cs-content-${id}`}>
       <div className='rt-text'>
         <h3>{title}<span>{titleNumber}</span></h3>
         <p>{text}</p>
@@ -34,9 +34,9 @@ const Right1 = ({ title, titleNumber, text, list1, img, imgAlt }) => {
   )
 }
 
-const Right2 = ({ title, titleNumber, text, list1, list2, img, imgAlt }) => {
+const Right2 = ({ title, titleNumber, text, list1, list2, img, imgAlt, id }) => {
   return (
-    <li className='rt'>
+    <li className='rt' id={`cs-content-${id}`}>
       <div className='rt-text'>
         <h3>{title}<span>{titleNumber}</span></h3>
         <p>{text}</p>

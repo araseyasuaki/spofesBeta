@@ -68,6 +68,7 @@
     top: 170px;
     width: 450px;
     height: calc(100vh - 220px);
+    max-height: 744px;
     right: 30px;
     opacity: 0;
     visibility: hidden;
@@ -76,8 +77,19 @@
     padding: 30px;
     border-radius: 20px;
     border: 1px solid #0055B4;
-    background-color: #fff;
     overflow-y: scroll;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      border-radius: 20px;
+      z-index: -10;
+      opacity: 0.8;
+    }
     &::-webkit-scrollbar{
       display: none;
     }
@@ -136,17 +148,23 @@
         padding: 0;
         li{
           margin: 20px 0 0 0 ;
+          padding: 0 0 0 35px;
           font-size: 14px;
           list-style-type: none;
           font-weight: bold;
-          color: #0055B4;
-          span{
-            padding: 0 10px 0 0;
-            color: #48B4D8;
-            font-family: "Black Ops One", system-ui;
-            font-weight: 100;
-            // font-style: normal;
-            font-size: 18px;
+          position: relative;
+          a{
+            text-decoration: none;
+            color: #0055B4;
+            span{
+              position: absolute;
+              left: 0;
+              top: 1px;
+              color: #48B4D8;
+              font-family: "Black Ops One", system-ui;
+              font-weight: 100;
+              font-size: 18px;
+            }
           }
         }
       }
@@ -289,17 +307,17 @@
     >nav{
       position: fixed;
       top: 123px;
-      width: 450px;
+      width: 280px;
       height: calc(100vh - 145px);
+      max-height: 590px;
       right: 10px;
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.7s ease, visibility 0.7s ease, top 0.7s ease;
       z-index: 90;
-      padding: 30px;
+      padding: 10px;
       border-radius: 20px;
       border: 1px solid #0055B4;
-      background-color: #fff;
       overflow-y: scroll;
       &::-webkit-scrollbar{
         display: none;
@@ -310,7 +328,7 @@
       dl{
         margin: 0;
         dt{
-          font-size: 18px;
+          font-size: 14px;
           color: #48B4D8;
           font-family: "Black Ops One", system-ui;
           font-weight: 100;
@@ -318,7 +336,7 @@
           margin: 20px 0 0 0 ;
         }
         dd{
-          font-size: 18px;
+          font-size: 14px;
           color: #0055B4;
           font-weight: bold;
           margin: 0 0 15px 0;
@@ -355,38 +373,46 @@
         display: flex;
         justify-content: center;
         ol{
-          margin: 0 20px;
           padding: 0;
+          &:nth-child(1){
+            margin: 0 10px 0 0;
+          }
+          &:nth-child(2){
+            margin: 0 0 0 10px;
+          }
           li{
+            position: relative;
             margin: 20px 0 0 0 ;
-            font-size: 14px;
+            padding: 0 0 0 30px;
+            font-size: 11px;
             list-style-type: none;
             font-weight: bold;
             color: #0055B4;
             span{
-              padding: 0 10px 0 0;
+              top: 0;
+              left: 0;
+              position: absolute;
               color: #48B4D8;
               font-family: "Black Ops One", system-ui;
               font-weight: 100;
-              // font-style: normal;
-              font-size: 18px;
+              font-size: 15px;
             }
           }
         }
       }
       .ms-link{
-        margin: 60px auto 30px auto ;
-        width: 100px;
-        height: 100px;
+        margin: 30px auto 10px auto ;
+        width: 58px;
+        height: 58px;
         a{
           width: 100%;
           height: 100%;
           display: block;
           text-align: center;
-          position: relative;
-          font-weight: bold;
           text-decoration: none;
           color: #0055B4;
+          font-weight: bold;
+          position: relative;
           &::after{
             position: absolute;
             content: '';
@@ -400,18 +426,18 @@
             left: 0;
           }
           p{
-            font-size: 22px;
+            font-size: 14px;
             width: 100%;
-            margin: 3px 0 0 0;
+            margin: 2px 0 0 0;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
             position: absolute;
-            line-height: 22px;
+            line-height: 16px;
             span{
               display: block;
-              margin: -5px 0 0 0;
-              font-size: 7px;
+              margin: -4px 0 0 0;
+              font-size: 4.5px;
             }
           }
           img{

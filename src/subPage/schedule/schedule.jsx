@@ -20,34 +20,34 @@ const schedule = () => {
         <dd>10:30〜</dd>
       </dl>
       <ol>
-        <li><span className='sd-dec-text-1'>01</span>クラス対抗リレー<span>(予選)</span></li>
-        <li><span className='sd-dec-text-1'>02</span>運命共同体：二人三脚障害物競走</li>
-        <li><span className='sd-dec-text-1'>03</span>だるま運びレース：色別対抗だるま運び</li>
-        <li><span className='sd-dec-text-1'>04</span>クラス対抗リレー<span>(準決勝)</span></li>
-        <li><span className='sd-dec-text-1'>05</span>借り物競争<span>(教員参加種目)</span></li>
-        <li><span className='sd-dec-text-1'>06</span>電子学園ウルトラクイズ<span>(オープン参加)</span></li>
-        <li><span className='sd-dec-text-1'>07</span>THE決戦！！：色別対抗騎馬戦</li>
-        <li><span className='sd-dec-text-1'>08</span>なわ取り合戦：色別対抗縄撮り</li>
-        <li><span className='sd-dec-text-1'>09</span>だるま神輿：色別対抗だるま運びリレー</li>
-        <li><span className='sd-dec-text-1'>10</span>一球入魂：色別対抗玉入れ</li>
-        <li><span className='sd-dec-text-1'>11</span>玉げた：色別対抗大玉運び</li>
-        <li><span className='sd-dec-text-1'>12</span>電子学園eスポーツ王決定戦：eスポーツ</li>
-        <li><span className='sd-dec-text-1'>13</span>クラス対抗リレー<span>(決勝)</span></li>
-        <li><span className='sd-dec-text-1'>14</span>色別対抗リレー</li>
+        <li><a href="#cs-content-1"><span className='sd-dec-text-1'>01</span>クラス対抗リレー<span>(予選)</span></a></li>
+        <li><a href="#cs-content-2"><span className='sd-dec-text-1'>02</span>運命共同体：二人三脚障害物競走</a></li>
+        <li><a href="#cs-content-3"><span className='sd-dec-text-1'>03</span>だるま運びレース：色別対抗だるま運び</a></li>
+        <li><a href="#cs-content-1"><span className='sd-dec-text-1'>04</span>クラス対抗リレー<span>(準決勝)</span></a></li>
+        <li><a href="#cs-content-4"><span className='sd-dec-text-1'>05</span>借り物競争<span>(教員参加種目)</span></a></li>
+        <li><a href="#cs-content-12"><span className='sd-dec-text-1'>06</span>ウルトラクイズ<span>(オープン参加)</span></a></li>
+        <li><a href="#cs-content-5"><span className='sd-dec-text-1'>07</span>THE決戦！！：色別対抗騎馬戦</a></li>
+        <li><a href="#cs-content-6"><span className='sd-dec-text-1'>08</span>なわ取り合戦：色別対抗縄取り</a></li>
+        <li><a href="#cs-content-7"><span className='sd-dec-text-1'>09</span>だるま神輿：色別対抗だるま運びリレー</a></li>
+        <li><a href="#cs-content-8"><span className='sd-dec-text-1'>10</span>一球入魂：色別対抗玉入れ</a></li>
+        <li><a href="#cs-content-9"><span className='sd-dec-text-1'>11</span>玉げた：色別対抗大玉運び</a></li>
+        <li><a href="#cs-content-10"><span className='sd-dec-text-1'>12</span>ゲーム対戦</a></li>
+        <li><a href="#cs-content-1"><span className='sd-dec-text-1'>13</span>クラス対抗リレー<span>(決勝)</span></a></li>
+        <li><a href="#cs-content-1"><span className='sd-dec-text-1'>14</span>色別対抗リレー</a></li>
       </ol>
       <div className='sd-dec-box-2'>
         <section className='sd-dec-box-3'>
           <h3>アトラクション種目</h3>
           <ul>
-            <li>ベースランニング</li>
-            <li>スピードガン</li>
+            <li><a href="#cs-content-13">ベースランニング</a></li>
+            <li><a href="#cs-content-14">スピードガン</a></li>
           </ul>
         </section>
         <section className='sd-dec-box-4'>
           <h3>エキシビジョン種目</h3>
           <ul>
-            <li>応援団長は君だ！</li>
-            <li>謎解き</li>
+            <li><a href="#cs-content-15">応援団長は君だ！</a></li>
+            <li><a href="#cs-content-16">謎解き</a></li>
           </ul>
         </section>
       </div>

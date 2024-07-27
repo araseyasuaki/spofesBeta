@@ -1,6 +1,6 @@
 .schedule{
   position: relative;
-  padding: 22vw 15% 20vw 15%;
+  padding: 15vw 15% 20vw 15%;
   .sd-dec-box-1{
     position: absolute;
     bottom: 100%;
@@ -59,12 +59,15 @@
     li{
       padding: 25px 0 0 0;
       list-style-type: none;
-      color: #0055B4;
-      display: flex;
       font-size: 24px;
       font-weight: bold;
-      span{
-        color: #48B4D8;
+      a{
+        display: flex;
+        text-decoration: none;
+        color: #0055B4;
+        span{
+          color: #48B4D8;
+        }
       }
       .sd-dec-text-1{
         font-size: 32px;
@@ -78,13 +81,12 @@
   }
   .sd-dec-box-2{
     display: flex;
-    margin: 45px 0 45px 0;
-    justify-content: center;
+    margin: 45px 8vw 45px 8vw;
+    justify-content: space-between;
     section{
       border: 8px solid #E2F3F7;
       border-radius: 20px;
-      padding: 15px 40px;
-      margin: 0 15px;
+      padding: 1.2vw 2vw;
       h3{
         color: #48B4D8;
         font-size: 24px;
@@ -92,9 +94,13 @@
       }
       ul{
         li{
-          font-weight: bold;
           color: #48B4D8;
-          font-size: 20px;
+          a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #48B4D8;
+            font-size: 20px;
+          }
         }
       }
     }
@@ -109,7 +115,7 @@
 @media (max-width: 800px) {
   .schedule{
     position: relative;
-    padding: 30vw 3% 30vw 3%;
+    padding: 10vw 3% 30vw 3%;
     margin: 0;
     .sd-dec-box-1{
       position: absolute;
@@ -163,11 +169,11 @@
     }
     ol{
       position: relative;
-      margin: 0 5vw;
-      padding: 0 0 0 0;
+      margin: 0 auto;
       max-width: 500px;
+      padding: 0;
       li{
-        padding: 15px 0 0 0;
+        padding: 15px 0 0 5vw;
         list-style-type: none;
         color: #0055B4;
         display: flex;
@@ -188,12 +194,13 @@
     }
     .sd-dec-box-2{
       display: flex;
-      margin: 20px 0 20px 0;
-      justify-content: center;
+      margin: 20px auto 20px auto;
+      justify-content: space-between;
+      max-width: 500px;
       section{
         border: 3px solid #E2F3F7;
         border-radius: 20px;
-        padding: 3vw 5vw;
+        padding: 1.3vw 3.5vw;
         margin: 0;
         h3{
           color: #48B4D8;
@@ -203,15 +210,18 @@
           padding: 0 0 0 15px;
           li{
             color: #48B4D8;
-            font-size: 12px;
+            a{
+              color: #48B4D8;
+              font-size: 12px;
+            }
           }
         }
       }
       .sd-dec-box-3{
-        margin: 0 1vw 0 0;
+        margin: 0 0 0 5vw;
       }
       .sd-dec-box-4{
-        margin: 0 0 0 1vw;
+        margin: 0 5vw 0 0;
       }
     }
   }

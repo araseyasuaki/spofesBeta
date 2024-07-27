@@ -31,24 +31,24 @@ const MenuSub = () => {
         </dl>
         <div className='ms-list'>
           <ol>
-            <li><span>01</span>クラス対抗リレー</li>
-            <li><span>02</span>運命共同体</li>
-            <li><span>03</span>だるま運びレース</li>
-            <li><span>04</span>借り物競争</li>
-            <li><span>05</span>ウルトラクイズ</li>
-            <li><span>06</span>THE 決戦！！</li>
-            <li><span>07</span>なわ取り合戦</li>
-            <li><span>08</span>だるま神輿</li>
+            <li><a href="#cs-content-1"><span>01</span>クラス対抗リレー</a></li>
+            <li><a href="#cs-content-2"><span>02</span>運命共同体</a></li>
+            <li><a href="#cs-content-3"><span>03</span>だるま運びレース</a></li>
+            <li><a href="#cs-content-4"><span>04</span>借り物競争</a></li>
+            <li><a href="#cs-content-5"><span>05</span>ウルトラクイズ</a></li>
+            <li><a href="#cs-content-6"><span>06</span>THE 決戦！！</a></li>
+            <li><a href="#cs-content-7"><span>07</span>なわ取り合戦</a></li>
+            <li><a href="#cs-content-8"><span>08</span>だるま神輿</a></li>
           </ol>
           <ol>
-            <li><span>09</span>一球入魂</li>
-            <li><span>10</span>玉げた</li>
-            <li><span>11</span>ゲーム対戦</li>
-            <li><span>12</span>色別対抗リレー</li>
-            <li><span>13</span>ベースランニング</li>
-            <li><span>14</span>スピードガン</li>
-            <li><span>15</span>応援団長は君だ！</li>
-            <li><span>16</span>謎解き</li>
+            <li><a href="#cs-content-9"><span>09</span>一球入魂</a></li>
+            <li><a href="#cs-content-10"><span>10</span>玉げた</a></li>
+            <li><a href="#cs-content-11"><span>11</span>ゲーム対戦</a></li>
+            <li><a href="#cs-content-12"><span>12</span>色別対抗リレー</a></li>
+            <li><a href="#cs-content-13"><span>13</span>ベースランニング</a></li>
+            <li><a href="#cs-content-14"><span>14</span>スピードガン</a></li>
+            <li><a href="#cs-content-15"><span>15</span>応援団長は君だ！</a></li>
+            <li><a href="#cs-content-16"><span>16</span>謎解き</a></li>
           </ol>
         </div>
         <dl className='ms-dec-link-img'>

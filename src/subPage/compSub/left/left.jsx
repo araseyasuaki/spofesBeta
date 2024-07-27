@@ -1,9 +1,9 @@
 import React from 'react'
 import './left.scss'
 
-const Left0 = ({ title, titleNumber, text, img, imgAlt }) => {
+const Left0 = ({ title, titleNumber, text, img, imgAlt, id }) => {
   return (
-    <li className='lt'>
+    <li className='lt' id={`cs-content-${id}`}>
       <div className='lt-img'>
         <img src={`/img/ct-content-img-${img}.png`} alt={imgAlt}/>
         <div/>
@@ -16,9 +16,9 @@ const Left0 = ({ title, titleNumber, text, img, imgAlt }) => {
   )
 }
 
-const Left1 = ({ title, titleNumber, text, list1, img, imgAlt }) => {
+const Left1 = ({ title, titleNumber, text, list1, img, imgAlt, id }) => {
   return (
-    <li className='lt'>
+    <li className='lt' id={`cs-content-${id}`}>
       <div className='lt-img'>
         <img src={`/img/ct-content-img-${img}.png`} alt={imgAlt}/>
         <div/>
@@ -34,9 +34,9 @@ const Left1 = ({ title, titleNumber, text, list1, img, imgAlt }) => {
   )
 }
 
-const Left2 = ({ title, titleNumber, text, list1, list2, img, imgAlt }) => {
+const Left2 = ({ title, titleNumber, text, list1, list2, img, imgAlt, id }) => {
   return (
-    <li className='lt'>
+    <li className='lt' id={`cs-content-${id}`}>
       <div className='lt-img'>
         <img src={`/img/ct-content-img-${img}.png`} alt={imgAlt}/>
         <div/>
