@@ -1,0 +1,42 @@
+.firstViewSub{
+  background: url(../../../public//img//ft-bg-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px 0 15vw 0 ;
+  img{
+    margin: 0 auto;
+    display: block;
+    width: 35%;
+  }
+  h2{
+    margin: 60px auto 0 auto;
+    padding: 5px 15px;
+    width: fit-content;
+    font-size: 24px;
+    color: #fff;
+    background-color: #1996C0;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .firstViewSub{
+    background: url(../../../public//img//ft-bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0 40vw 0 ;
+    img{
+      margin: 0 auto;
+      display: block;
+      width: 70%;
+    }
+    h2{
+      margin: 90px auto 0 auto;
+      padding: 5px 15px;
+      width: fit-content;
+      font-size: 18px;
+      color: #fff;
+      background-color: #1996C0;
+    }
+  }
+}

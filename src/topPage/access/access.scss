@@ -1,0 +1,113 @@
+.access{
+  position: relative;
+  padding: 0 0 25vw 0;
+  background: url('../../../public/img/ac-bg-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  >img{
+    width: 100%;
+    margin: -1px 0 0 0;
+  }
+  ul{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto 0 auto;
+    padding: 0 15vw 10px 15vw;
+    li{
+      width: 50%;
+      list-style-type: none;
+      height: fit-content;
+      iframe{
+        width: 100%;
+        aspect-ratio: 480 / 450;
+        box-shadow: 15px 15px 0 rgba(0, 85, 180, 1);
+        border-radius: 4px;
+      }
+      p{
+        font-weight: bold;
+        width: fit-content;
+        padding: 3px 10px;
+        background-color: #0055B4;
+        color: #B3DFF7;
+        margin: 10px 0 0 0;
+        font-size: 24px;
+        span{
+          padding: 0 0 0 25px;
+          color: #fff;
+        }
+      }
+      a{
+        margin: 60px 15px 0 auto;
+      }
+    }
+    li:nth-child(1){
+      padding: 0 15px 0 0;
+    }
+    li:nth-child(2){
+      padding: 0 0 0 80px;
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .access{
+    position: relative;
+    padding: 0 0 45vw 0;
+    background: url('../../../public/img/ac-bg-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .st-icon-title{
+      margin-top: 40px;
+    }
+    >img{
+      width: 100%;
+      margin: -1px 0 0 0;
+    }
+    ul{
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 60px auto 0 auto;
+      padding: 0 10vw 10px 10vw;
+      li{
+        text-align: center;
+        width: 100%;
+        list-style-type: none;
+        height: fit-content;
+        iframe{
+          box-shadow: 15px 15px 0 rgba(0, 85, 180, 1);
+        }
+        p{
+          max-width: 270px;
+          position: relative;
+          text-align: start;
+          font-weight: bold;
+          width: 80%;
+          padding: 3px 10px;
+          background-color: #0055B4;
+          color: #B3DFF7;
+          margin: 10px auto 0 auto;
+          span{
+            position: absolute;
+            right: 10px;
+            color: #fff;
+          }
+        }
+        a{
+          margin: 60px auto 0 auto;
+        }
+      }
+      li:nth-child(1){
+        padding: 0 15px 0 0;
+      }
+      li:nth-child(2){
+        padding: 30px 0 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.nt-title{
+  position: relative;
+  width: fit-content;
+  margin: 29px 0 11px 0;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 85px;
+    height: 28px;
+    background-color: #E2F3F7;
+    border-bottom: 3px solid #48B4D8;
+    transform: rotate(-35deg);
+    bottom: 28px;
+    left: -28px;
+  }
+  .nt-title-number{
+    font-weight: 100;
+    position: absolute;
+    font-family: "Black Ops One", system-ui;
+    top: -34px;
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    z-index: 10;
+    color: #48B4D8;
+  }
+  .nt-title-text{
+    line-height: 24px;
+    font-size: 24px;
+    padding: 12px 27px 12px 35px;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 3px solid #48B4D8;
+    color: #48B4D8;
+  }
+}
+.nt-title-1,
+.nt-title-7{
+  .nt-title-number{
+    left: -26px;
+  }
+}
+.nt-title-2,
+.nt-title-4{
+  .nt-title-number{
+    left: -32px;
+  }
+}
+.nt-title-3,
+.nt-title-5,
+.nt-title-6,
+.nt-title-8,
+.nt-title-9{
+  .nt-title-number{
+    left: -31px;
+  }
+}
+.nt-title-10{
+  .nt-title-number{
+    left: -21px;
+  }
+}
+.nt-title-11{
+  .nt-title-number{
+    left: -20px;
+  }
+}
+
+
+
+
+
+@media (max-width: 800px) {
+  .nt-title{
+    position: relative;
+    display: inline-block;
+    margin: 22px 0 6px 8.5vw;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 60px;
+      height: 28px;
+      background-color: #E2F3F7;
+      border-bottom: 3px solid #48B4D8;
+      transform: rotate(-35deg);
+      bottom: 22px;
+      left: -21px;
+    }
+    .nt-title-number{
+      position: absolute;
+      font-family: 'Black Ops One', sans-serif;
+      margin: 0;
+      top: -21px;
+      font-size: 32px;
+      line-height: 32px;
+      z-index: 10;
+      color: #48B4D8;
+    }
+    .nt-title-text{
+      line-height: 20px;
+      font-size: 20px;
+      padding: 7px 22px 7px 27px;
+      margin: 0;
+      background-color: #fff;
+      border-radius: 2px;
+      border: 3px solid #48B4D8;
+      color: #48B4D8;
+    }
+  }
+  .nt-title-1,
+  .nt-title-7{
+    .nt-title-number{
+      left: -24px;
+    }
+  }
+  .nt-title-2,
+  .nt-title-4{
+    .nt-title-number{
+      left: -30px;
+    }
+  }
+  .nt-title-3,
+  .nt-title-5,
+  .nt-title-6,
+  .nt-title-8,
+  .nt-title-9{
+    .nt-title-number{
+      left: -27px;
+    }
+  }
+  .nt-title-10{
+    .nt-title-number{
+      left: -20px;
+    }
+  }
+  .nt-title-11{
+    .nt-title-number{
+      left: -19px;
+    }
+  }
+}

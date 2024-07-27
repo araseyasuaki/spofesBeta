@@ -1,0 +1,218 @@
+.schedule{
+  position: relative;
+  padding: 22vw 15% 20vw 15%;
+  .sd-dec-box-1{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    img{
+      position: absolute;
+      left: 0.5vw;
+      top: 12vw;
+      z-index: 20;
+      transform: rotate(-7deg);
+      width: 45vw;
+    }
+    div{
+      content: '';
+      position: relative;
+      width: 100%;
+      aspect-ratio: 10 / 1.23;
+      bottom: -1px;
+      left: 0;
+      background-color: #ffffff;
+      z-index: 10;
+      clip-path: polygon(0 calc(100% - 1px), 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  dl{
+    display: flex;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 90px 0 0 0;
+    padding: 15px 0;
+    dt{
+      margin: 0;
+      padding: 0 0 0 8vw;
+    }
+    dd{
+      margin: 0 8vw 0 auto;
+    }
+  }
+  .sd-dec-title-1,
+  .sd-dec-title-3{
+    background-color: #0055B4;
+  }
+  .sd-dec-title-2{
+    background-color: #93D3D3;
+    margin: 0 0 10px 0;
+  }
+  .sd-dec-title-3{
+    margin-top: 0;
+  }
+  ol{
+    margin: 0;
+    padding: 0 0 0 8vw;
+    li{
+      padding: 25px 0 0 0;
+      list-style-type: none;
+      color: #0055B4;
+      display: flex;
+      font-size: 24px;
+      font-weight: bold;
+      span{
+        color: #48B4D8;
+      }
+      .sd-dec-text-1{
+        font-size: 32px;
+        display: block;
+        font-family: "Black Ops One", system-ui;
+        width: 35px;
+        padding: 0 40px 0 0;
+        font-weight: 100;
+      }
+    }
+  }
+  .sd-dec-box-2{
+    display: flex;
+    margin: 45px 0 45px 0;
+    justify-content: center;
+    section{
+      border: 8px solid #E2F3F7;
+      border-radius: 20px;
+      padding: 15px 40px;
+      margin: 0 15px;
+      h3{
+        color: #48B4D8;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      ul{
+        li{
+          font-weight: bold;
+          color: #48B4D8;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .schedule{
+    position: relative;
+    padding: 30vw 3% 30vw 3%;
+    margin: 0;
+    .sd-dec-box-1{
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+      aspect-ratio: 547 / 160.26;
+      img{
+        position: absolute;
+        left: -0.5vw;
+        top: 12vw;
+        z-index: 20;
+        transform: rotate(-7deg);
+        width: 65vw;
+      }
+      div{
+        content: '';
+        position: relative;
+        width: 100%;
+        aspect-ratio: 547 / 160.26;
+        bottom: -1px;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 10;
+        clip-path: polygon(0 41.98%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+    dl{
+      max-width: 500px;
+      display: flex;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 60px auto 0 auto;
+      padding: 10px 0;
+      dt{
+        margin: 0;
+        padding: 0 0 0 5vw;
+      }
+      dd{
+        margin: 0 5vw 0 auto;
+      }
+    }
+    .sd-dec-title-1,
+    .sd-dec-title-3{
+      background-color: #0055B4;
+    }
+    .sd-dec-title-2{
+      background-color: #93D3D3;
+      margin: 0 auto 5px auto;
+    }
+    ol{
+      position: relative;
+      margin: 0 5vw;
+      padding: 0 0 0 0;
+      max-width: 500px;
+      li{
+        padding: 15px 0 0 0;
+        list-style-type: none;
+        color: #0055B4;
+        display: flex;
+        font-size: 12px;
+        font-weight: bold;
+        span{
+          color: #48B4D8;
+        }
+        .sd-dec-text-1{
+          font-size: 18px;
+          display: block;
+          font-family: "Black Ops One", system-ui;
+          width: 25px;
+          padding: 0 15px 0 0;
+          font-weight: 100;
+        }
+      }
+    }
+    .sd-dec-box-2{
+      display: flex;
+      margin: 20px 0 20px 0;
+      justify-content: center;
+      section{
+        border: 3px solid #E2F3F7;
+        border-radius: 20px;
+        padding: 3vw 5vw;
+        margin: 0;
+        h3{
+          color: #48B4D8;
+          font-size: 12px;
+        }
+        ul{
+          padding: 0 0 0 15px;
+          li{
+            color: #48B4D8;
+            font-size: 12px;
+          }
+        }
+      }
+      .sd-dec-box-3{
+        margin: 0 1vw 0 0;
+      }
+      .sd-dec-box-4{
+        margin: 0 0 0 1vw;
+      }
+    }
+  }
+}

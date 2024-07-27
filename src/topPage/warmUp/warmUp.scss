@@ -1,0 +1,103 @@
+.warmUp{
+  position: relative;
+  text-align: center;
+  padding: 4vw 0 4vw 0;
+  background-color: #E2F3F7;
+  .wu-dec-box-1{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    img{
+      position: absolute;
+      right: 0.5vw;
+      bottom: 4.1vw;
+      z-index: 20;
+      transform: rotate(7deg);
+      width: 70vw;
+    }
+    div{
+      content: '';
+      position: relative;
+      width: 100%;
+      aspect-ratio: 10 / 1.23;
+      bottom: -1px;
+      left: 0;
+      background-color: #E2F3F7;
+      z-index: 10;
+      clip-path: polygon(0 0, 100% calc(100% - 1px), 100% 100%, 0 100%);
+    }
+  }
+  p{
+    margin: 60px auto 0 auto;
+    width: fit-content;
+    color: #B3DFF7;
+    font-size: 24px;
+    padding: 0 15px;
+    font-weight: bold;
+  }
+  iframe{
+    width: 60%;
+    aspect-ratio: 560 / 315;
+    border-radius: 20px;
+    margin: 90px 0 0 0;
+  }
+  a{
+    margin: 90px auto 0 auto;
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  .warmUp{
+    position: relative;
+    text-align: center;
+    padding: 10vw 0 10vw 0;
+    background-color: #E2F3F7;
+    .wu-dec-box-1{
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+      height: fit-content;
+      img{
+        position: absolute;
+        right: 0.5vw;
+        bottom: 4.1vw;
+        z-index: 20;
+        transform: rotate(7deg);
+        width: 90vw;
+      }
+      div{
+        content: '';
+        position: relative;
+        width: 100%;
+        aspect-ratio: 10 / 1.23;
+        bottom: -1px;
+        left: 0;
+        background-color: #E2F3F7;
+        z-index: 10;
+        clip-path: polygon(0 0, 100% calc(100% - 1px), 100% 100%, 0 100%);
+      }
+    }
+    p{
+      margin: 40px auto 0 auto;
+      width: fit-content;
+      color: #0055B4;
+      font-size: 14px;
+      padding: 5px 15px;
+      font-weight: bold;
+    }
+    iframe{
+      width: 80%;
+      aspect-ratio: 560 / 315;
+      border-radius: 20px;
+      margin: 40px 0 0 0;
+    }
+    a{
+      margin: 40px auto 0 auto;
+    }
+  }
+}
