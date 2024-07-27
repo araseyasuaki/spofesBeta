@@ -19,6 +19,7 @@
         background-color: #F0FC0B;
         display: inline-block;
         padding: 0 25px 0 0;
+        white-space: nowrap;
       }
     }
     li:nth-child(1),li:nth-child(3){
@@ -200,8 +201,8 @@
         p{
           margin: 0;
           background-color: #F0FC0B;
-          display: inline-block;
           padding: 0 5px 0 5px;
+          white-space: nowrap;
         }
       }
       li:nth-child(1),li:nth-child(3){
