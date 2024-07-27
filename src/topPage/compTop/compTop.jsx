@@ -38,7 +38,7 @@ const CompTop = () => {
         <CompImg classNumber={'10'} titleNumber={'10'} url={'10'} title={'玉げた'}/>
         <NewCompImg classNumber={'11'} titleNumber={'11'} url={'11'} title={'ゲーム対戦'}/>
         <CompImg classNumber={'12'} titleNumber={'12'} url={'12'} title={'色別対抗リレー'}/>
-        <CompImg classNumber={'13'} titleNumber={'13'} url={'13'} title={'ベースランニング'}/>
+        <ImageCompImg classNumber={'13'} titleNumber={'13'} url={'13'} title={'ベースランニング'}/>
         <CompImg classNumber={'14'} titleNumber={'14'} url={'14'} title={'スピードガン'}/>
         <CompImg classNumber={'15'} titleNumber={'15'} url={'15'} title={'応援団長は君だ!'}/>
         <ImageCompImg classNumber={'16'} titleNumber={'16'} url={'16'} title={'謎解き'}/>
