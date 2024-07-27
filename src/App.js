@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import TopPage from './topPage/topPage';
 import SubPage from './subPage/subPage';
 import PageChange from './common/pageChange/pageChange';
+import './fonts.scss';
 import './App.scss';
 
 function App() {

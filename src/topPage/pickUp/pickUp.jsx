@@ -36,10 +36,10 @@ export default function App() {
         pagination={{ clickable: true }}
         allowTouchMove={true}
         autoplay={{
-          delay: 2000,
+          delay: 0.2,
           disableOnInteraction: false,
         }}
-        speed={1000}
+        speed={0.1}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="mySwiper"
         centeredSlides={true}
