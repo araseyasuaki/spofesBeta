@@ -35,6 +35,12 @@ const MenuSub = () => {
     }
   }, [menuBtn])
 
+  if(menuBtn){
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+
   return (
     <div className='menuTop'>
       <div onClick={toggleMenu}>

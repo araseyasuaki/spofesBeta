@@ -18,6 +18,12 @@ const MenuSub = () => {
     }
   };
 
+  if(menuBtn){
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+
   useEffect(() => {
     if(menuBtn){
       setIsAnimating(true);

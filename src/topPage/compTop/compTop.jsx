@@ -1,8 +1,9 @@
 // 競技紹介（トップページ）
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { SectionTitle } from '../../common/sectionTitle/sectionTitle'
 import { CompImg, NewImageCompImg, NewCompImg,ImageCompImg } from './compImg/compImg';
 import { LinkBtnPageChange } from '../../common/linkBtn/linkBtn'
+import { gsap } from 'gsap'
 import './compTop.scss'
 
 const CompTop = () => {
