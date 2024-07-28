@@ -21,7 +21,7 @@ const OpenTime = () => {
   return (
     <section className='openTime' id='openTime'>
       <div className='ot-dec-box-1'>
-        <img src='/img/ot-date-and-time-text.png'/>
+        <img src='/img/ot-date-and-time-text.png' alt='dateAndTimeのテキスト画像'/>
         <div/>
       </div>
       <IconSectionTitle url={'/img/op-title-icon.png'} alt={'開催日時・場所のタイトルのアイコン'} title={'開催日時・場所'}/>

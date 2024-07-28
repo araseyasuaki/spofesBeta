@@ -169,18 +169,18 @@
         padding: 0;
         li{
           margin: 20px 0 0 0 ;
-          padding: 0 0 0 35px;
+          padding: 0 0 0 0;
           font-size: 14px;
           list-style-type: none;
           font-weight: bold;
           position: relative;
           a{
+            display: flex;
             text-decoration: none;
             color: #0055B4;
-            span{
-              position: absolute;
-              left: 0;
-              top: 1px;
+            p{
+              padding: 0 10px 0 0;
+              margin: 0;
               color: #48B4D8;
               font-family: "Black Ops One", system-ui;
               font-weight: 100;
@@ -404,16 +404,6 @@
         dd{
           width: fit-content;
           position: relative;
-          &::after{
-            position: absolute;
-            content: '';
-            width: 30px;
-            height: 30px;
-            background-color: #0055B4;
-            border-radius: 50%;
-            top: -9.25px;
-            right: -95px;
-          }
           img{
             position: absolute;
             width: 15px;
@@ -438,15 +428,16 @@
           li{
             position: relative;
             margin: 20px 0 0 0 ;
-            padding: 0 0 0 30px;
+            padding: 0 0 0 35px;
             font-size: 11px;
             list-style-type: none;
             font-weight: bold;
             color: #0055B4;
-            span{
-              top: 0;
-              left: 0;
+            p{
               position: absolute;
+              top: -2px;
+              left: 0;
+              margin: 0;
               color: #48B4D8;
               font-family: "Black Ops One", system-ui;
               font-weight: 100;

@@ -21,9 +21,9 @@ export default function App() {
   }, []);
 
   return (
-    <section className='pickUp'>
+    <section className='pickUp' id='pickUp'>
       <div className='pk-dec-box-1'>
-      <img src='/img/pu-pick-up-text.png'/>
+      <img src='/img/pu-pick-up-text.png' alt='pickUpのテキスト画像'/>
         <div/>
       </div>
       <SectionTitle title={'ピックアップ'}/>
@@ -47,32 +47,32 @@ export default function App() {
       >
         <SwiperSlide className='pu-img-fram-1'>
           <div>
-            <a href='#warmUp'><img src='/img/pu-img-1.jpg' alt='Image 1'/><p>#スポフェス前に運動しよう</p></a>
+            <a href='#warmUp'><img src='/img/pu-img-1.jpg' alt='談笑している生徒'/><p>#スポフェス前に運動しよう</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-2'>
           <div>
-            <a href='#access'><img src='/img/pu-img-2.jpg' alt='Image 2'/><p>#東京ドームに楽々到着</p></a>
+            <a href='#access'><img src='/img/pu-img-2.jpg' alt='東京ドームの外観の写真'/><p>#東京ドームに楽々到着</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-1'>
           <div>
-            <a href='#domeMap'><img src='/img/pu-img-3.jpg' alt='Image 3'/><p>#事前に知る東京ドーム</p></a>
+            <a href='#domeMap'><img src='/img/pu-img-3.jpg' alt='ドーム内のグランドの写真'/><p>#事前に知る東京ドーム</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-2'>
           <div>
-            <a href='#openTime'><img src='/img/pu-img-4.jpg' alt='Image 4'/><p>#入場時間10時じゃない！</p></a>
+            <a href='#openTime'><img src='/img/pu-img-4.jpg' alt='集合写真を撮っている生徒達'/><p>#入場時間10時じゃない！</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-1'>
           <div>
-            <a href='#compTop'><img src='/img/pu-img-5.jpg' alt='Image 5'/><p>#新競技の注目ポイント</p></a>
+            <a href='#compTop'><img src='/img/pu-img-5.jpg' alt='コスプレをした生徒達'/><p>#新競技の注目ポイント</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-2'>
           <div>
-            <a href='#notes'><img src='/img/pu-img-6.jpg' alt='Image 6'/><p>#出場禁止！！なんで〜</p></a>
+            <a href='#notes'><img src='/img/pu-img-6.jpg' alt='客席から見たドーム内の景色'/><p>#出場禁止！！なんで〜</p></a>
           </div>
         </SwiperSlide>
       </Swiper>

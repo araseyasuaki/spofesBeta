@@ -21,7 +21,7 @@ const CatchCopy = () => {
   }, []);
 
   return (
-    <section className="catch-copy">
+    <section className="catchCopy" id='catchCopy'>
       <div className='cp-dec-box-1'>
         <p>今年のキャッチコピー{cpMvIpRespon ? <br/> : ""}<span>「New Challengers」</span>には、</p>
         <p>新しいことにチャレンジする大変さを{cpMvIpRespon ? <br/> : ""}一致団結が必要なスポーツフェスティバルを通して、</p>

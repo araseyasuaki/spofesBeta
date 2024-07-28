@@ -126,9 +126,12 @@
       }
       dd{
         font-size: 18px;
-        color: #0055B4;
         font-weight: bold;
         margin: 0;
+        a{
+          text-decoration: none;
+          color: #0055B4;
+        }
       }
     }
     div{

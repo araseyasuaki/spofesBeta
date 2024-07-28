@@ -21,12 +21,12 @@ const FirstView = () => {
       </ul>
       <div className='ft-video'>
         <video loop autoPlay muted>
-          <source src="/video/2024-digest.mp4" type="video/mp4" />
+          <source src="/video/2024-digest.mp4" type="video/mp4"/>
         </video>
       </div>
       {ftRespon ?
-        <img className="ft-video-frame" src="/img/ft-mv-frame.svg"/> :
-        <img className="ft-video-frame" src="/img/ft-pc-frame.svg"/>
+        <img className="ft-video-frame" src="/img/ft-mv-frame.svg" alt='動画フレームの装飾画像'/> :
+        <img className="ft-video-frame" src="/img/ft-pc-frame.svg" alt='動画フレームの装飾画像'/>
       }
       <ul className='ft-dec-text-1'>
         <li>

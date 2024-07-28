@@ -1,17 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { gsap } from 'gsap';
 import './menuSub.scss';
 
 const MenuSub = () => {
   const [menuBtn, setMenuBtn] = useState(false);
-  const [isClassAdded, setIsClassAdded] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const menuRef = useRef(null);
+
+  const wrapTextInSpans = (text) => {
+    return text.split('').map((char, index) => <span key={index}>{char}</span>);
+  };
 
   const toggleMenu = () => {
-    setMenuBtn(prevMenuBtn => !prevMenuBtn);
-    setTimeout(() => {
-      setIsClassAdded(true);
-    }, 1000);
+    if (!isAnimating) {
+      setMenuBtn(!menuBtn);
+    }
   };
+
+  useEffect(() => {
+    if(menuBtn){
+      setIsAnimating(true);
+      gsap.from(menuRef.current.querySelectorAll('span'), {
+        opacity: 0,
+        ease: 'power2.out',
+        delay: 0.2,
+        stagger: {
+          amount: 0.7,
+          from: 'random'
+        },
+        // アニメーション完了時に呼び出されるコールバック関数
+        onComplete: () => setIsAnimating(false)
+      })
+    }
+  }, [menuBtn])
 
   return (
     <div className='menuSub'>
@@ -29,26 +51,26 @@ const MenuSub = () => {
           <dt>SPORTS DISCIPLINES</dt>
           <dd>詳しい競技紹介</dd>
         </dl>
-        <div className='ms-list'>
+        <div className='ms-list' ref={menuRef}>
           <ol>
-            <li><a href="#cs-content-1"><span>01</span>クラス対抗リレー</a></li>
-            <li><a href="#cs-content-2"><span>02</span>運命共同体</a></li>
-            <li><a href="#cs-content-3"><span>03</span>だるま運びレース</a></li>
-            <li><a href="#cs-content-4"><span>04</span>借り物競争</a></li>
-            <li><a href="#cs-content-12"><span>05</span>ウルトラクイズ</a></li>
-            <li><a href="#cs-content-5"><span>06</span>THE 決戦！！</a></li>
-            <li><a href="#cs-content-6"><span>07</span>なわ取り合戦</a></li>
-            <li><a href="#cs-content-7"><span>08</span>だるま神輿</a></li>
+            <li><a href="#cs-content-1"><p>01</p>{wrapTextInSpans('クラス対抗リレー')}</a></li>
+            <li><a href="#cs-content-2"><p>02</p>{wrapTextInSpans('運命共同体')}</a></li>
+            <li><a href="#cs-content-3"><p>03</p>{wrapTextInSpans('だるま運びレース')}</a></li>
+            <li><a href="#cs-content-4"><p>04</p>{wrapTextInSpans('借り物競争')}</a></li>
+            <li><a href="#cs-content-12"><p>05</p>{wrapTextInSpans('ウルトラクイズ')}</a></li>
+            <li><a href="#cs-content-5"><p>06</p>{wrapTextInSpans('THE 決戦！！')}</a></li>
+            <li><a href="#cs-content-6"><p>07</p>{wrapTextInSpans('なわ取り合戦')}</a></li>
+            <li><a href="#cs-content-7"><p>08</p>{wrapTextInSpans('だるま神輿')}</a></li>
           </ol>
           <ol>
-            <li><a href="#cs-content-8"><span>09</span>一球入魂</a></li>
-            <li><a href="#cs-content-9"><span>10</span>玉げた</a></li>
-            <li><a href="#cs-content-10"><span>11</span>ゲーム対戦</a></li>
-            <li><a href="#cs-content-11"><span>12</span>色別対抗リレー</a></li>
-            <li><a href="#cs-content-13"><span>13</span>ベースランニング</a></li>
-            <li><a href="#cs-content-14"><span>14</span>スピードガン</a></li>
-            <li><a href="#cs-content-15"><span>15</span>応援団長は君だ！</a></li>
-            <li><a href="#cs-content-16"><span>16</span>謎解き</a></li>
+            <li><a href="#cs-content-8"><p>09</p>{wrapTextInSpans('一球入魂')}</a></li>
+            <li><a href="#cs-content-9"><p>10</p>{wrapTextInSpans('玉げた')}</a></li>
+            <li><a href="#cs-content-10"><p>11</p>{wrapTextInSpans('ゲーム対戦')}</a></li>
+            <li><a href="#cs-content-11"><p>12</p>{wrapTextInSpans('色別対抗リレー')}</a></li>
+            <li><a href="#cs-content-13"><p>13</p>{wrapTextInSpans('ベースランニング')}</a></li>
+            <li><a href="#cs-content-14"><p>14</p>{wrapTextInSpans('スピードガン')}</a></li>
+            <li><a href="#cs-content-15"><p>15</p>{wrapTextInSpans('応援団長は君だ！')}</a></li>
+            <li><a href="#cs-content-16"><p>16</p>{wrapTextInSpans('謎解き')}</a></li>
           </ol>
         </div>
         <dl className='ms-dec-link-img'>

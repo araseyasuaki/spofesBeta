@@ -5,7 +5,7 @@ import './admissionTime.scss'
 
 const admissionTime = () => {
   return (
-    <section className='admissionTime'>
+    <section className='admissionTime' id='admissionTime'>
       <div className='at-dec-box-1'>
         <img src='/img/at-entry-time-text.png'/>
         <div/>

@@ -1,13 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { gsap } from 'gsap';
 import './menuTop.scss';
 
 const MenuSub = () => {
   const [menuBtn, setMenuBtn] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const menuRef = useRef(null);
+
+  const wrapTextInSpans = (text) => {
+    return text.split('').map((char, index) => <span key={index}>{char}</span>);
+  };
 
   const toggleMenu = () => {
-    setMenuBtn(!menuBtn);
+    if (!isAnimating) {
+      setMenuBtn(!menuBtn);
+    }
   };
+
+  useEffect(() => {
+    if(menuBtn){
+      setIsAnimating(true);
+      gsap.from(menuRef.current.querySelectorAll('span'), {
+        opacity: 0,
+        ease: 'power2.out',
+        delay: 0.2,
+        stagger: {
+          amount: 0.7,
+          from: 'random'
+        },
+        // アニメーション完了時に呼び出されるコールバック関数
+        onComplete: () => setIsAnimating(false)
+      })
+    }
+  }, [menuBtn])
 
   return (
     <div className='menuTop'>
@@ -16,26 +42,26 @@ const MenuSub = () => {
         <p className={`${menuBtn ? 'text-off' : ''}`}>MENU</p>
         <div className={`menuBer-2 ${menuBtn ? 'menuBer-2-off' : ''}`}/>
       </div>
-      <nav className={menuBtn ? 'nav-on' : ''}>
+      <nav className={menuBtn ? 'nav-on' : ''} ref={menuRef}>
         <dl>
           <dt>CATCH PHRASE</dt>
-          <dd>キャッチフレーズ紹介</dd>
+          <dd><a href="#catchCopy">{wrapTextInSpans('キャッチフレーズ紹介')}</a></dd>
           <dt>PICK UP</dt>
-          <dd>ピックアップ</dd>
+          <dd><a href="#pickUp">{wrapTextInSpans('ピックアップ')}</a></dd>
           <dt>DATE AND TIME</dt>
-          <dd>開催日時</dd>
+          <dd><a href="#openTime">{wrapTextInSpans('開催日時')}</a></dd>
           <dt>ENTRY TIME</dt>
-          <dd>入場時間</dd>
+          <dd><a href="#admissionTime">{wrapTextInSpans('入場時間')}</a></dd>
           <dt>SPORTS DISCIPLINES</dt>
-          <dd>競技紹介</dd>
+          <dd><a href="#compTop">{wrapTextInSpans('競技紹介')}</a></dd>
           <dt>TOKYO DOME</dt>
-          <dd>ドーム内地図</dd>
+          <dd><a href="#domeMap">{wrapTextInSpans('ドーム内地図')}</a></dd>
           <dt>WARM-UP VIDEO</dt>
-          <dd>準備体操動画</dd>
+          <dd><a href="#warmUp">{wrapTextInSpans('準備体操動画')}</a></dd>
           <dt>ACCESS</dt>
-          <dd>アクセス</dd>
+          <dd><a href="#access">{wrapTextInSpans('アクセス')}</a></dd>
           <dt>FESTIVAL RULES</dt>
-          <dd>ドーム内注意事項</dd>
+          <dd><a href="#notes">{wrapTextInSpans('ドーム内注意事項')}</a></dd>
         </dl>
         <div>
           <Link to="/subPage">

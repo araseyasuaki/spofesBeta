@@ -17,7 +17,7 @@ const WarmUp = () => {
   return (
     <section className='warmUp' id='warmUp'>
       <div className='wu-dec-box-1'>
-        <img src='/img/wu-warm-up-video-text.png'/>
+        <img src='/img/wu-warm-up-video-text.png' alt='warmUpのテキスト画像'/>
         <div/>
       </div>
       <SectionTitle title={'準備体操動画'}/>

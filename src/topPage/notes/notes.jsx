@@ -19,8 +19,8 @@ const Notes = () => {
     <section className='notes' id='notes'>
       <div className='nt-dec-box-1'>
         {ntRespon ?
-        <img src='/img/nt-mv-festival-rules-text.png'/> :
-        <img src='/img/nt-pc-festival-rules-text.png'/>
+        <img src='/img/nt-mv-festival-rules-text.png' alt='festivalRulesのテキスト画像'/> :
+        <img src='/img/nt-pc-festival-rules-text.png' alt='festivalRulesのテキスト画像'/>
         }
         <div/>
       </div>
