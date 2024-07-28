@@ -33,7 +33,7 @@ const schedule = () => {
         <li><a href="#cs-content-9"><span className='sd-dec-text-1'>11</span>玉げた：色別対抗大玉運び</a></li>
         <li><a href="#cs-content-10"><span className='sd-dec-text-1'>12</span>ゲーム対戦</a></li>
         <li><a href="#cs-content-1"><span className='sd-dec-text-1'>13</span>クラス対抗リレー<span>(決勝)</span></a></li>
-        <li><a href="#cs-content-1"><span className='sd-dec-text-1'>14</span>色別対抗リレー</a></li>
+        <li><a href="#cs-content-11"><span className='sd-dec-text-1'>14</span>色別対抗リレー</a></li>
       </ol>
       <div className='sd-dec-box-2'>
         <section className='sd-dec-box-3'>

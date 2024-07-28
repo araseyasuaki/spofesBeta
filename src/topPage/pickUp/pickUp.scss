@@ -187,7 +187,7 @@
 
 @media (max-width: 800px) {
   .pickUp{
-    padding: 13vw 0 100px 0;
+    padding: 28vw 0 60px 0;
     position: relative;
     .pk-dec-box-1{
       position: absolute;
@@ -200,7 +200,7 @@
         top: 13vw;
         z-index: 20;
         transform: rotate(-7deg);
-        width: 33vw;
+        width: 55vw;
       }
       div{
         content: '';
@@ -216,7 +216,7 @@
     }
     .swiper{
       position: relative;
-      margin: 100px 0 0 0;
+      margin: 60px 0 0 0;
       padding: 0 0 85px 0;
       .swiper-button-prev,
       .swiper-button-next{

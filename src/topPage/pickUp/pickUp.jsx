@@ -23,7 +23,7 @@ export default function App() {
   return (
     <section className='pickUp'>
       <div className='pk-dec-box-1'>
-        <img src='/img/pu-pick-up-text.png'/>
+      <img src='/img/pu-pick-up-text.png'/>
         <div/>
       </div>
       <SectionTitle title={'ピックアップ'}/>
@@ -35,11 +35,11 @@ export default function App() {
         spaceBetween={0}
         pagination={{ clickable: true }}
         allowTouchMove={true}
-        // autoplay={{
-        //   delay: 2000,
-        //   disableOnInteraction: false,
-        // }}
-        speed={1000}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        speed={600}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="mySwiper"
         centeredSlides={true}

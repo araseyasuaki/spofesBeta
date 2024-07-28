@@ -13,7 +13,7 @@ const MenuSub = () => {
     <div className='menuTop'>
       <div onClick={toggleMenu}>
         <div className={`menuBer-1 ${menuBtn ? 'menuBer-1-off' : ''}`}/>
-        <img className={`${menuBtn ? 'img-off' : ''}`} src='/img/menu.png' alt='Menu icon' />
+        <p className={`${menuBtn ? 'text-off' : ''}`}>MENU</p>
         <div className={`menuBer-2 ${menuBtn ? 'menuBer-2-off' : ''}`}/>
       </div>
       <nav className={menuBtn ? 'nav-on' : ''}>

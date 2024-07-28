@@ -1,6 +1,6 @@
 .schedule{
   position: relative;
-  padding: 7vw 15% 20vw 15%;
+  padding: 7vw 15% 25vw 15%;
   .sd-dec-box-1{
     overflow: hidden;
     position: absolute;
@@ -9,6 +9,7 @@
     width: 100%;
     aspect-ratio: 4.183 / 1;
     height: fit-content;
+    transform: translateY(1px);
     img{
       position: absolute;
       left: -0.5vw;
@@ -22,7 +23,7 @@
       position: relative;
       width: 100%;
       aspect-ratio: 4.183 / 1;
-      bottom: -1px;
+      bottom: 0;
       left: 0;
       background-color: #ffffff;
       z-index: 10;

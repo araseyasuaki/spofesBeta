@@ -11,6 +11,17 @@
     border: 1px solid #0055B4;
     cursor: pointer;
     z-index: 100;
+    &:hover{
+      .menuBer-1{
+        transform: translateX(-50%) translateY(18px);
+      }
+      .menuBer-2{
+        transform: translateX(-50%) translateY(-18px);
+      }
+      img{
+        opacity: 0;
+      }
+    }
     &::after{
       content: '';
       position: absolute;
@@ -24,16 +35,23 @@
       border-radius: 50%;
       z-index: -10;
     }
-    img{
+    p{
       position: absolute;
-      width: 70%;
-      top: 50%;
+      font-family: "Black Ops One", system-ui;
+      font-weight: 100;
+      font-style: normal;
+      color: #0055B4;
+      font-size: 16px;
+      width: fit-content;
+      top: 52%;
       left: 50%;
       opacity: 1;
       transform: translateX(-50%) translateY(-50%);
       transition: opacity 1s ease;
+      line-height: 11px;
+      margin: 0;
     }
-    .img-off{
+    .text-off{
       opacity: 0;
     }
     .menuBer-1{
@@ -142,6 +160,10 @@
         font-weight: bold;
         text-decoration: none;
         color: #0055B4;
+        :hover{
+          opacity: 0.8;
+          animation: spin 2s linear infinite;
+        }
         &::after{
           position: absolute;
           content: '';
@@ -211,6 +233,17 @@
       border: 1px solid #0055B4;
       cursor: pointer;
       z-index: 100;
+      &:hover{
+        .menuBer-1{
+          transform: translateX(-50%) translateY(14px);
+        }
+        .menuBer-2{
+          transform: translateX(-50%) translateY(-14px);
+        }
+        img{
+          opacity: 0;
+        }
+      }
       &::after{
         content: '';
         position: absolute;
@@ -224,16 +257,23 @@
         border-radius: 50%;
         z-index: -10;
       }
-      img{
+      p{
         position: absolute;
-        width: 70%;
-        top: 50%;
+        font-family: "Black Ops One", system-ui;
+        font-weight: 100;
+        font-style: normal;
+        color: #0055B4;
+        font-size: 14px;
+        width: fit-content;
+        top: 51%;
         left: 50%;
         opacity: 1;
         transform: translateX(-50%) translateY(-50%);
         transition: opacity 1s ease;
+        line-height: 11px;
+        margin: 0;
       }
-      .img-off{
+      .text-off{
         opacity: 0;
       }
       .menuBer-1{

@@ -12,6 +12,14 @@
   font-weight: bold;
   width: fit-content;
   transform: translateY(-5px);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  &:hover{
+    transform: translateX(3px) translateY(3px);
+    box-shadow: 2px 2px 0 rgb(0, 85, 180, 1);
+    background-color: #dddddd;
+  }
   span{
     position: absolute;
     top: 50%;
@@ -23,6 +31,8 @@
     border-radius: 100%;
     img{
       position: absolute;
+      width: auto;
+      height: 15px;
       left: 50%;
       top: 50%;
       transform: translateX(-50%) translateY(-50%);

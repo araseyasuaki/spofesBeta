@@ -10,7 +10,7 @@
     img{
       position: absolute;
       left: -0.5%;
-      bottom: 3.1vw;
+      bottom: 3vw;
       z-index: 20;
       transform: rotate(-7deg);
       width: 52vw;
@@ -275,11 +275,12 @@
     section{
       position: relative;
       margin: 0 3vw;
-      padding: 20px;
+      padding: 30px 20px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       ul{
+        width: 256px;
         margin: 20px 25px;
         padding: 0 0 0 20px;
         li{
@@ -384,13 +385,9 @@
         }
       }
       .at-dec-text-color-1{
+        width: 256px;
         li{
           color: #FF0000;
-        }
-      }
-      @media (max-width: 734px) {
-        .at-dec-text-color-1{
-          margin-top: 30px;
         }
       }
       .at-dec-text-color-2{
@@ -398,22 +395,13 @@
           color: #FFD600;
         }
       }
-      @media (max-width: 734px) {
-        .at-dec-text-color-2{
-          margin-bottom: 30px;
-        }
-      }
       .at-dec-text-color-3{
         li{
           color: #000;
         }
       }
-      @media (max-width: 734px) {
-        .at-dec-text-color-3{
-          margin-top: 30px;
-        }
-      }
       .at-dec-text-color-4{
+        width: 256px;
         li{
           color: #00B050;
         }
@@ -423,19 +411,10 @@
           color: #9200FF;
         }
       }
-      @media (max-width: 734px) {
-        .at-dec-text-color-5{
-          margin-bottom: 30px;
-        }
-      }
       .at-dec-text-color-6{
+        width: 256px;
         li{
           color: #FF9900;
-        }
-      }
-      @media (max-width: 734px) {
-        .at-dec-text-color-6{
-          margin-top: 30px;
         }
       }
       .at-dec-text-color-7{
@@ -444,13 +423,9 @@
         }
       }
       .at-dec-text-color-8{
+        width: 256px;
         li{
           color: #0055B4;
-        }
-      }
-      @media (max-width: 734px) {
-        .at-dec-text-color-8{
-          margin-bottom: 30px;
         }
       }
     }
