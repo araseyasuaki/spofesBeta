@@ -18,18 +18,18 @@ const topPage = () => {
 
   return (
     <>
-      {/* <MenuTop/>
+      <MenuTop/>
       <FirstViewTop/>
       <CatchCopy/>
       <PickUp/>
-      <OpenTime/> */}
+      <OpenTime/>
       <AdmissionTime/>
       <CompTop/>
       <DomeMap/>
-      {/* <WarmUp/>
+      <WarmUp/>
       <Access/>
       <Notes/>
-      <Footer/> */}
+      <Footer/>
     </>
   )
 }
