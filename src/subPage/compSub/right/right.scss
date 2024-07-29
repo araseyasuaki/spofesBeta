@@ -50,10 +50,12 @@
     width: 50%;
     clip-path: polygon(10% 75px, calc(10% + 75px) 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 10% 100%);
     height: fit-content;
-    &:hover{
-      img{
-        position: relative;
-        transform: scale(1.3);
+    @media (min-width: 801px) {
+      &:hover{
+        img{
+          position: relative;
+          transform: scale(1.3);
+        }
       }
     }
     img{
@@ -155,11 +157,13 @@
       aspect-ratio: 247 / 204;
       max-width: 400px;
       top: 121px;
+      clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
+      height: fit-content;
       img{
         position: absolute;
         display: block;
         width: 100%;
-        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%)
+        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
       }
       &::after{
         position: absolute;

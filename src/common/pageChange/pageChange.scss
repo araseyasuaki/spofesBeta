@@ -10,10 +10,12 @@
   width: 100px;
   height: 100px;
   z-index: 9999;
-  :hover{
-    opacity: 0.8;
-    img{
-      animation: spin 2s linear infinite;
+  @media (min-width: 801px) {
+    :hover{
+      opacity: 0.8;
+      img{
+        animation: spin 2s linear infinite;
+      }
     }
   }
   a{
