@@ -35,7 +35,6 @@ const MenuSub = () => {
           amount: 0.7,
           from: 'random'
         },
-        // アニメーション完了時に呼び出されるコールバック関数
         onComplete: () => setIsAnimating(false)
       })
     }
