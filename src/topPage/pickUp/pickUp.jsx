@@ -26,8 +26,7 @@ export default function App() {
         stagger: 0.1,
         scrollTrigger: {
           trigger: '.swiper',
-          start: 'top 55%',
-          markers: true,
+          start: 'top 70%',
         }
       }
     );

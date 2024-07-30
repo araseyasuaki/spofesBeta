@@ -32,13 +32,26 @@
       clip-path: polygon(0 0, 100% calc(100% - 1px), 100% 100%, 0 100%);
     }
   }
-  p{
-    margin: 60px auto 0 auto;
+  .wu-dec-text{
+    position: relative;
     width: fit-content;
-    color: #0055B4;
-    font-size: 24px;
-    padding: 0 15px;
-    font-weight: bold;
+    margin: 0 auto;
+    p{
+      margin: 60px auto 0 auto;
+      width: fit-content;
+      color: #0055B4;
+      font-size: 24px;
+      padding: 0 15px;
+      font-weight: bold;
+    }
+    div{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #0055B4;
+    }
   }
   iframe{
     width: 60%;

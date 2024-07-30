@@ -5,7 +5,13 @@ import './firstViewSub.scss'
 const FirstViewSub = () => {
 
   useEffect(() => {
-    gsap.fromTo('.ft-dec-ex-1',
+    const ftDecEx1 = document.querySelector('.ft-dec-ex-1');
+    const ftDecEx2 = document.querySelector('.ft-dec-ex-2');
+
+    if (ftDecEx1) ftDecEx1.style.display = 'block';
+    if (ftDecEx2) ftDecEx2.style.display = 'block';
+
+    gsap.fromTo(ftDecEx1,
       {
         scale: 1,
       },
@@ -15,9 +21,12 @@ const FirstViewSub = () => {
         delay: 1,
         duration: 0.8,
         ease: 'power4.out',
+        onComplete: () => {
+          if (ftDecEx1) ftDecEx1.style.display = 'none';
+        }
       }
     );
-    gsap.fromTo('.ft-dec-ex-2',
+    gsap.fromTo(ftDecEx2,
       {
         scale: 1,
         y: '-50%',
@@ -32,12 +41,15 @@ const FirstViewSub = () => {
         ease: 'power4.out',
       }
     );
-    gsap.to(".ft-dec-ex-2",
+    gsap.to(ftDecEx2,
       {
         delay: 1,
         ease: 'power4.out',
         duration: .8,
         opacity: 0,
+        onComplete: () => {
+          if (ftDecEx2) ftDecEx2.style.display = 'none';
+        }
       }
     );
     gsap.fromTo('h2',
@@ -69,12 +81,12 @@ const FirstViewSub = () => {
 
   return (
     <section className='firstViewSub'>
-      <div className='ft-dec-ex-1'/>
-      <img className='ft-dec-ex-2' src="/img/ft-new-challengers-text.png"/>
+      <div className='ft-dec-ex-1' style={{ display: 'none' }}/>
+      <img className='ft-dec-ex-2' src="/img/ft-new-challengers-text.png" style={{ display: 'none' }}/>
       <img className='fs-dec-img-1' src="/img/ft-new-challengers-text.png" alt="" />
       <h2>当日スケジュール＋詳しい競技紹介<span/></h2>
     </section>
   )
 }
 
-export default FirstViewSub
+export default FirstViewSub;

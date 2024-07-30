@@ -17,11 +17,11 @@ const CatchCopy = () => {
     gsap.fromTo('.cp-dec-box-1 p',
       {
         opacity: 0,
-        y: 80
+        x: -100,
       },
       {
         opacity: 1,
-        y: 0,
+        x: 0,
         stagger: 0.1,
         scrollTrigger: {
           trigger: '.cp-dec-box-1 p',

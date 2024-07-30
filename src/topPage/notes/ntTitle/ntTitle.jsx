@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './ntTitle.scss'
 
-const ntTitle = ({ classNumber, titleNumber, titleName }) => {
+const NtTitle = ({ classNumber, titleNumber, titleName }) => {
+
   return (
     <h3 className={`nt-title nt-title-${classNumber}`}>
       <span className='nt-title-number'>{titleNumber}</span>
@@ -10,4 +11,4 @@ const ntTitle = ({ classNumber, titleNumber, titleName }) => {
   )
 }
 
-export default ntTitle
+export default NtTitle

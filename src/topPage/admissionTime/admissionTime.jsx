@@ -1,9 +1,59 @@
 // 色別集合時間
-import React from 'react'
+import React, { useEffect } from 'react';
 import { SectionTitle } from './../../common/sectionTitle/sectionTitle'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './admissionTime.scss'
 
-const admissionTime = () => {
+gsap.registerPlugin(ScrollTrigger);
+
+const AdmissionTime = () => {
+
+  useEffect(() => {
+    gsap.fromTo('.at-dec-section-1',
+      {
+        opacity: 0,
+        y: 80
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: '.at-dec-section-1',
+          start: 'top 70%',
+        }
+      }
+    );
+    gsap.fromTo('.at-dec-section-2',
+      {
+        opacity: 0,
+        y: 80
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: '.at-dec-section-2',
+          start: 'top 70%',
+        }
+      }
+    );
+    gsap.fromTo('.at-dec-section-3',
+      {
+        opacity: 0,
+        y: 80
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: '.at-dec-section-3',
+          start: 'top 70%',
+        }
+      }
+    );
+  }, []);
+
   return (
     <section className='admissionTime' id='admissionTime'>
       <div className='at-dec-box-1'>
@@ -11,8 +61,8 @@ const admissionTime = () => {
         <div/>
       </div>
       <SectionTitle title={'色別集合時間'}/>
-      <h3>8:30</h3>
-      <section>
+      <section className='at-dec-section-1'>
+        <h3>8:30</h3>
         <ul className='at-dec-text-color-1'>
           <li><h4 className='at-dec-text-bg-1'>赤</h4></li>
           <li>ゲーム制作科</li>
@@ -25,8 +75,8 @@ const admissionTime = () => {
           <li>電子応用工学科</li>
         </ul>
       </section>
-      <h3>8:45</h3>
-      <section>
+      <section className='at-dec-section-2'>
+        <h3>8:45</h3>
         <ul className='at-dec-text-color-3'>
           <li><h4 className='at-dec-text-bg-3'>白</h4></li>
           <li>コンピュータグラフィックス研究科</li>
@@ -46,8 +96,8 @@ const admissionTime = () => {
           <li>DXスペシャリスト科</li>
         </ul>
       </section>
-      <h3>9:00</h3>
-      <section>
+      <section className='at-dec-section-3'>
+        <h3>9:00</h3>
         <ul className='at-dec-text-color-6'>
           <li><h4 className='at-dec-text-bg-6'>橙</h4></li>
           <li>AIシステム科</li>
@@ -58,7 +108,7 @@ const admissionTime = () => {
           <li><h4 className='at-dec-text-bg-7'>桃</h4></li>
           <li>高度情報処理科</li>
           <li>ゲーム企画科</li>
-          <li>ケータイアプリケーション科<br/>モバイルアプリケーション</li>
+          <li>モバイルアプリケーション開発科</li>
           <li>Webデザイン科</li>
         </ul>
         <ul className='at-dec-text-color-8'>
@@ -70,4 +120,4 @@ const admissionTime = () => {
   );
 };
 
-export default admissionTime
+export default AdmissionTime
