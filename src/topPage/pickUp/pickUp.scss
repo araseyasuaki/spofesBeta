@@ -1,3 +1,31 @@
+@keyframes yura {
+  0%, 100% {
+    transform: rotate(-10deg);
+  }
+  12.5%{
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  37.5% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  62.5% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  87.5% {
+    transform: rotate(0deg);
+  }
+}
+
+
 .pickUp{
   padding: 13vw 0 120px 0;
   position: relative;
@@ -72,6 +100,12 @@
             position: relative;
             display: block;
             text-decoration: none;
+            &:hover{
+              p{
+                // transform-origin: center bottom;
+                animation: yura 0.3s linear
+              }
+            }
             img{
               width: 100%;
               height: auto;

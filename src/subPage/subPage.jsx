@@ -10,13 +10,13 @@ import './subPage.scss'
 const subPage = () => {
 
   return (
-<>
+    <>
       <MenuSub/>
       <FirstViewSub/>
       <Schedule/>
       <CompSub/>
       <Footer/>
-   </>
+    </>
   )
 }
 

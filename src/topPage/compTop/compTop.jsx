@@ -13,23 +13,18 @@ const CompTop = () => {
   const compTopRef = useRef(null);
 
   useEffect(() => {
-    const arase = document.querySelector('.compTop');
     gsap.fromTo(compTopRef.current.querySelectorAll('li'),
       {
         opacity: 0,
-        y: 70
+        y: 80
       },
       {
         opacity: 1,
         y: 0,
-        duration: '0.7',
         stagger: 0.1,
         scrollTrigger: {
-          trigger: arase,
-          start: 'top 85%',
-          end: 'bottom 100%',
-          toggleActions: 'play none none reverse',
-          scrub: true,
+          trigger: '.compTop',
+          start: 'top 30%',
         }
       }
     );

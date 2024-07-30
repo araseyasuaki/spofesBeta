@@ -3,18 +3,45 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 90px 0 29vw 0 ;
-  img{
+  .ft-dec-ex-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #48B4D8;
+    z-index: 110;
+  }
+  .ft-dec-ex-2{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 60vw;
+    z-index: 110;
+  }
+  .fs-dec-img-1{
     margin: 0 auto;
     display: block;
     width: 35%;
   }
   h2{
+    position: relative;
     margin: 60px auto 0 auto;
     padding: 5px 15px;
     width: fit-content;
     font-size: 24px;
+    display: block;
     color: #fff;
     background-color: #1996C0;
+    span{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #1996C0;
+      z-index: 10;
+    }
   }
 }
 
@@ -25,7 +52,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 120px 0 40vw 0 ;
-    img{
+    .fs-dec-img-1{
       margin: 0 auto;
       display: block;
       width: 70%;

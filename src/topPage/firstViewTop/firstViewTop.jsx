@@ -1,12 +1,75 @@
 // ファーストビュー
 import React, { useState, useEffect } from 'react';
+import { gsap } from 'gsap';
 import './firstViewTop.scss';
 
 const FirstView = () => {
-
   const [ftRespon, setftRespon] = useState(window.innerWidth <= 800);
 
   useEffect(() => {
+    // gsap.fromTo('.ft-dec-ex-1',
+    //   {
+    //     scale: 1,
+    //   },
+    //   {
+    //     transformOrigin: '100% 50%',
+    //     scaleX: 0,
+    //     delay: 1,
+    //     duration: 0.8,
+    //     ease: 'power4.out',
+    //   }
+    // );
+    // gsap.fromTo('.ft-dec-ex-2',
+    //   {
+    //     scale: 1,
+    //     y: '-50%',
+    //     x: '-50%',
+    //   },
+    //   {
+    //     y: '-50%',
+    //     x: '-50%',
+    //     scale: .5,
+    //     rotateY: 360,
+    //     duration: 1,
+    //     ease: 'power4.out',
+    //   }
+    // );
+    // gsap.to(".ft-dec-ex-2",
+    //   {
+    //     delay: 1,
+    //     ease: 'power4.out',
+    //     duration: .8,
+    //     opacity: 0,
+    //   }
+    // );
+    // gsap.fromTo('.ft-title-text-1 li h1',
+    //   {
+    //     x: '-130%',
+    //     opacity: 0,
+    //   },
+    //   {
+    //     stagger: 0.2,
+    //     opacity: 1,
+    //     x: 0,
+    //     delay: 1.6,
+    //     duration: 0.5,
+    //     ease: 'power4.out',
+    //   }
+    // );
+    // gsap.fromTo('.ft-title-text-1 li h1 span',
+    //   {
+    //     scaleX: 1,
+    //   },
+    //   {
+    //     stagger: 0.2,
+    //     delay: 2,
+    //     scaleX: 0,
+    //     transformOrigin: '100% 50%',
+    //     duration: 0.5,
+    //     ease: 'power4.out',
+    //   }
+    // );
+
     const handleResize = () => setftRespon(window.innerWidth <= 800);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -14,10 +77,12 @@ const FirstView = () => {
 
   return (
     <section className="first-viwe-Top">
+      {/* <div className='ft-dec-ex-1'/> */}
+      {/* <img className='ft-dec-ex-2' src="/img/ft-new-challengers-text.png"/> */}
       <ul className='ft-title-text-1'>
-        <li><p>第27回</p></li>
-        <li><p>スポーツフェスティバル</p></li>
-        <li><p>Sport Festival</p></li>
+        <li><h1>第27回<span/></h1></li>
+        <li><h1>スポーツフェスティバル<span/></h1></li>
+        <li><h1>Sport Festival<span/></h1></li>
       </ul>
       <div className='ft-video'>
         <video loop autoPlay muted>
@@ -30,21 +95,21 @@ const FirstView = () => {
       }
       <ul className='ft-dec-text-1'>
         <li>
-          <div><div></div></div>
+          <div className='ft-dec-1'><div></div></div>
           <p>2024.09.20（金）</p>
         </li>
         <li>
-          <div><div></div></div>
+          <div className='ft-dec-1'><div></div></div>
           <p>東京ドーム Tokyo Dome</p>
         </li>
       </ul>
       <ul className='ft-dec-text-2'>
         <li>
-          <div><div></div></div>
+          <div className='ft-dec-1'><div></div></div>
           <p>日本電子専門学校</p>
         </li>
         <li>
-          <div><div></div></div>
+          <div className='ft-dec-1'><div></div></div>
           <p>Japan Electronics College</p>
         </li>
       </ul>
@@ -59,7 +124,6 @@ const FirstView = () => {
 }
 
 export default FirstView;
-
 
 
 

@@ -1,15 +1,34 @@
 // キャッチコピー
 import React, { useState, useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './catchCopy.scss';
 
-const CatchCopy = () => {
+gsap.registerPlugin(ScrollTrigger);
 
+const CatchCopy = () => {
   const [cpMvRespon, setcpMvRespon] = useState();
   const [cpMvIpRespon, setcpMvIpRespon] = useState();
 
   useEffect(() => {
     const cpMvNewLine = () => setcpMvRespon(window.innerWidth <= 800);
     const cpMvIpNewLine = () => setcpMvIpRespon(window.innerWidth <= 1300);
+
+    gsap.fromTo('.cp-dec-box-1 p',
+      {
+        opacity: 0,
+        y: 80
+      },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: '.cp-dec-box-1 p',
+          start: 'top 70%',
+        }
+      }
+    );
 
     window.addEventListener('resize', cpMvNewLine);
     window.addEventListener('resize', cpMvIpNewLine);

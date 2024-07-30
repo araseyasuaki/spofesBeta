@@ -2,8 +2,25 @@
   position: relative;
   background-color: #48B4D8;
   padding: 5vw 0 0 0;
+  .ft-dec-ex-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #48B4D8;
+    z-index: 110;
+  }
+  .ft-dec-ex-2{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 60vw;
+    z-index: 110;
+  }
   .ft-title-text-1{
-    z-index: 80;
+    position: absolute;
+    z-index: 200;
     top: 35%;
     right: 24%;
     transform: translateX(50%) translateY(-50%);
@@ -14,12 +31,27 @@
     flex-direction: column;
     li{
       margin: 0 0 10px auto;
-      p{
+      position: relative;
+      z-index: 200;
+      h1{
+        font-size: 36px;
         margin: 0;
+        position: relative;
+        z-index: 200;
         background-color: #F0FC0B;
-        display: inline-block;
+        display: block;
         padding: 0 25px 0 0;
         white-space: nowrap;
+        font-weight: 900;
+        span{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #F0FC0B;
+          z-index: 200;
+        }
       }
     }
     li:nth-child(1),
@@ -43,9 +75,7 @@
     position: absolute;
     z-index: 50;
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -1px;
+    top: 4.9vw;
   }
   ul{
     position: absolute;
@@ -56,7 +86,7 @@
       p{
         margin: 0;
       }
-      >div{
+      .ft-dec-1{
         position: relative;
         margin: auto 5px auto 0;
         width: 11.62px;
@@ -121,13 +151,14 @@
     width: 100%;
     height: 115%;
     overflow: hidden;
+    z-index: 60;
     .ft-dec-line-1{
       position: absolute;
       background-color: #0055B4;
-      z-index: 70;
-      width: 80%;
+      z-index: 50;
+      width: 80vw;
       height: 2px;
-      top: 5.5%;
+      top: 2vw;
       right: -20px;
       transform: rotate(12.7deg);
     }
@@ -135,7 +166,6 @@
       content: "";
       position: absolute;
       background-color: #0055B4;
-      z-index: 70;
       width: 100%;
       height: 2px;
       top: 15px;
@@ -144,11 +174,11 @@
     .ft-dec-line-2{
       position: absolute;
       background-color: #F0FC0B;
-      z-index: 70;
-      width: 110%;
+      z-index: 110;
+      width: 110vw;
       height: 2px;
-      bottom: 19.2%;
-      left: -25px;
+      bottom: 18.5%;
+      left: -3%;
       transform: rotate(12.7deg);
     }
     .ft-dec-line-2::after{
@@ -190,8 +220,8 @@
     .ft-title-text-1{
       z-index: 80;
       top: 32%;
-      right: 25%;
-      transform: translateX(50%) translateY(-50%);
+      right: 5%;
+      transform: translateY(-50%);
       font-size: 4vw;
       font-weight: bold;
       color: #0055B4;
@@ -199,7 +229,7 @@
       flex-direction: column;
       li{
         margin: 0 0 7px auto;
-        p{
+        h1{
           margin: 0;
           background-color: #F0FC0B;
           padding: 0 5px 0 5px;
@@ -326,10 +356,10 @@
       .ft-dec-line-1{
         position: absolute;
         background-color: #0055B4;
-        z-index: 70;
-        width: 80%;
+        z-index: 110;
+        width: 80vw;
         height: 2px;
-        top: 5.5%;
+        top: 10vw;
         right: -20%;
         transform: rotate(43deg);
       }
@@ -346,7 +376,7 @@
       .ft-dec-line-2{
         position: absolute;
         background-color: #F0FC0B;
-        z-index: 70;
+        z-index: 110;
         width: 120%;
         height: 2px;
         bottom: 7.5%;

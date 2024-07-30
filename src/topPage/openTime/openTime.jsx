@@ -27,7 +27,7 @@ const OpenTime = () => {
       <IconSectionTitle url={'/img/op-title-icon.png'} alt={'開催日時・場所のタイトルのアイコン'} title={'開催日時・場所'}/>
       <ul>
         <li>
-          <p>日時<span>024年9月20日(金)</span></p>
+          <p>日時<span>2024年9月20日(金)</span></p>
         </li>
         <li>
           <p>競技開始時間<span>午前10:00</span></p>

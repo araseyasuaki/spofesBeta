@@ -1,6 +1,6 @@
 .menuSub{
   position: relative;
-  z-index: 9999;
+  z-index: 100;
   >div{
     position: fixed;
     top: 25px;
@@ -10,7 +10,7 @@
     border-radius: 50%;
     border: 1px solid #0055B4;
     cursor: pointer;
-    z-index: 100;
+    z-index: 90;
     &:hover{
       .menuBer-1{
         transform: translateX(-50%) translateY(18px);
@@ -266,7 +266,7 @@
 @media (max-width: 800px) {
   .menuSub{
     position: relative;
-    z-index: 9999;
+    z-index: 90;
     >div{
       position: fixed;
       top: 10px;

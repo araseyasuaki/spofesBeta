@@ -6,4 +6,37 @@ body{
   min-width: 320px;
   font-family: "Noto Sans JP", sans-serif;
   margin: 0;
+  height: 0;
+}
+.load{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #48B4D8;
+  z-index: 110;
+  .ld-dec-img-1{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 22%;
+    z-index: 10;
+  }
+  .ld-dec-img-2{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 15%;
+  }
+  .ld-dec-img-3{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 12%;
+    z-index: -10;
+  }
+}
+.load-off{
+  display: none;
 }

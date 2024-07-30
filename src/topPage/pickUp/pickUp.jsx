@@ -2,19 +2,38 @@ import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
 import { SectionTitle } from '../../common/sectionTitle/sectionTitle';
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './pickUp.scss';
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function App() {
   const [swiperView, setSwiperView] = useState(window.innerWidth <= 1000);
 
   useEffect(() => {
+    gsap.fromTo('.swiper',
+      {
+        opacity: 0,
+        y: 80
+      },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: '.swiper',
+          start: 'top 55%',
+          markers: true,
+        }
+      }
+    );
+
     const handleResize = () => setSwiperView(window.innerWidth <= 1000);
-
     window.addEventListener('resize', handleResize);
-
     return () => {
       window.removeEventListener('resize', handleResize);
     };
