@@ -97,7 +97,7 @@ const FirstView = () => {
       </ul>
       <div className='ft-video'>
         <video loop autoPlay muted>
-          <source src="/video/2024-digest.mp4" type="video/mp4" />
+          <source src="/video/2024-digest-test.mp4" type="video/mp4" />
         </video>
       </div>
       {ftRespon ?
