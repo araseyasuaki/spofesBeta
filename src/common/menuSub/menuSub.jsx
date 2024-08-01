@@ -82,13 +82,15 @@ const MenuSub = () => {
           <dt>Competition Manual</dt>
           <dd>
             競技マニュアル
-            <a href=""><img src="/img/link-btn-img-2.png" alt="" /></a>
+            <a href="https://drive.google.com/file/d/1LAv1jDWCRdCMS6VZk7LUnc47b5ra1ICy/view" target="_blank">
+              <img src="/img/link-btn-img-2.png" alt="" />
+            </a>
           </dd>
         </dl>
         <div className='ms-link'>
-          <Link to="/">
+          <a href="/">
             <p>TOP<br/><span>に戻ります</span></p><img src='/img/page-btn.png'/>
-          </Link>
+          </a>
         </div>
       </nav>
     </div>

@@ -3,11 +3,11 @@ import React from 'react'
 import TopBtn from '../../common/topBtn/topBtn'
 import './footer.scss'
 
-const footer = () => {
+const Footer1 = () => {
   return (
-    <section className='footer'>
+    <section className='footer ft-dec-bg-1'>
       <div/>
-      <a className='ft-Copywriter' href="#">
+      <a href="#">
         <small>©2024 Japan Electronics College</small>
       </a>
       <TopBtn/>
@@ -15,4 +15,16 @@ const footer = () => {
   )
 }
 
-export default footer
+const Footer2 = () => {
+  return (
+    <section className='footer ft-dec-bg-2'>
+      <div/>
+      <a href="#">
+        <small>©2024 Japan Electronics College</small>
+      </a>
+      <TopBtn/>
+    </section>
+  )
+}
+
+export { Footer1, Footer2 }

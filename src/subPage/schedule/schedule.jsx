@@ -1,9 +1,83 @@
-// スケジュル
-import React from 'react'
+import React, { useEffect } from 'react';
 import { SectionTitle } from '../../common/sectionTitle/sectionTitle'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './schedule.scss'
 
-const schedule = () => {
+gsap.registerPlugin(ScrollTrigger);
+
+const Schedule = () => {
+
+  useEffect(() => {
+    for (let i = 1; i <= 3; i++) {
+      const className = `.sd-dec-title-${i}`;
+      const classNameNumber = `.sd-dec-title-${i} div`;
+      gsap.fromTo(className,
+        {
+          opacity: 0,
+          x: -100
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.8,
+          scrollTrigger: {
+            trigger: className,
+            start: 'top 70%',
+          }
+        }
+      );
+      gsap.fromTo(classNameNumber,
+        {
+          scaleX: 1,
+        },
+        {
+          stagger: 0.2,
+          delay: .4,
+          scaleX: 0,
+          duration: 0.5,
+          transformOrigin: '100% 50%',
+          scrollTrigger: {
+            trigger: classNameNumber,
+            start: 'top 70%',
+          }
+        }
+      );
+    }
+    gsap.fromTo('.schedule ol li',
+      {
+        x: '-100%',
+        opacity: 0,
+      },
+      {
+        stagger: 0.05,
+        opacity: 1,
+        x: 0,
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: '.schedule ol li',
+          start: 'top 70%',
+        }
+      }
+    );
+    gsap.fromTo('.sd-dec-box-2 section',
+      {
+        x: '-100%',
+        opacity: 0,
+      },
+      {
+        stagger: 0.2,
+        opacity: 1,
+        x: 0,
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: '.sd-dec-box-2',
+          start: 'top 70%',
+        }
+      }
+    );
+  }, []);
+
   return (
     <section className='schedule'>
       <div className='sd-dec-box-1'>
@@ -11,14 +85,20 @@ const schedule = () => {
         <div/>
       </div>
       <SectionTitle title={'スケジュール'}/>
-      <dl className='sd-dec-title-1'>
-        <dt>オープニングセレモニー</dt>
-        <dd>10:00〜</dd>
-      </dl>
-      <dl className='sd-dec-title-2'>
-        <dt>競技開始</dt>
-        <dd>10:30〜</dd>
-      </dl>
+      <div className='sd-dec-title-1'>
+        <dl>
+          <dt>オープニングセレモニー</dt>
+          <dd>10:00〜</dd>
+        </dl>
+        <div />
+      </div>
+      <div className='sd-dec-title-2'>
+        <dl>
+          <dt>競技開始</dt>
+          <dd>10:30〜</dd>
+        </dl>
+        <div/>
+      </div>
       <ol>
         <li><a href="#cs-content-1"><span className='sd-dec-text-1'>01</span>クラス対抗リレー<span>(予選)</span></a></li>
         <li><a href="#cs-content-2"><span className='sd-dec-text-1'>02</span>運命共同体：二人三脚障害物競走</a></li>
@@ -51,12 +131,15 @@ const schedule = () => {
           </ul>
         </section>
       </div>
-      <dl className='sd-dec-title-3'>
-        <dt>エンディングセレモニー</dt>
-        <dd>15:30〜</dd>
-      </dl>
+      <div className='sd-dec-title-3'>
+        <dl>
+          <dt>エンディングセレモニー</dt>
+          <dd>15:30〜</dd>
+        </dl>
+        <div/>
+      </div>
     </section>
   )
 }
 
-export default schedule
+export default Schedule

@@ -62,7 +62,7 @@ const FirstView = () => {
         stagger: 0.2,
         opacity: 1,
         x: 0,
-        delay: 1.6,
+        delay: 1.4,
         duration: 0.5,
         ease: 'power4.out',
       }
@@ -73,7 +73,7 @@ const FirstView = () => {
       },
       {
         stagger: 0.2,
-        delay: 2,
+        delay: 1.8,
         scaleX: 0,
         transformOrigin: '100% 50%',
         duration: 0.5,

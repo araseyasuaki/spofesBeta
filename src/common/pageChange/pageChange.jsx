@@ -1,29 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import './pageChange.scss'
+import React from 'react';
+import './pageChange.scss';
 
-function PageChange() {
-
-  const location = useLocation();
-  const currentPath = location.pathname;
-
+function PageChangeTop() {
   return (
     <nav className='pageChange'>
-      {currentPath !== '/' && (
-        <Link to="/">
-          <p>TOP<br/><span>に戻ります</span></p>
-          <img src='/img/page-btn.png'/>
-        </Link>
-      )}
-      {currentPath !== '/subPage' && (
-        <Link to="/subPage">
-          <p>当日<br/><span>スケジュール</span></p>
-          <img src='/img/page-btn.png'/>
-        </Link>
-      )}
+      <a href="/subPage">
+        <p>当日<br/><span>スケジュール</span></p>
+        <img src='/img/page-btn.png' alt='ページ遷移ボタンの装飾画像'/>
+      </a>
       <div className='pc-box-1'/>
     </nav>
   );
 }
 
-export default PageChange;
+function PageChangeSub() {
+  return (
+    <nav className='pageChange'>
+      <a href="/">
+        <p>TOP<br/><span>に戻ります</span></p>
+        <img src='/img/page-btn.png' alt='ページ遷移ボタンの装飾画像'/>
+      </a>
+      <div className='pc-box-1'/>
+    </nav>
+  );
+}
+
+export { PageChangeTop, PageChangeSub };

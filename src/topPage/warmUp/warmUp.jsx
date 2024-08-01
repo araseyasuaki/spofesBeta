@@ -1,7 +1,7 @@
 // 準備体操動画
 import React, { useState, useEffect } from 'react';
 import { SectionTitle } from '../../common/sectionTitle/sectionTitle'
-import { LinkBtn } from '../../common/linkBtn/linkBtn'
+import LinkBtn from '../../common/linkBtn/linkBtn'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './warmUp.scss'
@@ -19,9 +19,10 @@ const WarmUp = () => {
         opacity: 0,
       },
       {
-        stagger: 0.2,
         opacity: 1,
         x: 0,
+        ease: 'power4.out',
+        direction: .8,
         scrollTrigger: {
           trigger: '.wu-dec-text p',
           start: 'top 70%',
@@ -33,9 +34,10 @@ const WarmUp = () => {
         scaleX: 1,
       },
       {
-        stagger: 0.2,
         delay: .4,
         scaleX: 0,
+        ease: 'power4.out',
+        direction: .5,
         transformOrigin: '100% 50%',
         scrollTrigger: {
           trigger: '.wu-dec-text div',

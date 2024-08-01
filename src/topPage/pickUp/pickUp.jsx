@@ -41,7 +41,7 @@ export default function App() {
   return (
     <section className='pickUp' id='pickUp'>
       <div className='pk-dec-box-1'>
-      <img src='/img/pu-pick-up-text.png' alt='pickUpのテキスト画像'/>
+        <img src='/img/pu-pick-up-text.png' alt='pickUpのテキスト画像'/>
         <div/>
       </div>
       <SectionTitle title={'ピックアップ'}/>

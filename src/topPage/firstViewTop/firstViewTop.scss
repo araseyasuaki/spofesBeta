@@ -9,22 +9,21 @@
     width: 100vw;
     height: 100vh;
     background-color: #48B4D8;
-    z-index: 110;
+    z-index: 300;
   }
   .ft-dec-ex-2{
     position: fixed;
     left: 50%;
     top: 50%;
     width: 60vw;
-    z-index: 110;
+    z-index: 300;
   }
   .ft-title-text-1{
     position: absolute;
-    z-index: 200;
+    z-index: 190;
     top: 35%;
-    right: 24%;
-    transform: translateX(50%) translateY(-50%);
-    font-size: 2.5vw;
+    right: 7%;
+    transform: translateY(-50%);
     font-weight: bold;
     color: #0055B4;
     display: flex;
@@ -34,7 +33,7 @@
       position: relative;
       z-index: 200;
       h1{
-        font-size: 36px;
+        font-size: 2.7vw;
         margin: 0;
         position: relative;
         z-index: 200;
@@ -96,7 +95,7 @@
         >div{
           position: absolute;
           top: 50%;
-          left: 44.5%;
+          left: 43.5%;
           transform: translateX(-50%) translateY(-50%);
           width: 7.04px;
           height: 7.4px;
@@ -217,8 +216,23 @@
     position: relative;
     background-color: #48B4D8;
     padding: 80px 0 0 0;
+    .ft-dec-ex-1{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #48B4D8;
+      z-index: 200;
+    }
+    .ft-dec-ex-2{
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 90vw;
+      z-index: 200;
+    }
     .ft-title-text-1{
-      z-index: 80;
       top: 32%;
       right: 5%;
       transform: translateY(-50%);

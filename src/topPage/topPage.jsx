@@ -1,5 +1,6 @@
 // トップページ
 import React from 'react'
+import { PageChangeTop } from '../common/pageChange/pageChange'
 import MenuTop from '../common/menuTop/menuTop'
 import FirstViewTop from './firstViewTop/firstViewTop'
 import CatchCopy from './catchCopy/catchCopy'
@@ -11,13 +12,14 @@ import DomeMap from './domeMap/domeMap'
 import WarmUp from './warmUp/warmUp'
 import Access from './access/access'
 import Notes from './notes/notes'
-import Footer from '../common/footer/footer'
+import { Footer1 } from '../common/footer/footer'
 import './topPage.scss'
 
-const topPage = () => {
+const TopPage = () => {
 
   return (
     <>
+      <PageChangeTop/>
       <MenuTop/>
       <FirstViewTop/>
       <CatchCopy/>
@@ -29,9 +31,9 @@ const topPage = () => {
       <WarmUp/>
       <Access/>
       <Notes/>
-      <Footer/>
+      <Footer1/>
     </>
   )
 }
 
-export default topPage
+export default TopPage

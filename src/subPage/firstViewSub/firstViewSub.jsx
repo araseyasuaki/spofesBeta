@@ -52,7 +52,7 @@ const FirstViewSub = () => {
         }
       }
     );
-    gsap.fromTo('h2',
+    gsap.fromTo('.firstViewSub h2',
       {
         x: '-130%',
         opacity: 0,
@@ -60,17 +60,17 @@ const FirstViewSub = () => {
       {
         opacity: 1,
         x: 0,
-        delay: 1.6,
+        delay: 1.4,
         duration: 0.5,
         ease: 'power4.out',
       }
     );
-    gsap.fromTo('h2 span',
+    gsap.fromTo('.firstViewSub h2 span',
       {
         scaleX: 1,
       },
       {
-        delay: 2,
+        delay: 1.8,
         scaleX: 0,
         transformOrigin: '100% 50%',
         duration: 0.5,

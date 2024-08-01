@@ -73,6 +73,9 @@
         height: 100%;
         margin: auto;
       }
+      &:hover{
+        opacity: 0.5;
+      }
     }
     .swiper-button-prev{
       left: auto;
@@ -102,7 +105,6 @@
             text-decoration: none;
             &:hover{
               p{
-                // transform-origin: center bottom;
                 animation: yura 0.3s linear
               }
             }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { SectionTitle } from '../../common/sectionTitle/sectionTitle';
 import { CompImg, NewImageCompImg, NewCompImg, ImageCompImg } from './compImg/compImg';
-import { LinkBtnPageChange } from '../../common/linkBtn/linkBtn';
+import LinkBtn from '../../common/linkBtn/linkBtn';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './compTop.scss';
@@ -63,7 +63,7 @@ const CompTop = () => {
         <ImageCompImg classNumber={'16'} titleNumber={'16'} url={'16'} title={'謎解き'}/>
       </ul>
       <small>※準決勝と決勝は競技順番が異なりますので、{ctRespon && <br/>}<span>詳細はスケジュールページをご覧ください</span></small>
-      <LinkBtnPageChange link={'subPage'} title={'詳しい競技紹介'} imgNumber={'2'}/>
+      <LinkBtn link={'subPage'} title={'詳しい競技紹介'} imgNumber={'2'}/>
     </section>
   );
 };

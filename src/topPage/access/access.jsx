@@ -1,7 +1,7 @@
 // アクセス
 import React, { useState, useEffect } from 'react';
 import { IconSectionTitle } from '../../common/sectionTitle/sectionTitle'
-import { LinkBtn } from '../../common/linkBtn/linkBtn'
+import LinkBtn from '../../common/linkBtn/linkBtn'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './access.scss'
@@ -21,6 +21,8 @@ const Access = () => {
       {
         opacity: 1,
         y: 0,
+        ease: 'power4.out',
+        duration: .8,
         stagger: 0.1,
         scrollTrigger: {
           trigger: '.access iframe',
@@ -36,9 +38,11 @@ const Access = () => {
       {
         stagger: 0.2,
         opacity: 1,
+        ease: 'power4.out',
+        duration: .8,
         x: 0,
         scrollTrigger: {
-          trigger: '.wu-dec-text p',
+          trigger: '.access ul li iframe',
           start: 'top 70%',
         }
       }
@@ -50,6 +54,8 @@ const Access = () => {
       {
         stagger: 0.2,
         delay: .4,
+        ease: 'power4.out',
+        duration: .5,
         scaleX: 0,
         transformOrigin: '100% 50%',
         scrollTrigger: {

@@ -1,7 +1,7 @@
 .compSub{
   background-color: #E2F3F7;
   position: relative;
-  padding: 7vw 0 7vw 0 ;
+  padding: 7vw 0 30vw 0 ;
   .cs-dec-box-1{
     overflow: hidden;
     padding: 1.8vw 0 0 0;
@@ -36,6 +36,11 @@
     padding: 0;
     >li{
       margin-top: 140px;
+      div{
+        h3{
+          position: relative;
+        }
+      }
     }
     #cs-content-4,
     #cs-content-10,

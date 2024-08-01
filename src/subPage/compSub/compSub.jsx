@@ -1,11 +1,53 @@
-// 競技紹介（サブページ）
-import React from 'react'
+import React, { useEffect } from 'react';
 import { SectionTitle } from '../../common/sectionTitle/sectionTitle'
 import { Left0, Left1, Left2 } from './left/left'
 import { Right0, Right1, Right2 } from './right/right'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './compSub.scss'
 
-const compSub = () => {
+gsap.registerPlugin(ScrollTrigger);
+
+const CompSub = () => {
+
+  useEffect(() => {
+    for (let i = 1; i <= 16; i++) {
+      const className = `#cs-content-${i}`;
+      gsap.fromTo(className,
+        {
+          opacity: 0,
+          x: -100
+        },
+        {
+          opacity: 1,
+          duration: 0.8,
+          ease: 'power4.out',
+          x: 0,
+          scrollTrigger: {
+            trigger: className,
+            start: 'top 70%',
+          }
+        }
+      );
+      gsap.fromTo(`#cs-content-${i} div h3 span`,
+        {
+          scaleX: 1,
+        },
+        {
+          delay: .2,
+          scaleX: 0,
+          duration: 0.5,
+          transformOrigin: '100% 50%',
+          ease: 'power4.out',
+          scrollTrigger: {
+            trigger: className,
+            start: 'top 70%',
+          }
+        }
+      );
+    }
+  }, []);
+
   return (
     <section className='compSub'>
       <div className='cs-dec-box-1'>
@@ -169,4 +211,4 @@ const compSub = () => {
   )
 }
 
-export default compSub
+export default CompSub

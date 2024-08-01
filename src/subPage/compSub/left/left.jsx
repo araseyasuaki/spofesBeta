@@ -9,8 +9,9 @@ const Left0 = ({ title, titleNumber, text, img, imgAlt, id }) => {
         <div/>
       </div>
       <div className='lt-text'>
-        <h3>{title}<span>{titleNumber}</span></h3>
-        <p>{text}</p>
+        <h3>{title}<span/></h3>
+        <span className='lt-dec-text-1'>{titleNumber}</span>
+        <p className='lt-dec-text-2'>{text}</p>
       </div>
     </li>
   )
@@ -24,8 +25,9 @@ const Left1 = ({ title, titleNumber, text, list1, img, imgAlt, id }) => {
         <div/>
       </div>
       <div className='lt-text'>
-        <h3>{title}<span>{titleNumber}</span></h3>
-        <p>{text}</p>
+        <h3>{title}<span/></h3>
+        <span className='lt-dec-text-1'>{titleNumber}</span>
+        <p className='lt-dec-text-2'>{text}</p>
         <ul>
           <li>{list1}</li>
         </ul>
@@ -42,8 +44,9 @@ const Left2 = ({ title, titleNumber, text, list1, list2, img, imgAlt, id }) => {
         <div/>
       </div>
       <div className='lt-text'>
-        <h3>{title}<span>{titleNumber}</span></h3>
-        <p>{text}</p>
+        <h3>{title}<span/></h3>
+        <span className='lt-dec-text-1'>{titleNumber}</span>
+        <p className='lt-dec-text-2'>{text}</p>
         <ul>
           <li>{list1}</li>
           <li>{list2}</li>

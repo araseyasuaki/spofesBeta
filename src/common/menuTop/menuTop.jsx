@@ -70,10 +70,10 @@ const MenuSub = () => {
           <dd><a href="#notes">{wrapTextInSpans('ドーム内注意事項')}</a></dd>
         </dl>
         <div>
-          <Link to="/subPage">
+          <a href="/subPage">
             <p>当日<br/><span>スケジュール</span></p>
             <img src='/img/page-btn.png'/>
-          </Link>
+          </a>
         </div>
       </nav>
     </div>

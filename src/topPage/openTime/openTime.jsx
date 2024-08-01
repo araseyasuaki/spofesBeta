@@ -1,7 +1,7 @@
   // 開催日
 import React, { useState, useEffect } from 'react';
 import { IconSectionTitle } from '../../common/sectionTitle/sectionTitle'
-import { LinkBtn } from '../../common/linkBtn/linkBtn'
+import LinkBtn from '../../common/linkBtn/linkBtn'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './openTime.scss'

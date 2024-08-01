@@ -4,6 +4,7 @@
   margin: 0 auto;
   z-index: 10;
   .rt-text{
+    position: relative;
     width: 50%;
     h3{
       margin: 115px 0 0 0;
@@ -11,21 +12,31 @@
       color: #0055B4;
       position: relative;
       z-index: 10;
+      width: fit-content;
       span{
-        font-weight: 100;
-        line-height: 145px;
-        width: 350px;
-        font-family: "Black Ops One", system-ui;
         position: absolute;
-        font-size: 250px;
-        right: 0;
-        transform: translateY(50px);
-        bottom: 100%;
-        z-index: -10;
-        color: #C7EAF2;
+        background-color: #0055B4;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
       }
     }
-    p{
+    .rt-dec-text-1{
+      font-weight: 100;
+      line-height: 145px;
+      width: 350px;
+      font-family: "Black Ops One", system-ui;
+      position: absolute;
+      font-size: 250px;
+      right: 0;
+      transform: translateY(50px);
+      bottom: calc(100% - 115px);
+      z-index: -10;
+      color: #C7EAF2;
+      margin: 0;
+    }
+    .rt-dec-text-2{
       margin: 30px 0 0 0;
       font-size: 20px;
     }
@@ -95,33 +106,35 @@
         color: #0055B4;
         position: relative;
         z-index: 10;
-        span{
-          font-weight: 100;
-          height: 80px;
-          line-height: 80px;
-          width: fit-content;
-          font-family: "Black Ops One", system-ui;
-          position: absolute;
-          font-size: 140px;
-          left: 50%;
-          top: 68%;
-          transform: translateX(-50%) translateY(-50%);
-          z-index: -10;
-          color: #C7EAF2;
-        }
+
       }
-      p{
+      .rt-dec-text-1{
+        font-weight: 100;
+        height: 80px;
+        line-height: 80px;
+        width: fit-content;
+        font-family: "Black Ops One", system-ui;
+        position: absolute;
+        font-size: 140px;
+        left: 50%;
+        top: 3.5%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -10;
+        color: #C7EAF2;
+        margin: 0;
+      }
+      .rt-dec-text-2{
         margin: 420px 0 0 0;
         font-size: 16px;
       }
       @media (max-width: 500px) {
-        p{
+        .rt-dec-text-2{
           margin: 84vw 0 0 0;
           font-size: 16px;
         }
       }
       @media (max-width: 450px) {
-        p{
+        .rt-dec-text-2{
           margin: 88vw 0 0 0;
           font-size: 16px;
         }
