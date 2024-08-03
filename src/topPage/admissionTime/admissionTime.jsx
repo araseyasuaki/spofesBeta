@@ -1,6 +1,5 @@
-// 色別集合時間
 import React, { useEffect } from 'react';
-import { SectionTitle } from './../../common/sectionTitle/sectionTitle'
+import { SectionTitle1 } from './../../common/sectionTitle/sectionTitle'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './admissionTime.scss'
@@ -57,10 +56,10 @@ const AdmissionTime = () => {
   return (
     <section className='admissionTime' id='admissionTime'>
       <div className='at-dec-box-1'>
-        <img src='/img/at-entry-time-text.png'/>
+        <img src='./img/at-entry-time-text.png' alt='entryTimeのテキスト画像'/>
         <div/>
       </div>
-      <SectionTitle title={'色別集合時間'}/>
+      <SectionTitle1 title={'色別集合時間'}/>
       <section className='at-dec-section-1'>
         <h3>8:30</h3>
         <ul className='at-dec-text-color-1'>
@@ -82,12 +81,12 @@ const AdmissionTime = () => {
           <li>コンピュータグラフィックス研究科</li>
           <li>アニメーション研究科</li>
           <li>アニメーション科</li>
-          <li>グラフィックスデザイン科</li>
+          <li>グラフィックデザイン科</li>
           <li>高度電気工学科</li>
         </ul>
         <ul className='at-dec-text-color-4'>
           <li><h4 className='at-dec-text-bg-4'>緑</h4></li>
-          <li>ゲーム制作研修科</li>
+          <li>ゲーム制作研究科</li>
           <li>電気工事技術科</li>
         </ul>
         <ul className='at-dec-text-color-5'>

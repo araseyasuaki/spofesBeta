@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { SectionTitle } from '../../common/sectionTitle/sectionTitle'
+import { SectionTitle1 } from '../../common/sectionTitle/sectionTitle'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './schedule.scss'
@@ -79,12 +79,12 @@ const Schedule = () => {
   }, []);
 
   return (
-    <section className='schedule'>
+    <section className='schedule' id='schedule'>
       <div className='sd-dec-box-1'>
-        <img src='/img/sd-schedule-text.png'/>
+        <img src='./img/sd-schedule-text.png' alt='scheduleのテキスト画像'/>
         <div/>
       </div>
-      <SectionTitle title={'スケジュール'}/>
+      <SectionTitle1 title={'スケジュール'}/>
       <div className='sd-dec-title-1'>
         <dl>
           <dt>オープニングセレモニー</dt>
@@ -111,7 +111,7 @@ const Schedule = () => {
         <li><a href="#cs-content-7"><span className='sd-dec-text-1'>09</span>だるま神輿：色別対抗だるま運びリレー</a></li>
         <li><a href="#cs-content-8"><span className='sd-dec-text-1'>10</span>一球入魂：色別対抗玉入れ</a></li>
         <li><a href="#cs-content-9"><span className='sd-dec-text-1'>11</span>玉げた：色別対抗大玉運び</a></li>
-        <li><a href="#cs-content-10"><span className='sd-dec-text-1'>12</span>ゲーム対戦</a></li>
+        <li><a href="#cs-content-10"><span className='sd-dec-text-1'>12</span>Top of fighters</a></li>
         <li><a href="#cs-content-1"><span className='sd-dec-text-1'>13</span>クラス対抗リレー<span>(決勝)</span></a></li>
         <li><a href="#cs-content-11"><span className='sd-dec-text-1'>14</span>色別対抗リレー</a></li>
       </ol>
@@ -119,15 +119,15 @@ const Schedule = () => {
         <section className='sd-dec-box-3'>
           <h3>アトラクション種目</h3>
           <ul>
-            <li><a href="#cs-content-13">ベースランニング</a></li>
-            <li><a href="#cs-content-14">スピードガン</a></li>
+            <li><a href="#cs-content-13">・ベースランニング</a></li>
+            <li><a href="#cs-content-14">・スピードガン</a></li>
           </ul>
         </section>
         <section className='sd-dec-box-4'>
           <h3>エキシビジョン種目</h3>
           <ul>
-            <li><a href="#cs-content-15">応援団長は君だ！</a></li>
-            <li><a href="#cs-content-16">謎解き</a></li>
+            <li><a href="#cs-content-15">・応援団長は君だ！</a></li>
+            <li><a href="#cs-content-16">・謎解き</a></li>
           </ul>
         </section>
       </div>

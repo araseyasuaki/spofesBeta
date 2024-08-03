@@ -82,7 +82,14 @@
   }
 }
 
-
+@media (max-width: 1200px){
+  .lt{
+    width: 90%;
+    .lt-img{
+      margin: auto 0;
+    }
+  }
+}
 
 
 @media (max-width: 800px) {

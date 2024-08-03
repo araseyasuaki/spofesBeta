@@ -1,4 +1,3 @@
-// サブページ
 import React from 'react'
 import { PageChangeSub } from '../common/pageChange/pageChange'
 import MenuSub from '../common/menuSub/menuSub'
@@ -13,7 +12,7 @@ const subPage = () => {
 
   return (
     <>
-      <PageChangeSub/>
+      {/* <PageChangeSub/> */}
       <MenuSub/>
       <FirstViewSub/>
       <Schedule/>

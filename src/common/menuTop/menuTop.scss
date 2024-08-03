@@ -1,7 +1,19 @@
 .menuTop{
   position: relative;
   z-index: 200;
-  >div{
+  .active{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.3;
+  }
+  .inactive{
+    display: none;
+  }
+  .menuBtn{
     position: fixed;
     top: 25px;
     right: 22px;
@@ -12,10 +24,10 @@
     cursor: pointer;
     z-index: 200;
     &:hover{
-      .menuBer-1{
+      .mt-ber-1-on{
         transform: translateX(-50%) translateY(18px);
       }
-      .menuBer-2{
+      .mt-ber-2-on{
         transform: translateX(-50%) translateY(-18px);
       }
       img{
@@ -91,7 +103,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.7s ease, visibility 0.7s ease, top 0.7s ease;
-    z-index: 90;
+    z-index: 10;
     padding: 20px;
     border-radius: 20px;
     border: 1px solid #0055B4;
@@ -120,6 +132,9 @@
         a{
           text-decoration: none;
           color: #0055B4;
+          &:hover{
+            opacity: 0.5;
+          }
         }
       }
     }
@@ -214,8 +229,8 @@
 @media (max-width: 800px) {
   .menuTop{
     position: relative;
-    z-index: 90;
-    >div{
+    z-index: 200;
+    .menuBtn{
       position: fixed;
       top: 10px;
       right: 10px;
@@ -224,7 +239,7 @@
       border-radius: 50%;
       border: 1px solid #0055B4;
       cursor: pointer;
-      z-index: 100;
+      z-index: 200;
       &:hover{
         .menuBer-1{
           transform: translateX(-50%) translateY(14px);

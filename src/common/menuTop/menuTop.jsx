@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { gsap } from 'gsap';
+import { Link } from 'react-router-dom';
 import './menuTop.scss';
 
 const MenuSub = () => {
@@ -29,7 +29,6 @@ const MenuSub = () => {
           amount: 0.7,
           from: 'random'
         },
-        // アニメーション完了時に呼び出されるコールバック関数
         onComplete: () => setIsAnimating(false)
       })
     }
@@ -43,10 +42,11 @@ const MenuSub = () => {
 
   return (
     <div className='menuTop'>
-      <div onClick={toggleMenu}>
-        <div className={`menuBer-1 ${menuBtn ? 'menuBer-1-off' : ''}`}/>
+      <div className={menuBtn ? 'active' : 'inactive'} onClick={menuBtn ? toggleMenu : null}/>
+      <div className='menuBtn' onClick={toggleMenu}>
+        <div className={`menuBer-1 ${menuBtn ? 'menuBer-1-off' : 'mt-ber-1-on'}`}/>
         <p className={`${menuBtn ? 'text-off' : ''}`}>MENU</p>
-        <div className={`menuBer-2 ${menuBtn ? 'menuBer-2-off' : ''}`}/>
+        <div className={`menuBer-2 ${menuBtn ? 'menuBer-2-off' : 'mt-ber-2-on'}`}/>
       </div>
       <nav className={menuBtn ? 'nav-on' : ''} ref={menuRef}>
         <dl>
@@ -69,12 +69,12 @@ const MenuSub = () => {
           <dt>FESTIVAL RULES</dt>
           <dd><a href="#notes">{wrapTextInSpans('ドーム内注意事項')}</a></dd>
         </dl>
-        <div>
-          <a href="/subPage">
+        {/* <div>
+          <Link to="/schedulePage">
             <p>当日<br/><span>スケジュール</span></p>
-            <img src='/img/page-btn.png'/>
-          </a>
-        </div>
+            <img src='./img/page-btn.png'/>
+          </Link>
+        </div> */}
       </nav>
     </div>
   );

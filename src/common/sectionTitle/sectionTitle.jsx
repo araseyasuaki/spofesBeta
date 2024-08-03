@@ -1,7 +1,7 @@
 import React from 'react'
 import './sectionTitle.scss'
 
-const SectionTitle = ({ title }) => {
+const SectionTitle1 = ({ title }) => {
   return (
     <div className='st-title'>
       <h2>{title}</h2>
@@ -9,7 +9,7 @@ const SectionTitle = ({ title }) => {
   )
 }
 
-const IconSectionTitle = ({ url, alt, title }) => {
+const SectionTitle2 = ({ url, alt, title }) => {
   return (
     <div className='st-icon-title'>
       <div>
@@ -20,4 +20,4 @@ const IconSectionTitle = ({ url, alt, title }) => {
   )
 }
 
-export { SectionTitle, IconSectionTitle };
+export { SectionTitle1, SectionTitle2 };

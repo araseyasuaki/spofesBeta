@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
-import { SectionTitle } from '../../common/sectionTitle/sectionTitle';
+import { SectionTitle1 } from '../../common/sectionTitle/sectionTitle';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import 'swiper/css';
@@ -41,10 +41,10 @@ export default function App() {
   return (
     <section className='pickUp' id='pickUp'>
       <div className='pk-dec-box-1'>
-        <img src='/img/pu-pick-up-text.png' alt='pickUpのテキスト画像'/>
+        <img src='./img/pu-pick-up-text.png' alt='pickUpのテキスト画像'/>
         <div/>
       </div>
-      <SectionTitle title={'ピックアップ'}/>
+      <SectionTitle1 title={'ピックアップ'}/>
       <Swiper
         key={swiperView}
         navigation={true}
@@ -65,32 +65,32 @@ export default function App() {
       >
         <SwiperSlide className='pu-img-fram-1'>
           <div>
-            <a href='#warmUp'><img src='/img/pu-img-1.jpg' alt='談笑している生徒'/><p>#スポフェス前に運動しよう</p></a>
+            <a href='#warmUp'><img src='./img/pu-img-1.jpg' alt='談笑している生徒'/><p>#スポフェス前に運動しよう！</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-2'>
           <div>
-            <a href='#access'><img src='/img/pu-img-2.jpg' alt='東京ドームの外観の写真'/><p>#東京ドームに楽々到着</p></a>
+            <a href='#access'><img src='./img/pu-img-2.jpg' alt='東京ドームの外観の写真'/><p>#東京ドームに楽々到着♪</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-1'>
           <div>
-            <a href='#domeMap'><img src='/img/pu-img-3.jpg' alt='ドーム内のグランドの写真'/><p>#事前に知る東京ドーム</p></a>
+            <a href='#domeMap'><img src='./img/pu-img-3.jpg' alt='ドーム内のグランドの写真'/><p>#事前に知る東京ドーム！</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-2'>
           <div>
-            <a href='#openTime'><img src='/img/pu-img-4.jpg' alt='集合写真を撮っている生徒達'/><p>#入場時間10時じゃない！</p></a>
+            <a href='#openTime'><img src='./img/pu-img-4.jpg' alt='集合写真を撮っている生徒達'/><p>#色別の集合時間に要注意！</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-1'>
           <div>
-            <a href='#compTop'><img src='/img/pu-img-5.jpg' alt='コスプレをした生徒達'/><p>#新競技の注目ポイント</p></a>
+            <a href='#compTop'><img src='./img/pu-img-5.jpg' alt='コスプレをした生徒達'/><p>#今年注目の新競技は！？</p></a>
           </div>
         </SwiperSlide>
         <SwiperSlide className='pu-img-fram-2'>
           <div>
-            <a href='#notes'><img src='/img/pu-img-6.jpg' alt='客席から見たドーム内の景色'/><p>#出場禁止！！なんで〜</p></a>
+            <a href='#notes'><img src='./img/pu-img-6.jpg' alt='客席から見たドーム内の景色'/><p>#ルールを守って楽しもう！</p></a>
           </div>
         </SwiperSlide>
       </Swiper>

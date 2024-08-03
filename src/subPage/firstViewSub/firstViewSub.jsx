@@ -82,8 +82,8 @@ const FirstViewSub = () => {
   return (
     <section className='firstViewSub'>
       <div className='ft-dec-ex-1' style={{ display: 'none' }}/>
-      <img className='ft-dec-ex-2' src="/img/ft-new-challengers-text.png" style={{ display: 'none' }}/>
-      <img className='fs-dec-img-1' src="/img/ft-new-challengers-text.png" alt="" />
+      <img className='ft-dec-ex-2' src="./img/ft-new-challengers-text.png" style={{ display: 'none' }} alt='newChallengersのテキスト画像'/>
+      <img className='fs-dec-img-1' src="./img/ft-new-challengers-text.png" alt="newChallengersのテキスト画像" />
       <h2>当日スケジュール＋詳しい競技紹介<span/></h2>
     </section>
   )

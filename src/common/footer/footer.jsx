@@ -1,4 +1,3 @@
-// フッター
 import React from 'react'
 import TopBtn from '../../common/topBtn/topBtn'
 import './footer.scss'
@@ -7,10 +6,10 @@ const Footer1 = () => {
   return (
     <section className='footer ft-dec-bg-1'>
       <div/>
-      <a href="#">
+      <p>
         <small>©2024 Japan Electronics College</small>
-      </a>
-      <TopBtn/>
+      </p>
+      <TopBtn colorNumber={'1'}/>
     </section>
   )
 }
@@ -19,10 +18,10 @@ const Footer2 = () => {
   return (
     <section className='footer ft-dec-bg-2'>
       <div/>
-      <a href="#">
+      <p>
         <small>©2024 Japan Electronics College</small>
-      </a>
-      <TopBtn/>
+      </p>
+      <TopBtn colorNumber={'2'}/>
     </section>
   )
 }

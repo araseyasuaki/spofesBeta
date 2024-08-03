@@ -1,7 +1,7 @@
 // 準備体操動画
 import React, { useState, useEffect } from 'react';
-import { SectionTitle } from '../../common/sectionTitle/sectionTitle'
-import LinkBtn from '../../common/linkBtn/linkBtn'
+import { SectionTitle1 } from '../../common/sectionTitle/sectionTitle'
+import { LinkBtn1 } from '../../common/linkBtn/linkBtn'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './warmUp.scss'
@@ -69,16 +69,16 @@ const WarmUp = () => {
   return (
     <section className='warmUp' id='warmUp'>
       <div className='wu-dec-box-1'>
-        <img src='/img/wu-warm-up-video-text.png' alt='warmUpのテキスト画像'/>
+        <img src='./img/wu-warm-up-video-text.png' alt='warmUpのテキスト画像'/>
         <div/>
       </div>
-      <SectionTitle title={'準備体操動画'}/>
+      <SectionTitle1 title={'準備体操動画'}/>
       <div className='wu-dec-text'>
         <p>スポフェス前に体を動かして{wuRespon ? <br/> : ''}怪我を予防しよう！！</p>
         <div/>
       </div>
       <iframe src="https://www.youtube-nocookie.com/embed/mh93A87stAY?si=HjEc_G5KKaOGmuuc&amp;start=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
-      <LinkBtn link={'https://youtu.be/mh93A87stAY?si=Jmlhe7dX5Fmz-QfL'} title={'YouTube'} imgNumber={'2'}/>
+      <LinkBtn1 link={'https://youtu.be/mh93A87stAY?si=Jmlhe7dX5Fmz-QfL'} title={'YouTube'} imgNumber={'2'}/>
     </section>
   )
 }

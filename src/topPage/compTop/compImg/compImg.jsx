@@ -1,48 +1,48 @@
 import React from 'react'
 import './compImg.scss'
 
-const CompImg = ({ classNumber, titleNumber, url, title }) => {
+const CompImg1 = ({ classNumber, titleNumber, imgNumber, alt, title, }) => {
   return (
     <li className={`compImg ct-title-${classNumber}`}>
       <h3>{titleNumber}</h3>
-      <img src={`/img/ct-content-img-${url}.jpg`}/>
+      <img src={`./img/ct-content-img-${imgNumber}.png`} alt={alt}/>
       <figcaption>{title}</figcaption>
     </li>
   )
 }
 
-const NewImageCompImg = ({ classNumber, titleNumber, url, title }) => {
+const CompImg2 = ({ classNumber, titleNumber, imgNumber, alt, title, }) => {
   return (
     <li className={`compImg ct-title-${classNumber}`}>
       <div/>
       <p>＊写真はイメージです</p>
       <h3>{titleNumber}</h3>
-      <img src={`/img/ct-content-img-${url}.jpg`}/>
+      <img src={`./img/ct-content-img-${imgNumber}.png`} alt={alt}/>
       <figcaption>{title}</figcaption>
     </li>
   )
 }
 
-const NewCompImg = ({ classNumber, titleNumber, url, title }) => {
+const CompImg3 = ({ classNumber, titleNumber, imgNumber, alt, title, }) => {
   return (
     <li className={`compImg ct-title-${classNumber}`}>
       <div/>
       <h3>{titleNumber}</h3>
-      <img src={`/img/ct-content-img-${url}.jpg`}/>
+      <img src={`./img/ct-content-img-${imgNumber}.png`} alt={alt}/>
       <figcaption>{title}</figcaption>
     </li>
   )
 }
 
-const ImageCompImg = ({ classNumber, titleNumber, url, title }) => {
+const CompImg4 = ({ classNumber, titleNumber, imgNumber, alt, title, }) => {
   return (
     <li className={`compImg ct-title-${classNumber}`}>
       <p>＊写真はイメージです</p>
       <h3>{titleNumber}</h3>
-      <img src={`/img/ct-content-img-${url}.jpg`}/>
+      <img src={`./img/ct-content-img-${imgNumber}.png`} alt={alt}/>
       <figcaption>{title}</figcaption>
     </li>
   )
 }
 
-export { CompImg, NewImageCompImg, NewCompImg, ImageCompImg }
+export { CompImg1, CompImg2, CompImg3, CompImg4, }

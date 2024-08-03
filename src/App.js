@@ -1,21 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './common/scrollToTop/ScrollToTop'
 import TopPage from './topPage/topPage';
 import SubPage from './subPage/subPage';
-import { gsap } from 'gsap'
-import './fonts.scss';
 import './App.scss';
+import './fonts.scss';
 
 function App() {
-  const location = useLocation();
-
   return (
-    <>
-      <Routes location={location} key={location.pathname}>
+    <BrowserRouter basename='/'>
+      <ScrollToTop/>
+      <Routes>
         <Route path="/" element={<TopPage />} />
-        <Route path="/subPage" element={<SubPage />} />
+        <Route path="/schedulePage" element={<SubPage />} />
       </Routes>
-    </>
+    </BrowserRouter>
   );
 }
 

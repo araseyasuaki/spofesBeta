@@ -1,27 +1,11 @@
 import React from 'react'
 import './left.scss'
 
-const Left0 = ({ title, titleNumber, text, img, imgAlt, id }) => {
+const Left1 = ({ idNumber, imgNumber, alt, title, titleNumber, text, list1 }) => {
   return (
-    <li className='lt' id={`cs-content-${id}`}>
+    <li className='lt' id={`cs-content-${idNumber}`}>
       <div className='lt-img'>
-        <img src={`/img/ct-content-img-${img}.jpg`} alt={imgAlt}/>
-        <div/>
-      </div>
-      <div className='lt-text'>
-        <h3>{title}<span/></h3>
-        <span className='lt-dec-text-1'>{titleNumber}</span>
-        <p className='lt-dec-text-2'>{text}</p>
-      </div>
-    </li>
-  )
-}
-
-const Left1 = ({ title, titleNumber, text, list1, img, imgAlt, id }) => {
-  return (
-    <li className='lt' id={`cs-content-${id}`}>
-      <div className='lt-img'>
-        <img src={`/img/ct-content-img-${img}.jpg`} alt={imgAlt}/>
+        <img src={`./img/ct-content-img-${imgNumber}.png`} alt={alt}/>
         <div/>
       </div>
       <div className='lt-text'>
@@ -36,11 +20,11 @@ const Left1 = ({ title, titleNumber, text, list1, img, imgAlt, id }) => {
   )
 }
 
-const Left2 = ({ title, titleNumber, text, list1, list2, img, imgAlt, id }) => {
+const Left2 = ({ idNumber, imgNumber, alt, title, titleNumber, text, list1, list2 }) => {
   return (
-    <li className='lt' id={`cs-content-${id}`}>
+    <li className='lt' id={`cs-content-${idNumber}`}>
       <div className='lt-img'>
-        <img src={`/img/ct-content-img-${img}.jpg`} alt={imgAlt}/>
+        <img src={`./img/ct-content-img-${imgNumber}.png`} alt={alt}/>
         <div/>
       </div>
       <div className='lt-text'>
@@ -56,4 +40,4 @@ const Left2 = ({ title, titleNumber, text, list1, list2, img, imgAlt, id }) => {
   )
 }
 
-export { Left0, Left1, Left2 }
+export { Left1, Left2 }

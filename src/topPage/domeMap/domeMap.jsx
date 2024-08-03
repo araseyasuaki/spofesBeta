@@ -1,6 +1,6 @@
 // 場内マップ
 import React, { useState, useEffect } from 'react';
-import { SectionTitle } from '../../common/sectionTitle/sectionTitle'
+import { SectionTitle1 } from '../../common/sectionTitle/sectionTitle'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './domeMap.scss'
@@ -36,13 +36,13 @@ const DomeMap = () => {
   return (
     <section className='domeMap' id='domeMap'>
       {dmRespon ?
-        <img className='dm-dec-text' src='/img/dm-mv-tokyo-dome-text.png'/> :
-        <img className='dm-dec-text' src='/img/dm-pc-tokyo-dome-text.png'/>
+        <img className='dm-dec-text' src='./img/dm-mv-tokyo-dome-text.png' alt='tokyoDomeのテキスト画像'/> :
+        <img className='dm-dec-text' src='./img/dm-pc-tokyo-dome-text.png' alt='tokyoDomeのテキスト画像'/>
       }
-      <SectionTitle title={'ドーム内地図'}/>
+      <SectionTitle1 title={'ドーム内地図'}/>
       {dmRespon ?
-        <img className='dm-dec-bg' src="/img/dm-mv-map-img.png"/> :
-        <img className='dm-dec-bg' src="/img/dm-pc-map-img.png"/>
+        <img className='dm-dec-bg' src="./img/dm-mv-map-img.png" alt='東京ドーム内地図の画像'/> :
+        <img className='dm-dec-bg' src="./img/dm-pc-map-img.png" alt='東京ドーム内地図の画像'/>
       }
     </section>
   )

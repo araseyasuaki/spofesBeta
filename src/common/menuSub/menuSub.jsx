@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
+import { Link } from 'react-router-dom';
 import './menuSub.scss';
 
 const MenuSub = () => {
+
   const [menuBtn, setMenuBtn] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const menuRef = useRef(null);
 
   const wrapTextInSpans = (text) => {
     return text.split('').map((char, index) => <span key={index}>{char}</span>);
@@ -27,7 +27,7 @@ const MenuSub = () => {
   useEffect(() => {
     if(menuBtn){
       setIsAnimating(true);
-      gsap.from(menuRef.current.querySelectorAll('span'), {
+      gsap.from(".menuSub span", {
         opacity: 0,
         ease: 'power2.out',
         delay: 0.2,
@@ -42,21 +42,22 @@ const MenuSub = () => {
 
   return (
     <div className='menuSub'>
-      <div onClick={toggleMenu}>
-        <div className={`menuBer-1 ${menuBtn ? 'menuBer-1-off' : ''}`}/>
-        <p className={`${menuBtn ? 'text-off' : ''}`}>MENU</p>
-        <div className={`menuBer-2 ${menuBtn ? 'menuBer-2-off' : ''}`}/>
+      <div className={menuBtn ? 'ms-active' : 'ms-inactive'} onClick={menuBtn ? toggleMenu : null}/>
+      <div className='ms-btn' onClick={toggleMenu}>
+        <div className={`ms-ber-1 ${menuBtn ? 'ms-ber-1-off' : 'ms-ber-1-on'}`}/>
+          <p className={`${menuBtn ? 'text-off' : ''}`}>MENU</p>
+        <div className={`ms-ber-2 ${menuBtn ? 'ms-ber-2-off' : 'ms-ber-2-on'}`}/>
       </div>
-      <nav className={menuBtn ? 'nav-on' : ''}>
+      <nav className={menuBtn ? 'ms-nav-on' : ''}>
         <dl>
           <dt>SCHEDULE</dt>
-          <dd>スケジュール</dd>
+          <dd><a href="#schedule">{wrapTextInSpans('スケジュール')}</a></dd>
         </dl>
         <dl>
           <dt>SPORTS DISCIPLINES</dt>
-          <dd>詳しい競技紹介</dd>
+          <dd><a href="#compSub">{wrapTextInSpans('詳しい競技紹介')}</a></dd>
         </dl>
-        <div className='ms-list' ref={menuRef}>
+        <div className='ms-nav-list'>
           <ol>
             <li><a href="#cs-content-1"><p>01</p>{wrapTextInSpans('クラス対抗リレー')}</a></li>
             <li><a href="#cs-content-2"><p>02</p>{wrapTextInSpans('運命共同体')}</a></li>
@@ -70,7 +71,7 @@ const MenuSub = () => {
           <ol>
             <li><a href="#cs-content-8"><p>09</p>{wrapTextInSpans('一球入魂')}</a></li>
             <li><a href="#cs-content-9"><p>10</p>{wrapTextInSpans('玉げた')}</a></li>
-            <li><a href="#cs-content-10"><p>11</p>{wrapTextInSpans('ゲーム対戦')}</a></li>
+            <li><a href="#cs-content-10"><p>11</p><span>T</span><span>o</span><span className='ms-dec-text-1'>p</span><span>o</span><span className='ms-dec-text-2'>f</span><span>f</span><span>i</span><span>g</span><span>h</span><span>t</span><span>e</span><span>r</span><span>s</span></a></li>
             <li><a href="#cs-content-11"><p>12</p>{wrapTextInSpans('色別対抗リレー')}</a></li>
             <li><a href="#cs-content-13"><p>13</p>{wrapTextInSpans('ベースランニング')}</a></li>
             <li><a href="#cs-content-14"><p>14</p>{wrapTextInSpans('スピードガン')}</a></li>
@@ -78,19 +79,23 @@ const MenuSub = () => {
             <li><a href="#cs-content-16"><p>16</p>{wrapTextInSpans('謎解き')}</a></li>
           </ol>
         </div>
-        <dl className='ms-dec-link-img'>
+        <dl className='ms-pdf-link'>
           <dt>Competition Manual</dt>
           <dd>
-            競技マニュアル
             <a href="https://drive.google.com/file/d/1LAv1jDWCRdCMS6VZk7LUnc47b5ra1ICy/view" target="_blank">
-              <img src="/img/link-btn-img-2.png" alt="" />
+              {wrapTextInSpans('競技マニュアル')}
+              <img src="./img/link-btn-img-2.png" alt="リンクボタンの装飾画像" />
             </a>
           </dd>
         </dl>
-        <div className='ms-link'>
-          <a href="/">
-            <p>TOP<br/><span>に戻ります</span></p><img src='/img/page-btn.png'/>
-          </a>
+        <dl>
+          <dt>FESTIVAL RULES</dt>
+          <dd><a href="#attention">{wrapTextInSpans('競技注意事項')}</a></dd>
+        </dl>
+        <div className='ms-top-link'>
+          <Link to="/">
+            <p>TOP<br/><span>に戻ります</span></p><img src='./img/page-btn.png'/>
+          </Link>
         </div>
       </nav>
     </div>

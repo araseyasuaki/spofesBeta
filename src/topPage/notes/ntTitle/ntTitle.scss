@@ -90,27 +90,27 @@
     &::before{
       position: absolute;
       content: '';
-      width: 60px;
+      width: 40px;
       height: 28px;
       border-bottom: 3px solid #48B4D8;
       transform: rotate(-35deg);
-      bottom: 22px;
-      left: -21px;
+      bottom: 17px;
+      left: -19px;
     }
     .nt-title-number{
       position: absolute;
       font-family: 'Black Ops One', sans-serif;
       margin: 0;
-      top: -21px;
-      font-size: 32px;
-      line-height: 32px;
+      top: -15px;
+      font-size: 28px;
+      line-height: 28px;
       z-index: 10;
       color: #48B4D8;
     }
     .nt-title-text{
-      line-height: 20px;
-      font-size: 20px;
-      padding: 7px 22px 7px 27px;
+      line-height: 16px;
+      font-size: 16px;
+      padding: 0 12px 0 16px;
       margin: 0;
       background-color: #fff;
       border-radius: 2px;

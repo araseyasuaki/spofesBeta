@@ -16,7 +16,6 @@ import { Footer1 } from '../common/footer/footer'
 import './topPage.scss'
 
 const TopPage = () => {
-
   return (
     <>
       <PageChangeTop/>

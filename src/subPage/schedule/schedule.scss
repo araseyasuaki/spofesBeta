@@ -94,6 +94,9 @@
         display: flex;
         text-decoration: none;
         color: #0055B4;
+        &:hover{
+          opacity: 0.5;
+        }
         span{
           color: #48B4D8;
         }
@@ -122,13 +125,18 @@
         font-weight: bold;
       }
       ul{
+        padding: 0;
         li{
           color: #48B4D8;
+          list-style-type: none;
           a{
             text-decoration: none;
             font-weight: bold;
             color: #48B4D8;
             font-size: 20px;
+            &:hover{
+              opacity: 0.5;
+            }
           }
         }
       }
@@ -266,6 +274,7 @@
         }
         ul{
           padding: 0 0 0 15px;
+          padding: 0;
           li{
             color: #48B4D8;
             a{

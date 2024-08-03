@@ -1,7 +1,7 @@
   // 開催日
 import React, { useState, useEffect } from 'react';
-import { IconSectionTitle } from '../../common/sectionTitle/sectionTitle'
-import LinkBtn from '../../common/linkBtn/linkBtn'
+import { SectionTitle2 } from '../../common/sectionTitle/sectionTitle'
+import { LinkBtn1 } from '../../common/linkBtn/linkBtn'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './openTime.scss'
@@ -54,10 +54,10 @@ const OpenTime = () => {
   return (
     <section className='openTime' id='openTime'>
       <div className='ot-dec-box-1'>
-        <img src='/img/ot-date-and-time-text.png' alt='dateAndTimeのテキスト画像'/>
+        <img src='./img/ot-date-and-time-text.png' alt='dateAndTimeのテキスト画像'/>
         <div/>
       </div>
-      <IconSectionTitle url={'/img/op-title-icon.png'} alt={'開催日時・場所のタイトルのアイコン'} title={'開催日時・場所'}/>
+      <SectionTitle2 url={'./img/op-title-icon.png'} alt={'開催日時・場所のタイトルのアイコン'} title={'開催日時・場所'}/>
       <ul>
         <li>
           <p>日時<span>2024年9月20日(金)</span></p>
@@ -77,7 +77,7 @@ const OpenTime = () => {
           <div/>
         </li>
       </ul>
-      <LinkBtn link={'#access'} title={'詳しいアクセス'} imgNumber={'1'}/>
+      <LinkBtn1 link={'#access'} title={'詳しいアクセス'} imgNumber={'1'}/>
     </section>
   )
 }

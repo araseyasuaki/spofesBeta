@@ -22,8 +22,7 @@
     width: 100%;
     aspect-ratio: 10 / 1.23;
   }
-  a{
-    text-decoration: none;
+  p{
     small{
       position: relative;
       font-size: 24px;
@@ -49,7 +48,7 @@
 @media (max-width: 800px) {
   .footer{
     padding: 25vw 0 40px 0;
-    a{
+    p{
       small{
       font-size: 12px;
         &::after{
@@ -60,7 +59,7 @@
     .topBtn{
       left: 50%;
       transform: translateX(-50%);
-      bottom: 65px;
+      bottom: 90px;
     }
   }
 }
