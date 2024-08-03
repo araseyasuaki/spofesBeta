@@ -42,10 +42,30 @@ const CatchCopy = () => {
   return (
     <section className="catchCopy" id='catchCopy'>
       <div className='cp-dec-box-1'>
-        <p>今年のキャッチコピー{cpMvIpRespon ? <br/> : ""}<span>「New Challengers」</span>には、</p>
-        <p>新しいことにチャレンジする大変さを{cpMvIpRespon ? <br/> : ""}一致団結が必要なスポーツフェスティバルを通して、</p>
-        <p>クラスの仲間と{cpMvRespon ? <br/> : ""}共有できるような仲になることで、</p>
-        <p>今後の学園生活を{cpMvRespon ? <br/> : ""}より豊かな時間にして欲しいという{cpMvIpRespon ? <br/> : ""}意味が込められています。</p>
+        <div className='cp-pc-box'>
+          <p>今年のキャッチコピー<span>「New Challengers」</span>には、</p>
+          <p>新しいことにチャレンジする大変さを一致団結が必要なスポーツフェスティバルを通して、</p>
+          <p>クラスの仲間と共有できるような仲になることで、</p>
+          <p>今後の学園生活をより豊かな時間にして欲しいという意味が込められています。</p>
+        </div>
+        <div className='cp-ip-box'>
+          <p>今年のキャッチコピー<br/><span>「New Challengers」</span>には、</p>
+          <p>新しいことにチャレンジする大変さを<br/>一致団結が必要なスポーツフェスティバルを通して、</p>
+          <p>クラスの仲間と共有できるような仲になることで、</p>
+          <p>今後の学園生活をより豊かな時間にして欲しいという<br/>意味が込められています。</p>
+        </div>
+        <div className='cp-mv-box'>
+          <p>今年のキャッチコピー<br/>
+          <span>「New Challengers」</span>には、</p>
+          <p>新しいことにチャレンジする大変さを<br/>
+          一致団結が必要な<br/>
+            スポーツフェスティバルを通して、</p>
+          <p>クラスの仲間と<br/>
+          共有できるような仲になることで、</p>
+          <p>今後の学園生活を<br/>
+          より豊かな時間にして欲しいという<br/>
+          意味が込められています。</p>
+        </div>
       </div>
       <div className='cp-dec-box-2'>
         <div className='cp-dec-line-1'/>

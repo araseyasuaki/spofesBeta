@@ -5,7 +5,7 @@ const Left1 = ({ idNumber, imgNumber, alt, title, titleNumber, text, list1 }) =>
   return (
     <li className='lt' id={`cs-content-${idNumber}`}>
       <div className='lt-img'>
-        <img src={`./img/ct-content-img-${imgNumber}.png`} alt={alt}/>
+        <img src={`./img/ct-content-img-${imgNumber}.jpg`} alt={alt}/>
         <div/>
       </div>
       <div className='lt-text'>
@@ -24,7 +24,7 @@ const Left2 = ({ idNumber, imgNumber, alt, title, titleNumber, text, list1, list
   return (
     <li className='lt' id={`cs-content-${idNumber}`}>
       <div className='lt-img'>
-        <img src={`./img/ct-content-img-${imgNumber}.png`} alt={alt}/>
+        <img src={`./img/ct-content-img-${imgNumber}.jpg`} alt={alt}/>
         <div/>
       </div>
       <div className='lt-text'>

@@ -1,4 +1,3 @@
-// トップページ
 import React from 'react'
 import { PageChangeTop } from '../common/pageChange/pageChange'
 import MenuTop from '../common/menuTop/menuTop'

@@ -1,23 +1,31 @@
 .catchCopy{
   position: relative;
   z-index: 10;
-  // margin-top: -7.5%;
+  margin-top: -2px;
   background-color: #0055b4;
-  padding: 200px 0 300px 0;
+  padding: 0 0 300px 0;
   .cp-dec-box-1{
     width: fit-content;
     margin: 0 auto 0 18%;
-    p{
-      text-align: center;
-      margin: 0;
-      font-size: 20px;
-      color: #fff;
-      line-height: 60px;
-      span{
-        color: #F0FC0B;
-        font-size: 32px;
-        font-weight: bold;
+    .cp-pc-box{
+      p{
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+        color: #fff;
+        line-height: 60px;
+        span{
+          color: #F0FC0B;
+          font-size: 32px;
+          font-weight: bold;
+        }
       }
+    }
+    .cp-ip-box{
+      display: none;
+    }
+    .cp-mv-box{
+      display: none;
     }
   }
   .cp-dec-box-2{
@@ -56,7 +64,69 @@
   }
 }
 
-
+@media (max-width: 1300px) {
+  .catchCopy{
+    position: relative;
+    z-index: 10;
+    margin-top: -2px;
+    background-color: #0055b4;
+    padding: 0 0 170px 0;
+    overflow: hidden;
+    .cp-dec-box-1{
+      margin: 0 auto;
+      .cp-pc-box{
+        display: none;
+      }
+      .cp-ip-box{
+        display: block;
+        p{
+          text-align: center;
+          margin: 0;
+          font-size: 20px;
+          color: #fff;
+          line-height: 60px;
+          span{
+            color: #F0FC0B;
+            font-size: 32px;
+            font-weight: bold;
+          }
+        }
+      }
+      .cp-mv-box{
+        display: none;
+      }
+    }
+    .cp-dec-box-2{
+      position: absolute;
+      width: 100%;
+      height: 370px;
+      bottom: 0;
+      overflow: hidden;
+      .cp-dec-line-1{
+        position: absolute;
+        width: 120%;
+        height: 2px;
+        background-color: #F0FC0B;
+        transform: rotate(-7deg);
+        z-index: 10;
+        bottom: 23%;
+        left: -15px;
+      }
+      .cp-dec-line-1::after{
+        position: absolute;
+        content: '';
+        width: 120%;
+        height: 2px;
+        top: 15px;
+        z-index: 10;
+        background-color: #F0FC0B;
+      }
+      .cp-dec-bg-1{
+        display: none;
+      }
+    }
+  }
+}
 
 
 
@@ -69,21 +139,31 @@
   .catchCopy{
     position: relative;
     z-index: 10;
-    margin-top: -31%;
+    margin-top: -2px;
     background-color: #0055b4;
-    padding: 60% 0 170px 0;
+    padding: 25% 0 170px 0;
     overflow: hidden;
     .cp-dec-box-1{
       margin: 0 auto;
-      p{
-        text-align: center;
-        margin: 0;
-        font-size: 16px;
-        color: #fff;
-        line-height: 45px;
-        span{
-          color: #F0FC0B;
-          font-size: 24px;
+      .cp-pc-box{
+        display: none;
+      }
+      .cp-ip-box{
+        display: none;
+      }
+      .cp-mv-box{
+        display: block;
+        p{
+          text-align: center;
+          margin: 0;
+          font-size: 16px;
+          color: #fff;
+          line-height: 60px;
+          span{
+            color: #F0FC0B;
+            font-size: 24px;
+            font-weight: bold;
+          }
         }
       }
     }
