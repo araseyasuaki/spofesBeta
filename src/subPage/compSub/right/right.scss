@@ -222,7 +222,7 @@
     .rt-dec-text-1{
       font-weight: 100;
       line-height: 145px;
-      width: 350px;
+      width: fit-content;
       font-family: "Black Ops One", system-ui;
       position: absolute;
       font-size: 250px;
@@ -283,14 +283,15 @@
 @media (max-width: 800px) {
   .rt{
     width: 90%;
+    max-width: 450px;
     margin: 0 auto;
     display: flex;
     .rt-text{
-      width: 48%;
+      width: 100%;
       position: relative;
-      margin: 0 2% 0 0;
+      margin: 0 0 0 0;
       h3{
-        margin: 115px 0 0 0;
+        margin: 35px auto 0 auto;
         font-size: 40px;
         color: #0055B4;
         position: relative;
@@ -305,33 +306,41 @@
           left: 0;
         }
       }
-      .rt-dec-text-1{
-        font-weight: 100;
-        line-height: 145px;
-        width: 350px;
-        font-family: "Black Ops One", system-ui;
-        position: absolute;
-        font-size: 250px;
-        right: 0;
-        transform: translateY(50px);
-        bottom: calc(100% - 115px);
-        z-index: -10;
-        color: #C7EAF2;
-        margin: 0;
-      }
       p{
         list-style-type: none;
       }
       .rt-dec-text-1{
-  
+        font-weight: 100;
+        line-height: 90px;
+        width: fit-content;
+        font-family: "Black Ops One", system-ui;
+        position: absolute;
+        font-size: 140px;
+        right: 50%;
+        transform: translateX(50%) translateY(50px);
+        top: -27px;
+        bottom: auto;
+        z-index: -10;
+        color: #C7EAF2;
+        margin: 0;
       }
       .rt-dec-text-2{
-  
+        margin: 460px 0 0 0;
+        font-size: 16px;
+        @media (max-width: 500px) {
+          margin-top: 92vw;
+        }
+        @media (max-width: 400px) {
+          margin-top: 95vw;
+        }
       }
       div{
+        margin: 30px 0 0 0;
         p{
           position: relative;
           padding: 0 0 0 20px;
+          margin: 0;
+          font-size: 16px;
           &::after{
             position: absolute;
             content: "・";
@@ -342,10 +351,10 @@
       }
     }
     .rt-img{
-      width: 48%;
-      margin: auto 0 auto 2%;
+      width: 100%;
+      margin: 140px 0 0 0;
       height: fit-content;
-      position: relative;
+      position: absolute;
       img{
         width: 100%;
         clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%);
