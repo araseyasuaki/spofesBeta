@@ -286,6 +286,7 @@
     max-width: 450px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     .rt-text{
       width: 100%;
       position: relative;
@@ -357,7 +358,7 @@
       position: absolute;
       img{
         width: 100%;
-        clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%);
+        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
       }
       div{
         position: absolute;
@@ -372,7 +373,7 @@
           aspect-ratio: 247 / 204;
           top: 0;
           background-color: #48B4D8;
-          clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%, 10px calc(100% - 10px), calc(100% - 79px) calc(100% - 10px), calc(100% - 10px) calc(100% - 79px), calc(100% - 10px) 10px , 79px 10px , 10px 79px, 10px calc(100% - 10px), 0 100%);
+          clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 10px calc(100% - 5px), calc(100% - 54px) calc(100% - 5px), calc(100% - 5px) calc(100% - 54px), calc(100% - 5px) 5px , 54px 5px , 5px 54px, 5px calc(100% - 5px), 0 100%);
         }
       }
     }
