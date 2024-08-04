@@ -62,8 +62,8 @@ const CompTop = () => {
         <CompImg1 classNumber={'15'} titleNumber={'15'} imgNumber={'15'} title={'応援団長は君だ!'} alt={'色別の旗を振って応援している生徒'}/>
         <CompImg4 classNumber={'16'} titleNumber={'16'} imgNumber={'16'} title={'謎解き'} alt={'謎解きをしている生徒'}/>
       </ul>
-      {/* <small>※準決勝と決勝は競技順番が異なりますので、{ctRespon && <br/>}<span>詳細はスケジュールページをご覧ください</span></small> */}
-      {/* <LinkBtn2 link={'/schedulePage'} title={'詳しい競技紹介'} imgNumber={'1'}/> */}
+      <small>※準決勝と決勝は競技順番が異なりますので、{ctRespon && <br/>}<span>詳細はスケジュールページをご覧ください</span></small>
+      <LinkBtn2 link={'/schedulePage'} title={'詳しい競技紹介'} imgNumber={'1'}/>
     </section>
   );
 };

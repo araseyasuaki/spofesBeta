@@ -90,12 +90,12 @@
     &::before{
       position: absolute;
       content: '';
-      width: 40px;
+      width: 50px;
       height: 28px;
       border-bottom: 3px solid #48B4D8;
       transform: rotate(-35deg);
       bottom: 17px;
-      left: -19px;
+      left: -20px;
     }
     .nt-title-number{
       position: absolute;
@@ -110,7 +110,7 @@
     .nt-title-text{
       line-height: 16px;
       font-size: 16px;
-      padding: 0 12px 0 16px;
+      padding: 3px 12px 3px 16px;
       margin: 0;
       background-color: #fff;
       border-radius: 2px;
@@ -121,13 +121,13 @@
   .nt-title-1,
   .nt-title-7{
     .nt-title-number{
-      left: -24px;
+      left: -21px;
     }
   }
   .nt-title-2,
   .nt-title-4{
     .nt-title-number{
-      left: -30px;
+      left: -27px;
     }
   }
   .nt-title-3,
@@ -136,7 +136,7 @@
   .nt-title-8,
   .nt-title-9{
     .nt-title-number{
-      left: -27px;
+      left: -25px;
     }
   }
   .nt-title-10{
@@ -146,7 +146,7 @@
   }
   .nt-title-11{
     .nt-title-number{
-      left: -19px;
+      left: -17px;
     }
   }
 }
