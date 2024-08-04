@@ -42,105 +42,105 @@
         }
       }
     }
-    #cs-content-4,
-    #cs-content-10,
-    #cs-content-13,
-    #cs-content-16{
-      .rt-img,
-      .lt-img{
-        div{
-          position: absolute;
-          top: 0;
-          width: 90%;
-          aspect-ratio: 247 / 204;
-        }
-      }
-      .lt-img{
-        div{
-          left: 0;
-        }
-      }
-      .rt-img{
-        div{
-          right: 0;
-        }
-      }
-    }
-    #cs-content-4{
-      .rt-img{
-        div{
-          &::before{
-            position: absolute;
-            content: '';
-            background: url(../../../public/img/ct-new-text.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 20%;
-            transform: rotate(-20deg);
-            aspect-ratio: 1 / 1;
-            top: 13%;
-            left: 13%;
-          }
-          &::after{
-            position: absolute;
-            content: '＊写真はイメージです';
-            font-size: 16px;
-            color: #48B4D8;
-            top: 5%;
-            right: 5%;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-    #cs-content-10{
-      .rt-img{
-        div{
-          &::before{
-            position: absolute;
-            content: '';
-            background: url(../../../public/img/ct-new-text.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 20%;
-            transform: rotate(-20deg);
-            aspect-ratio: 1 / 1;
-            top: 13%;
-            left: 13%;
-          }
-        }
-      }
-    }
-    #cs-content-13{
-      .lt-img{
-        div{
-            &::after{
-              position: absolute;
-              content: '＊写真はイメージです';
-              font-size: 20px;
-              color: #48B4D8;
-              top: 5%;
-              right: 30px;
-              font-weight: bold;
-            }
-        }
-      }
-    }
-    #cs-content-16{
-      .rt-img{
-        div{
-          &::after{
-            position: absolute;
-            content: '＊写真はイメージです';
-            font-size: 16px;
-            color: #48B4D8;
-            top: 5%;
-            right: 5%;
-            font-weight: bold;
-          }
-        }
-      }
-    }
+    // #cs-content-4,
+    // #cs-content-10,
+    // #cs-content-13,
+    // #cs-content-16{
+    //   .rt-img,
+    //   .lt-img{
+    //     div{
+    //       position: absolute;
+    //       top: 0;
+    //       width: 90%;
+    //       aspect-ratio: 247 / 204;
+    //     }
+    //   }
+    //   .lt-img{
+    //     div{
+    //       left: 0;
+    //     }
+    //   }
+    //   .rt-img{
+    //     div{
+    //       right: 0;
+    //     }
+    //   }
+    // }
+    // #cs-content-4{
+    //   .rt-img{
+    //     div{
+    //       &::before{
+    //         position: absolute;
+    //         content: '';
+    //         background: url(../../../public/img/ct-new-text.png);
+    //         background-size: cover;
+    //         background-repeat: no-repeat;
+    //         width: 20%;
+    //         transform: rotate(-20deg);
+    //         aspect-ratio: 1 / 1;
+    //         top: 13%;
+    //         left: 13%;
+    //       }
+    //       &::after{
+    //         position: absolute;
+    //         content: '＊写真はイメージです';
+    //         font-size: 16px;
+    //         color: #48B4D8;
+    //         top: 5%;
+    //         right: 5%;
+    //         font-weight: bold;
+    //       }
+    //     }
+    //   }
+    // }
+    // #cs-content-10{
+    //   .rt-img{
+    //     div{
+    //       &::before{
+    //         position: absolute;
+    //         content: '';
+    //         background: url(../../../public/img/ct-new-text.png);
+    //         background-size: cover;
+    //         background-repeat: no-repeat;
+    //         width: 20%;
+    //         transform: rotate(-20deg);
+    //         aspect-ratio: 1 / 1;
+    //         top: 13%;
+    //         left: 13%;
+    //       }
+    //     }
+    //   }
+    // }
+    // #cs-content-13{
+    //   .lt-img{
+    //     div{
+    //         &::after{
+    //           position: absolute;
+    //           content: '＊写真はイメージです';
+    //           font-size: 20px;
+    //           color: #48B4D8;
+    //           top: 5%;
+    //           right: 30px;
+    //           font-weight: bold;
+    //         }
+    //     }
+    //   }
+    // }
+    // #cs-content-16{
+    //   .rt-img{
+    //     div{
+    //       &::after{
+    //         position: absolute;
+    //         content: '＊写真はイメージです';
+    //         font-size: 16px;
+    //         color: #48B4D8;
+    //         top: 5%;
+    //         right: 5%;
+    //         font-weight: bold;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -190,92 +190,92 @@
       >li{
         margin-top: 50px;
       }
-      #cs-content-4,
-      #cs-content-10,
-      #cs-content-13,
-      #cs-content-16{
-        .rt-img,
-        .lt-img{
-          div{
-            position: absolute;
-            top: 0;
-            width: 100%;
-            aspect-ratio: 247 / 204;
-          }
-        }
-      }
-      #cs-content-4{
-        .rt-img{
-          div{
-            &::before{
-              position: absolute;
-              content: '';
-              background: url(../../../public/img/ct-new-text.png);
-              background-size: cover;
-              background-repeat: no-repeat;
-              width: 25%;
-              transform: rotate(-20deg);
-              aspect-ratio: 1 / 1;
-              top: 13%;
-              left: 13%;
-            }
-            &::after{
-              position: absolute;
-              content: '＊写真はイメージです';
-              font-size: 16px;
-              color: #48B4D8;
-              top: 5%;
-              right: 5%;
-            }
-          }
-        }
-      }
-      #cs-content-10{
-        .rt-img{
-          div{
-            &::before{
-              position: absolute;
-              content: '';
-              background: url(../../../public/img/ct-new-text.png);
-              background-size: cover;
-              background-repeat: no-repeat;
-              width: 25%;
-              transform: rotate(-20deg);
-              aspect-ratio: 1 / 1;
-              top: 10%;
-              left: 10%;
-            }
-          }
-        }
-      }
-      #cs-content-13{
-        .lt-img{
-          div{
-              &::after{
-                position: absolute;
-                content: '＊写真はイメージです';
-                font-size: 20px;
-                color: #48B4D8;
-                top: 5%;
-                right: 30px;
-              }
-          }
-        }
-      }
-      #cs-content-16{
-        .rt-img{
-          div{
-            &::after{
-              position: absolute;
-              content: '＊写真はイメージです';
-              font-size: 16px;
-              color: #48B4D8;
-              top: 5%;
-              right: 5%;
-            }
-          }
-        }
-      }
+      // #cs-content-4,
+      // #cs-content-10,
+      // #cs-content-13,
+      // #cs-content-16{
+      //   .rt-img,
+      //   .lt-img{
+      //     div{
+      //       position: absolute;
+      //       top: 0;
+      //       width: 100%;
+      //       aspect-ratio: 247 / 204;
+      //     }
+      //   }
+      // }
+      // #cs-content-4{
+      //   .rt-img{
+      //     div{
+      //       &::before{
+      //         position: absolute;
+      //         content: '';
+      //         background: url(../../../public/img/ct-new-text.png);
+      //         background-size: cover;
+      //         background-repeat: no-repeat;
+      //         width: 25%;
+      //         transform: rotate(-20deg);
+      //         aspect-ratio: 1 / 1;
+      //         top: 13%;
+      //         left: 13%;
+      //       }
+      //       &::after{
+      //         position: absolute;
+      //         content: '＊写真はイメージです';
+      //         font-size: 16px;
+      //         color: #48B4D8;
+      //         top: 5%;
+      //         right: 5%;
+      //       }
+      //     }
+      //   }
+      // }
+      // #cs-content-10{
+      //   .rt-img{
+      //     div{
+      //       &::before{
+      //         position: absolute;
+      //         content: '';
+      //         background: url(../../../public/img/ct-new-text.png);
+      //         background-size: cover;
+      //         background-repeat: no-repeat;
+      //         width: 25%;
+      //         transform: rotate(-20deg);
+      //         aspect-ratio: 1 / 1;
+      //         top: 10%;
+      //         left: 10%;
+      //       }
+      //     }
+      //   }
+      // }
+      // #cs-content-13{
+      //   .lt-img{
+      //     div{
+      //         &::after{
+      //           position: absolute;
+      //           content: '＊写真はイメージです';
+      //           font-size: 20px;
+      //           color: #48B4D8;
+      //           top: 5%;
+      //           right: 30px;
+      //         }
+      //     }
+      //   }
+      // }
+      // #cs-content-16{
+      //   .rt-img{
+      //     div{
+      //       &::after{
+      //         position: absolute;
+      //         content: '＊写真はイメージです';
+      //         font-size: 16px;
+      //         color: #48B4D8;
+      //         top: 5%;
+      //         right: 5%;
+      //       }
+      //     }
+      //   }
+      // }
     }
   }
 }

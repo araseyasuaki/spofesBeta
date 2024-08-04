@@ -12,9 +12,9 @@ const Left1 = ({ idNumber, imgNumber, alt, title, titleNumber, text, list1 }) =>
         <h3>{title}<span/></h3>
         <span className='lt-dec-text-1'>{titleNumber}</span>
         <p className='lt-dec-text-2'>{text}</p>
-        <ul>
-          <li>{list1}</li>
-        </ul>
+        <div>
+          <p>{list1}</p>
+        </div>
       </div>
     </li>
   )
@@ -31,10 +31,10 @@ const Left2 = ({ idNumber, imgNumber, alt, title, titleNumber, text, list1, list
         <h3>{title}<span/></h3>
         <span className='lt-dec-text-1'>{titleNumber}</span>
         <p className='lt-dec-text-2'>{text}</p>
-        <ul>
-          <li>{list1}</li>
-          <li>{list2}</li>
-        </ul>
+        <div>
+          <p>{list1}</p>
+          <p>{list2}</p>
+        </div>
       </div>
     </li>
   )

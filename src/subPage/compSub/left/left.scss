@@ -1,11 +1,12 @@
 .lt{
-  justify-content: center;
-  display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  z-index: 10;
+  display: flex;
+  min-width: 320px;
   .lt-text{
-    width: 50%;
+    width: 48%;
+    position: relative;
+    margin: 0 0 0 2%;
     h3{
       margin: 115px 0 0 0;
       font-size: 40px;
@@ -22,6 +23,9 @@
         left: 0;
       }
     }
+    p{
+      list-style-type: none;
+    }
     .lt-dec-text-1{
       font-weight: 100;
       line-height: 145px;
@@ -37,156 +41,100 @@
       margin: 0;
     }
     .lt-dec-text-2{
-      margin: 30px 0 0 0;
+      margin: 20px 0 0 0;
       font-size: 20px;
     }
-    ul{
-      margin: 30px 0 0 13px;
-      padding: 0;
-      li{
+    div{
+      margin: 30px 0 0 0;
+      p{
         position: relative;
-        list-style-type: none;
+        padding: 0 0 0 20px;
+        margin: 0;
         font-size: 20px;
         &::after{
-          content: '・';
           position: absolute;
-          left: -20px;
+          content: "・";
+          left: 0;
           top: 0;
         }
       }
     }
   }
   .lt-img{
-    position: relative;
-    width: 50%;
-    clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%);
+    width: 48%;
+    margin: auto 2% auto 0;
     height: fit-content;
-    img{
-      transition: transform 0.8s ease;
-      display: block;
-      margin: 0 auto 0 0;
-      width: 90%;
-      clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%)
-    }
-    &::after{
-      position: absolute;
-      content: '';
-      width: 90%;
-      left: 0;
-      top: 50;
-      aspect-ratio: 247 / 204;
-      top: 0;
-      background-color: #48B4D8;
-      clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%, 10px calc(100% - 10px), calc(100% - 79px) calc(100% - 10px), calc(100% - 10px) calc(100% - 79px), calc(100% - 10px) 10px , 79px 10px , 10px 79px, 10px calc(100% - 10px), 0 100%);
-    }
-  }
-}
-
-@media (max-width: 1200px){
-  .lt{
-    width: 90%;
-    .lt-img{
-      margin: auto 0;
-    }
-  }
-}
-
-
-@media (max-width: 800px) {
-  .lt{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    margin: 0 auto;
-    z-index: 10;
     position: relative;
-    padding: 31px 0 0 0;
-    @media (max-width: 500px) {
-      width: 80%;
-    }
-    .lt-text{
+    img{
       width: 100%;
-      max-width: 400px;
-      position: relative;
-      h3{
-        width: fit-content;
-        margin: 0 auto 0 auto;
-        font-size: 25px;
-        color: #0055B4;
-        position: relative;
-        z-index: 10;
-      }
-      .lt-dec-text-1{
-        font-weight: 100;
-        height: 80px;
-        line-height: 80px;
-        width: fit-content;
-        font-family: "Black Ops One", system-ui;
-        position: absolute;
-        font-size: 140px;
-        left: 50%;
-        top: 3.5%;
-        transform: translateX(-50%) translateY(-50%);
-        z-index: -10;
-        color: #C7EAF2;
-        margin: 0;
-      }
-      .lt-dec-text-2{
-        margin: 420px 0 0 0;
-        font-size: 16px;
-      }
-      @media (max-width: 500px) {
-        .lt-dec-text-2{
-          margin: 84vw 0 0 0;
-          font-size: 16px;
-        }
-      }
-      @media (max-width: 450px) {
-        .lt-dec-text-2{
-          margin: 88vw 0 0 0;
-          font-size: 16px;
-        }
-      }
-      ul{
-        margin: 15px 0 0 13px;
-        padding: 0;
-        li{
-          position: relative;
-          list-style-type: none;
-          font-size: 16px;
-          &::after{
-            content: '・';
-            position: absolute;
-            left: -16px;
-            top: 0;
-          }
-        }
-      }
+      clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%);
     }
-    .lt-img{
+    div{
       position: absolute;
       width: 100%;
-      aspect-ratio: 247 / 204;
-      max-width: 400px;
-      top: 121px;
-      clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
-      height: fit-content;
-      img{
-        position: absolute;
-        display: block;
-        width: 100%;
-        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%)
-      }
+      height: 100%;
+      top: 0;
       &::after{
         position: absolute;
         content: '';
         width: 100%;
         right: 0;
-        top: 50;
-        height: 100%;
+        aspect-ratio: 247 / 204;
         top: 0;
         background-color: #48B4D8;
-        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 10px calc(100% - 5px), calc(100% - 54px) calc(100% - 5px), calc(100% - 5px) calc(100% - 54px), calc(100% - 5px) 5px , 54px 5px , 5px 54px, 5px calc(100% - 5px), 0 100%);
+        clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%, 10px calc(100% - 10px), calc(100% - 79px) calc(100% - 10px), calc(100% - 10px) calc(100% - 79px), calc(100% - 10px) 10px , 79px 10px , 10px 79px, 10px calc(100% - 10px), 0 100%);
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .lt{
+    max-width: 450px;
+    flex-direction: column;
+    .lt-text{
+      width: 100%;
+      margin: 0 0 0 0;
+      h3{
+        margin: 23px auto 0 auto;
+        font-size: 33px;
+      }
+      .lt-dec-text-1{
+        line-height: 90px;
+        font-size: 140px;
+        right: 50%;
+        transform: translateX(50%) translateY(0);
+        top: 6px;
+        bottom: auto;
+      }
+      .lt-dec-text-2{
+        margin: 460px 0 0 0;
+        font-size: 16px;
+        @media (max-width: 500px) {
+          margin-top: 92vw;
+        }
+        @media (max-width: 400px) {
+          margin-top: 95vw;
+        }
+        @media (max-width: 350px) {
+          margin-top: 98vw;
+        }
+      }
+      div{
+        margin-top: 20px;
+      }
+    }
+    .lt-img{
+      width: 100%;
+      margin: 120px 0 0 0;
+      height: fit-content;
+      position: absolute;
+      img{
+        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
+      }
+      div{
+        &::after{
+          clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 10px calc(100% - 5px), calc(100% - 54px) calc(100% - 5px), calc(100% - 5px) calc(100% - 54px), calc(100% - 5px) 5px , 54px 5px , 5px 54px, 5px calc(100% - 5px), 0 100%);
+        }
       }
     }
   }
