@@ -201,11 +201,31 @@
     width: 50%;
   }
   .rt-img{
+    position: relative;
     width: 50%;
     img{
       margin: 0 0 0 auto;
       display: block;
       width: 90%;
+      clip-path: polygon(0 75px, calc(0% + 75px) 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%);
+    }
+    div{
+      position: absolute;
+      width: 95%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      &::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      right: 0;
+      top: 50;
+      height: 100%;
+      top: 0;
+      background-color: #48B4D8;
+      clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%, 10px calc(100% - 10px), calc(100% - 79px) calc(100% - 10px), calc(100% - 10px) calc(100% - 79px), calc(100% - 10px) 10px , 79px 10px , 10px 79px, 10px calc(100% - 10px), 0 100%);
+    }
     }
   }
 }
@@ -227,24 +247,41 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     position: relative;
+    max-width: 450px;
     .rt-text{
-      width: 50%;
+      width: 100%;
       .rt-dec-text-2{
         margin: 400px 0 0 0;
       }
     }
     .rt-img{
-      width: 50%;
+      width: 100%;
       position: absolute;
       top: 60px;
       img{
-        max-width: 600px;
+        position: relative;
+        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
         margin: 0 0 0 0;
         display: block;
         width: 100%;
+      }
+      div{
+        position: absolute;
+        width: 100%;
+        &::after{
+          position: absolute;
+          content: '';
+          width: 100%;
+          right: 0;
+          height: 100%;
+          top: 0;
+          background-color: #48B4D8;
+          clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 10px calc(100% - 5px), calc(100% - 54px) calc(100% - 5px), calc(100% - 5px) calc(100% - 54px), calc(100% - 5px) 5px , 54px 5px , 5px 54px, 5px calc(100% - 5px), 0 100%);
+          z-index: 10;
+        }
       }
     }
   }
