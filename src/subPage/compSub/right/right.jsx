@@ -44,10 +44,10 @@ const Right2 = ({ idNumber, title, titleNumber, text, list1, list2, imgNumber, a
         <h3>{title}<span/></h3>
         <p className='rt-dec-text-1'>{titleNumber}</p>
         <p className='rt-dec-text-2'>{text}</p>
-        <ul>
-          <li>{list1}</li>
-          <li>{list2}</li>
-        </ul>
+        <div>
+          <p>{list1}</p>
+          <p>{list2}</p>
+        </div>
       </div>
       <div className='rt-img'>
         <img src={`./img/ct-content-img-${imgNumber}.jpg`} alt={alt}/>
