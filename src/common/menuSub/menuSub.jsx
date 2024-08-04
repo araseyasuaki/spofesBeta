@@ -4,18 +4,14 @@ import { Link } from 'react-router-dom';
 import './menuSub.scss';
 
 const MenuSub = () => {
-
   const [menuBtn, setMenuBtn] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
 
   const wrapTextInSpans = (text) => {
     return text.split('').map((char, index) => <span key={index}>{char}</span>);
   };
 
   const toggleMenu = () => {
-    if (!isAnimating) {
-      setMenuBtn(!menuBtn);
-    }
+    setMenuBtn(!menuBtn);
   };
 
   if(menuBtn){
@@ -25,19 +21,20 @@ const MenuSub = () => {
   }
 
   useEffect(() => {
-    if(menuBtn){
-      setIsAnimating(true);
-      gsap.from(".menuSub span", {
-        opacity: 0,
-        ease: 'power2.out',
-        delay: 0.2,
-        stagger: {
-          amount: 0.7,
-          from: 'random'
+      gsap.fromTo(".menuSub span",
+        {
+          opacity: 0,
         },
-        onComplete: () => setIsAnimating(false)
-      })
-    }
+        {
+          opacity: 1,
+          ease: 'power2.out',
+          delay: 0.2,
+          stagger: {
+            amount: 0.5,
+            from: 'random'
+          },
+        }
+      )
   }, [menuBtn])
 
   return (

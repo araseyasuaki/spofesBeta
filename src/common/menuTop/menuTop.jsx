@@ -5,40 +5,37 @@ import './menuTop.scss';
 
 const MenuSub = () => {
   const [menuBtn, setMenuBtn] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-  const menuRef = useRef(null);
 
   const wrapTextInSpans = (text) => {
     return text.split('').map((char, index) => <span key={index}>{char}</span>);
   };
 
   const toggleMenu = () => {
-    if (!isAnimating) {
-      setMenuBtn(!menuBtn);
-    }
+    setMenuBtn(!menuBtn);
   };
-
-  useEffect(() => {
-    if(menuBtn){
-      setIsAnimating(true);
-      gsap.from(menuRef.current.querySelectorAll('span'), {
-        opacity: 0,
-        ease: 'power2.out',
-        delay: 0.2,
-        stagger: {
-          amount: 0.7,
-          from: 'random'
-        },
-        onComplete: () => setIsAnimating(false)
-      })
-    }
-  }, [menuBtn])
 
   if(menuBtn){
     document.body.style.overflow = 'hidden';
   } else {
     document.body.style.overflow = '';
   }
+
+  useEffect(() => {
+      gsap.from("menuTop span",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          ease: 'power2.out',
+          delay: 0.2,
+          stagger: {
+            amount: 0.5,
+            from: 'random'
+          },
+        }
+      )
+  }, [menuBtn])
 
   return (
     <div className='menuTop'>
@@ -48,7 +45,7 @@ const MenuSub = () => {
         <p className={`${menuBtn ? 'text-off' : ''}`}>MENU</p>
         <div className={`menuBer-2 ${menuBtn ? 'menuBer-2-off' : 'mt-ber-2-on'}`}/>
       </div>
-      <nav className={menuBtn ? 'nav-on' : ''} ref={menuRef}>
+      <nav className={menuBtn ? 'nav-on' : ''}>
         <dl>
           <dt>CATCH PHRASE</dt>
           <dd><a href="#catchCopy">{wrapTextInSpans('キャッチフレーズ紹介')}</a></dd>
@@ -69,12 +66,12 @@ const MenuSub = () => {
           <dt>FESTIVAL RULES</dt>
           <dd><a href="#notes">{wrapTextInSpans('ドーム内注意事項')}</a></dd>
         </dl>
-        {/* <div>
+        <div>
           <Link to="/schedulePage">
             <p>当日<br/><span>スケジュール</span></p>
             <img src='./img/page-btn.png'/>
           </Link>
-        </div> */}
+        </div>
       </nav>
     </div>
   );

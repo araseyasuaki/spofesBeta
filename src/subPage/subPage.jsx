@@ -12,7 +12,7 @@ const subPage = () => {
 
   return (
     <>
-      {/* <PageChangeSub/> */}
+      <PageChangeSub/>
       <MenuSub/>
       <FirstViewSub/>
       <Schedule/>
