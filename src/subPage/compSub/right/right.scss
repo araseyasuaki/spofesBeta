@@ -190,3 +190,22 @@
 //     }
 //   }
 // }
+
+
+.rt{
+  list-style-type: none;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  .rt-text{
+    width: 50%;
+  }
+  .rt-img{
+    width: 50%;
+    img{
+      margin: 0 0 0 auto;
+      display: block;
+      width: 90%;
+    }
+  }
+}
