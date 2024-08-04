@@ -195,7 +195,7 @@
 .rt{
   list-style-type: none;
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   .rt-text{
     width: 50%;
@@ -206,6 +206,46 @@
       margin: 0 0 0 auto;
       display: block;
       width: 90%;
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .rt{
+    width: 90%;
+    .rt-img{
+      margin: auto 0;
+      img{
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .rt{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    .rt-text{
+      width: 50%;
+      .rt-dec-text-2{
+        margin: 400px 0 0 0;
+      }
+    }
+    .rt-img{
+      width: 50%;
+      position: absolute;
+      top: 60px;
+      img{
+        max-width: 600px;
+        margin: 0 0 0 0;
+        display: block;
+        width: 100%;
+      }
     }
   }
 }
