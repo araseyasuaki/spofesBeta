@@ -324,8 +324,8 @@
     >nav{
       top: 123px;
       width: 280px;
-      height: calc(100vh - 200px);
-      max-height: 520px;
+      height: 60vh;
+      max-height: 690px;
       right: 10px;
       opacity: 0;
       padding: 10px;
@@ -386,7 +386,7 @@
       }
     }
     .ms-nav-on{
-      top: 73px;
+      top: 83px;
     }
   }
 }

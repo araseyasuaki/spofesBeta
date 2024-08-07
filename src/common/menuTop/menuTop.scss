@@ -269,8 +269,8 @@
     >nav{
       top: 123px;
       width: 250px;
-      height: calc(100vh - 200px);
-      max-height: 520px;
+      height: 60vh;
+      max-height: 738.5px;
       right: 10px;
       >div{
         margin: 30px auto 10px auto ;
@@ -289,8 +289,8 @@
         }
       }
     }
-    .nav-on{
-      top: 73px;
+    .mt-nav-on{
+      top: 83px;
     }
   }
 }
