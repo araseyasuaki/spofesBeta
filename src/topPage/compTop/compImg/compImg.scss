@@ -39,7 +39,7 @@
     width: 247px;
     height: auto;
     position: relative;
-    clip-path: polygon(0 calc(0% + 34px), calc(0% + 34px) 0, 100% 0, 100% calc(100% - 34px), calc(100% - 34px) 100%, 0 100%);
+    clip-path: polygon(0 calc(0% + 34px), calc(0% + 34px) 0, 100% 0, 100% calc(100% - 35px), calc(100% - 34px) calc(100% - 1px), 0 calc(100% - 1px));
   }
   figcaption{
     position: absolute;
@@ -112,75 +112,37 @@
     left: -28px;
   }
 }
-
-
-
-
 @media (max-width: 800px) {
   .compImg{
-    list-style-type: none;
-    position: relative;
-    width: fit-content;
     height: 117.27px;
-    margin: 41px 13px 0px 27px;
+    margin: 41px 10px 0px 27px;
     div{
-      position: absolute;
       width: 32px;
       height: 32px;
-      z-index: 10;
       top: 10px;
       left: 10px;
-      background: url(../../../../public/img/ct-new-text.png);
-      background-size: contain;
-      transform: rotate(-20deg);
     }
     p{
-      position: absolute;
-      color: #48B4D8;
       top: 7px;
       right: 10px;
-      margin: 0;
-      z-index: 10;
       font-size: 8px;
-      font-weight: bold;
     }
     h3{
-      position: absolute;
-      font-family: "Black Ops One", system-ui;
-      font-style: normal;
-      color: #C7EAF2;
       font-size: 32px;
-      font-weight: 100;
       top: -19px;
-      margin: 0;
     }
     img{
       width: 142px;
-      height: auto;
-      position: relative;
-      clip-path: polygon(0 calc(0% + 20px), calc(0% + 20px) 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+      clip-path: polygon(0 calc(0% + 20px), calc(0% + 20px) 0, 100% 0, 100% calc(100% - 21px), calc(100% - 20px) calc(100% - 1px), 0 calc(100% - 1px));
     }
     figcaption{
-      position: absolute;
       font-size: 11px;
-      color: #fff;
-      background-color: #48B4D8;
-      font-weight: bold;
-      padding: 2px 17px 2px 7px;
-      left: -5px;
-      bottom: 15px;
-      z-index: 10;
       clip-path: polygon(0 0, calc(100% - 17px) 0, 100% 100%, 0 100%);
     }
   }
   .compImg::after{
-    content: '';
-    position: absolute;
     width: 142px;
     height: 117.27px;
-    top: 0;
-    left: 0;
-    background-color: #48B4D8;
     clip-path: polygon(0 calc(0% + 20px), calc(0% + 20px) 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, calc(0% + 4px) calc(100% - 4px), calc(100% - 21.5px) calc(100% - 4px), calc(100% - 4px) calc(100% - 21.5px), calc(100% - 4px) calc(0% + 4px), calc(0% + 21.5px) calc(0% + 4px), calc(0% + 4px) calc(0% + 21.5px), calc(0% + 4px) calc(100% - 4px), 0% 100%);
   }
   .ct-title-1,

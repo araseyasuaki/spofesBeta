@@ -32,7 +32,7 @@
       clip-path: polygon(0 0, 100% calc(100% - 1px), 100% 100%, 0 100%);
     }
   }
-  .wu-dec-text{
+  .wu-dec-text-1{
     position: relative;
     width: fit-content;
     margin: 0 auto;
@@ -43,6 +43,9 @@
       font-size: 24px;
       padding: 0 15px;
       font-weight: bold;
+    }
+    .wu-dec-text-mv{
+      display: none;
     }
     div{
       position: absolute;
@@ -63,56 +66,31 @@
     margin: 90px auto 0 auto;
   }
 }
-
-
-
 @media (max-width: 800px) {
   .warmUp{
-    position: relative;
-    text-align: center;
     padding: 10vw 0 10vw 0;
-    background-color: #E2F3F7;
     .wu-dec-box-1{
-      padding: 8.7vw 0 0 0;
-      overflow: hidden;
-      position: absolute;
-      bottom: 100%;
-      left: 0;
-      width: 100%;
-      height: fit-content;
       img{
-        position: absolute;
-        right: -1vw;
         bottom: 4.1vw;
-        z-index: 20;
-        transform: rotate(7deg);
         width: 90vw;
       }
-      div{
-        content: '';
-        position: relative;
-        width: 100%;
-        aspect-ratio: 10 / 1.23;
-        bottom: -1px;
-        left: 0;
-        background-color: #E2F3F7;
-        z-index: 10;
-        clip-path: polygon(0 0, 100% calc(100% - 1px), 100% 100%, 0 100%);
-      }
     }
-    p{
-      margin: 40px auto 0 auto;
-      width: fit-content;
-      color: #0055B4;
-      font-size: 14px;
-      padding: 5px 15px;
-      font-weight: bold;
+    .wu-dec-text-1{
+      p{
+        margin: 40px auto 0 auto;
+        font-size: 14px;
+        padding: 5px 15px;
+      }
+      .wu-dec-text-pc{
+        display: none;
+      }
+      .wu-dec-text-mv{
+        display: block;
+      }
     }
     iframe{
       max-width: 450px;
       width: 80%;
-      aspect-ratio: 560 / 315;
-      border-radius: 20px;
       margin: 40px 0 0 0;
     }
     a{

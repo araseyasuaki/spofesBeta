@@ -1,19 +1,19 @@
 .menuTop{
   position: relative;
   z-index: 200;
-  .active{
+  .mt-active{
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     top: 0;
     left: 0;
     background-color: #000;
     opacity: 0.3;
   }
-  .inactive{
+  .mt-inactive{
     display: none;
   }
-  .menuBtn{
+  .mt-btn{
     position: fixed;
     top: 25px;
     right: 22px;
@@ -24,14 +24,10 @@
     cursor: pointer;
     z-index: 200;
     &:hover{
-      .mt-ber-1-on{
-        transform: translateX(-50%) translateY(18px);
-      }
-      .mt-ber-2-on{
-        transform: translateX(-50%) translateY(-18px);
-      }
-      img{
-        opacity: 0;
+      .mt-dec-ex-1{
+        p{
+          transform: translateY(-25px);
+        }
       }
     }
     &::after{
@@ -47,26 +43,39 @@
       border-radius: 50%;
       z-index: -10;
     }
-    p{
+    .mt-dec-ex-1{
       position: absolute;
-      font-family: "Black Ops One", system-ui;
-      font-weight: 100;
-      font-style: normal;
-      color: #0055B4;
-      font-size: 16px;
       width: fit-content;
-      top: 52%;
+      height: 11px;
+      top: 50%;
       left: 50%;
       opacity: 1;
       transform: translateX(-50%) translateY(-50%);
-      transition: opacity 1s ease;
-      line-height: 11px;
-      margin: 0;
+      overflow: hidden;
+      p{
+        position: relative;
+        font-family: "Black Ops One", system-ui;
+        font-weight: 100;
+        color: #0055B4;
+        font-size: 16px;
+        transition: transform .2s ease-out, opacity 1s ease;
+        margin: 1.2px 0 0 0;
+        line-height: 11px;
+        &::after{
+          content: 'MENU';
+          position: absolute;
+          font-family: "Black Ops One", system-ui;
+          font-weight: 100;
+          font-size: 16px;
+          top: 25px;
+          left: 0;
+        }
+      }
     }
-    .text-off{
+    .mt-text-off{
       opacity: 0;
     }
-    .menuBer-1{
+    .mt-ber-1{
       position: absolute;
       width: 35px;
       height: 2px;
@@ -76,10 +85,10 @@
       transition: transform 1s ease;
       top: 20px;
     }
-    .menuBer-1-off{
+    .mt-ber-1-off{
       transform: translateX(-50%) translateY(9px) rotate(45deg);
     }
-    .menuBer-2{
+    .mt-ber-2{
       position: absolute;
       width: 35px;
       height: 2px;
@@ -89,7 +98,7 @@
       transition: transform 1s ease;
       bottom: 20px;
     }
-    .menuBer-2-off{
+    .mt-ber-2-off{
       transform: translateX(-50%) translateY(-9px) rotate(-45deg);
     }
   }
@@ -97,7 +106,7 @@
     position: fixed;
     top: 160px;
     width: 250px;
-    height: calc(100vh - 190px);
+    height: calc(100vh - 220px);
     max-height: 806.5px;
     right: 22px;
     opacity: 0;
@@ -158,7 +167,8 @@
       margin: 60px auto 30px auto ;
       width: 100px;
       height: 100px;
-      a{
+      cursor: pointer;
+      div{
         width: 100%;
         height: 100%;
         display: block;
@@ -177,7 +187,6 @@
           width: 100%;
           height: 100%;
           border-radius: 50%;
-          background-color: #fff;
           opacity: 0.8;
           z-index: -10;
           top: 0;
@@ -210,217 +219,78 @@
       }
     }
   }
-  .nav-on{
+  .mt-nav-on{
     top: 110px;
     opacity: 1;
     visibility: visible;
   }
 }
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 800px) {
   .menuTop{
-    position: relative;
-    z-index: 200;
-    .menuBtn{
-      position: fixed;
+    .mt-btn{
       top: 10px;
       right: 10px;
       width: 53px;
       height: 53px;
-      border-radius: 50%;
-      border: 1px solid #0055B4;
-      cursor: pointer;
-      z-index: 200;
       &:hover{
-        .menuBer-1{
-          transform: translateX(-50%) translateY(14px);
-        }
-        .menuBer-2{
-          transform: translateX(-50%) translateY(-14px);
-        }
-        img{
-          opacity: 0;
-        }
-      }
-      &::after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        background-color: #fff;
-        opacity: 0.8;
-        border-radius: 50%;
-        z-index: -10;
-      }
-      p{
-        position: absolute;
-        font-family: "Black Ops One", system-ui;
-        font-weight: 100;
-        font-style: normal;
-        color: #0055B4;
-        font-size: 14px;
-        width: fit-content;
-        top: 51%;
-        left: 50%;
-        opacity: 1;
-        transform: translateX(-50%) translateY(-50%);
-        transition: opacity 1s ease;
-        line-height: 11px;
-        margin: 0;
-      }
-      .text-off{
-        opacity: 0;
-      }
-      .menuBer-1{
-        position: absolute;
-        width: 30px;
-        height: 1px;
-        background-color: #0055B4;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: transform 1s ease;
-        top: 19px;
-      }
-      .menuBer-1-off{
-        transform: translateX(-50%) translateY(7px) rotate(45deg);
-      }
-      .menuBer-2{
-        position: absolute;
-        width: 30px;
-        height: 1px;
-        background-color: #0055B4;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: transform 1s ease;
-        bottom: 19px;
-      }
-      .menuBer-2-off{
-        transform: translateX(-50%) translateY(-7px) rotate(-45deg);
-      }
-    }
-    >nav{
-      position: fixed;
-      top: 123px;
-      width: 250px;
-      height: calc(100vh - 125px);
-      max-height: 714.5px;
-      right: 10px;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.7s ease, visibility 0.7s ease, top 0.7s ease;
-      z-index: 90;
-      padding: 20px;
-      border-radius: 20px;
-      border: 1px solid #0055B4;
-      overflow-y: scroll;
-      background-color: rgba(255, 255, 255, 0.9);
-      &::-webkit-scrollbar{
-        display: none;
-      }
-      &::-webkit-scrollbar-thumb {
-        display: none;
-      }
-      dl{
-        margin: 0;
-        dt{
-          font-size: 18px;
-          color: #48B4D8;
-          font-family: "Black Ops One", system-ui;
-          font-weight: 100;
-          font-style: normal;
-          margin: 20px 0 0 0 ;
-        }
-        dd{
-          font-size: 18px;
-          color: #0055B4;
-          font-weight: bold;
-          margin: 0;
-        }
-      }
-      div{
-        display: flex;
-        ol{
-          li{
-            list-style-type: none;
-            font-weight: bold;
-            color: #0055B4;
-            span{
-              color: #48B4D8;
-              font-family: "Black Ops One", system-ui;
-              font-weight: 100;
-              font-style: normal;
-            }
+        .mt-dec-ex-1{
+          p{
+            transform: translateY(-22px);
           }
         }
       }
+      .mt-dec-ex-1{
+        height: 9.25px;
+        p{
+          font-size: 14px;
+          margin: 1px 0 0 0;
+          line-height: 9.5px;
+          &::after{
+            font-size: 14px;
+            top: 22px;
+          }
+        }
+      }
+      .mt-ber-1{
+        width: 30px;
+        top: 18px;
+      }
+      .mt-ber-1-off{
+        transform: translateX(-50%) translateY(7.5px) rotate(45deg);
+      }
+      .mt-ber-2{
+        width: 30px;
+        bottom: 18px;
+      }
+      .mt-ber-2-off{
+        transform: translateX(-50%) translateY(-7.5px) rotate(-45deg);
+      }
+    }
+    >nav{
+      top: 123px;
+      width: 250px;
+      height: calc(100vh - 200px);
+      max-height: 520px;
+      right: 10px;
       >div{
         margin: 30px auto 10px auto ;
         width: 80px;
         height: 80px;
         a{
-          width: 100%;
-          height: 100%;
-          display: block;
-          text-align: center;
-          text-decoration: none;
-          color: #0055B4;
-          font-weight: bold;
-          position: relative;
-          &::after{
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background-color: #fff;
-            opacity: 0.8;
-            z-index: -10;
-            top: 0;
-            left: 0;
-          }
           p{
             font-size: 16px;
-            width: 100%;
             margin: 2px 0 0 0;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            position: absolute;
             line-height: 16px;
             span{
-              display: block;
               margin: -3px 0 0 0;
               font-size: 5.5px;
             }
-          }
-          img{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            animation: spin 12s linear infinite;
           }
         }
       }
     }
     .nav-on{
       top: 73px;
-      opacity: 1;
-      visibility: visible;
     }
   }
 }

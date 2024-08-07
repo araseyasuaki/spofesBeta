@@ -46,71 +46,31 @@
     margin: 120px auto 0 auto;
     width: fit-content;
   }
-  a{
+  >div{
     margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
-
-
-
-
 @media (max-width: 800px) {
   .compTop{
-    position: relative;
-    background-color: #E2F3F7;
     .ct-dec-box-1{
-      overflow: hidden;
       padding: 25.4vw 0 0 0;
-      position: absolute;
-      bottom: 100%;
-      left: 0;
-      width: 100%;
-      height: fit-content;
       img{
-        position: absolute;
         right: -2vw;
         bottom: 4.9vw;
-        z-index: 20;
-        transform: rotate(7deg);
         width: 85vw;
       }
-      div{
-        content: '';
-        position: relative;
-        width: 100%;
-        aspect-ratio: 10 / 1.23;
-        bottom: -1px;
-        left: 0;
-        background-color: #E2F3F7;
-        z-index: 20;
-        clip-path: polygon(0 0, 100% calc(100% - 1px), 100% 100%, 0 100%);
-      }
-    }
-    ul{
-      margin: 0 ;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
     }
     small{
-      display: block;
-      width: fit-content;
-      color: #0055B4;
       font-size: 12px;
-      font-weight: bold;
       margin: 60px auto 0 auto;
       span{
         padding: 0 0 0 12px;
       }
     }
-    a{
+    >div{
       margin-top: 60px;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 }

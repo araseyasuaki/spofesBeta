@@ -8,6 +8,9 @@
     width: 100%;
     margin: -1px 0 0 0;
   }
+  .ac-dec-img-mv{
+    display: none;
+  }
   ul{
     max-width: 1000px;
     display: flex;
@@ -61,62 +64,43 @@
     }
   }
 }
-
-
 @media (max-width: 800px) {
   .access{
-    position: relative;
     padding: 0 0 45vw 0;
-    background: url('../../../public/img/ac-bg-img.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    .ac-dec-img-pc{
+      display: none;
+    }
+    .ac-dec-img-mv{
+      display: block;
+    }
     .st-icon-title{
       margin-top: 40px;
     }
-    >img{
-      width: 100%;
-      margin: -1px 0 0 0;
-    }
     ul{
       max-width: 1000px;
-      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       margin: 60px auto 0 auto;
       padding: 0 10vw 10px 10vw;
       li{
         text-align: center;
         width: 100%;
-        list-style-type: none;
-        height: fit-content;
         iframe{
           max-width: 500px;
-          box-shadow: 15px 15px 0 rgba(0, 85, 180, 1);
         }
         p{
           font-size: 14px;
           max-width: 270px;
-          position: relative;
           text-align: start;
-          font-weight: bold;
           width: 80%;
-          padding: 3px 10px;
-          background-color: #0055B4;
-          color: #B3DFF7;
           margin: 10px auto 0 auto;
           span{
             position: absolute;
             right: 10px;
-            color: #fff;
           }
         }
         a{
           margin: 60px auto 0 auto;
         }
-      }
-      li:nth-child(1){
-        padding: 0 15px 0 0;
       }
       li:nth-child(2){
         padding: 30px 0 0 0;

@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
 import './menuTop.scss';
 
-const MenuSub = () => {
+const MenuSub = ({ pageBtn, setPageBtn }) => {
   const [menuBtn, setMenuBtn] = useState(false);
 
   const wrapTextInSpans = (text) => {
@@ -20,8 +20,26 @@ const MenuSub = () => {
     document.body.style.overflow = '';
   }
 
+  const disableSmoothScroll = () => {
+    document.documentElement.style.scrollBehavior = 'auto';
+  };
+
+  const enableSmoothScroll = () => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  };
+
+  const handlePageChange = () => {
+    setPageBtn(!pageBtn);
+    disableSmoothScroll();
+    setTimeout(() => enableSmoothScroll(), 100);
+  };
+
   useEffect(() => {
-      gsap.from("menuTop span",
+    if (menuBtn) {
+      gsap.killTweensOf(".menuTop span");
+      gsap.set(".menuTop span", { opacity: 0 });
+
+      gsap.fromTo(".menuTop span",
         {
           opacity: 0,
         },
@@ -34,18 +52,24 @@ const MenuSub = () => {
             from: 'random'
           },
         }
-      )
-  }, [menuBtn])
+      );
+    } else {
+      gsap.killTweensOf(".menuTop span");
+      gsap.set(".menuTop span", { opacity: 0 });
+    }
+  }, [menuBtn]);
 
   return (
     <div className='menuTop'>
-      <div className={menuBtn ? 'active' : 'inactive'} onClick={menuBtn ? toggleMenu : null}/>
-      <div className='menuBtn' onClick={toggleMenu}>
-        <div className={`menuBer-1 ${menuBtn ? 'menuBer-1-off' : 'mt-ber-1-on'}`}/>
-        <p className={`${menuBtn ? 'text-off' : ''}`}>MENU</p>
-        <div className={`menuBer-2 ${menuBtn ? 'menuBer-2-off' : 'mt-ber-2-on'}`}/>
+      <div className={menuBtn ? 'mt-active' : 'mt-inactive'} onClick={menuBtn ? toggleMenu : null}/>
+      <div className='mt-btn' onClick={toggleMenu}>
+        <div className={`mt-ber-1 ${menuBtn ? 'mt-ber-1-off' : 'mt-ber-1-on'}`}/>
+        <div className='mt-dec-ex-1'>
+          <p className={`${menuBtn ? 'mt-text-off' : ''}`} data-notranslate>MENU</p>
+        </div>
+        <div className={`mt-ber-2 ${menuBtn ? 'mt-ber-2-off' : 'mt-ber-2-on'}`}/>
       </div>
-      <nav className={menuBtn ? 'nav-on' : ''}>
+      <nav className={menuBtn ? 'mt-nav-on' : ''}>
         <dl>
           <dt>CATCH PHRASE</dt>
           <dd><a href="#catchCopy">{wrapTextInSpans('キャッチフレーズ紹介')}</a></dd>
@@ -67,10 +91,10 @@ const MenuSub = () => {
           <dd><a href="#notes">{wrapTextInSpans('ドーム内注意事項')}</a></dd>
         </dl>
         <div>
-          <Link to="/schedulePage">
+          <div onClick={handlePageChange}>
             <p>当日<br/><span>スケジュール</span></p>
             <img src='./img/page-btn.png'/>
-          </Link>
+          </div>
         </div>
       </nav>
     </div>

@@ -3,9 +3,8 @@ import './topBtn.scss'
 
 const TopBtn = ({ colorNumber }) => {
   return (
-    <a href='#' className='topBtn'>
+    <a href='#' className={`topBtn tb-dec-bg-${colorNumber}`}>
       <img src='./img/ft-top-btn.png' alt='TOPボタンの画像'/>
-      <div className={`tb-dec-bg-${colorNumber}`}/>
     </a>
   )
 }

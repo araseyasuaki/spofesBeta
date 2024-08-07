@@ -19,7 +19,7 @@ const AdmissionTime = () => {
         y: 0,
         scrollTrigger: {
           trigger: '.at-dec-section-1',
-          start: 'top 70%',
+          start: 'top 80%',
         }
       }
     );
@@ -33,7 +33,7 @@ const AdmissionTime = () => {
         y: 0,
         scrollTrigger: {
           trigger: '.at-dec-section-2',
-          start: 'top 70%',
+          start: 'top 80%',
         }
       }
     );
@@ -47,7 +47,7 @@ const AdmissionTime = () => {
         y: 0,
         scrollTrigger: {
           trigger: '.at-dec-section-3',
-          start: 'top 70%',
+          start: 'top 80%',
         }
       }
     );
@@ -76,43 +76,44 @@ const AdmissionTime = () => {
       </section>
       <section className='at-dec-section-2'>
         <h3>8:45</h3>
-        <ul className='at-dec-text-color-3'>
-          <li><h4 className='at-dec-text-bg-3'>白</h4></li>
-          <li>コンピュータグラフィックス研究科</li>
-          <li>アニメーション研究科</li>
-          <li>アニメーション科</li>
-          <li>グラフィックデザイン科</li>
-          <li>高度電気工学科</li>
+        <ul className='at-dec-text-color-7'>
+          <li><h4 className='at-dec-text-bg-7'>桃</h4></li>
+          <li>高度情報処理科</li>
+          <li>ゲーム企画科</li>
+          <li>Webデザイン科</li>
+          <li>ケータイ・アプリケーション科</li>
+          <li>モバイルアプリケーション開発科</li>
         </ul>
-        <ul className='at-dec-text-color-4'>
-          <li><h4 className='at-dec-text-bg-4'>緑</h4></li>
-          <li>ゲーム制作研究科</li>
-          <li>電気工事技術科</li>
-        </ul>
-        <ul className='at-dec-text-color-5'>
-          <li><h4 className='at-dec-text-bg-5'>紫</h4></li>
-          <li>コンピュータグラフィックス科</li>
-          <li>DXスペシャリスト科</li>
-        </ul>
-      </section>
-      <section className='at-dec-section-3'>
-        <h3>9:00</h3>
         <ul className='at-dec-text-color-6'>
           <li><h4 className='at-dec-text-bg-6'>橙</h4></li>
           <li>AIシステム科</li>
           <li>CG映像制作科</li>
           <li>iU専門職大学</li>
         </ul>
-        <ul className='at-dec-text-color-7'>
-          <li><h4 className='at-dec-text-bg-7'>桃</h4></li>
-          <li>高度情報処理科</li>
-          <li>ゲーム企画科</li>
-          <li>モバイルアプリケーション開発科</li>
-          <li>Webデザイン科</li>
+        <ul className='at-dec-text-color-4'>
+          <li><h4 className='at-dec-text-bg-4'>緑</h4></li>
+          <li>ゲーム制作研究科</li>
+          <li>電気工事技術科</li>
         </ul>
+      </section>
+      <section className='at-dec-section-3'>
+        <h3>9:00</h3>
         <ul className='at-dec-text-color-8'>
           <li><h4 className='at-dec-text-bg-8'>青</h4></li>
           <li>情報処理科</li>
+        </ul>
+        <ul className='at-dec-text-color-5'>
+          <li><h4 className='at-dec-text-bg-5'>紫</h4></li>
+          <li>コンピュータグラフィックス科</li>
+          <li>DXスペシャリスト科</li>
+        </ul>
+        <ul className='at-dec-text-color-3'>
+          <li><h4 className='at-dec-text-bg-3'>白</h4></li>
+          <li>コンピュータグラフィックス研究科</li>
+          <li>グラフィックデザイン科</li>
+          <li>アニメーション研究科</li>
+          <li>アニメーション科</li>
+          <li>高度電気工学科</li>
         </ul>
       </section>
     </section>

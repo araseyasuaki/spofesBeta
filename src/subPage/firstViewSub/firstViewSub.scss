@@ -44,29 +44,18 @@
     }
   }
 }
-
-
 @media (max-width: 800px) {
   .firstViewSub{
-    background: url(../../../public//img//ft-bg-img.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 120px 0 40vw 0 ;
     .ft-dec-ex-2{
       width: 90vw;
     }
     .fs-dec-img-1{
-      margin: 0 auto;
-      display: block;
       width: 70%;
     }
     h2{
       margin: 90px auto 0 auto;
-      padding: 5px 15px;
-      width: fit-content;
       font-size: 18px;
-      color: #fff;
-      background-color: #1996C0;
     }
   }
 }

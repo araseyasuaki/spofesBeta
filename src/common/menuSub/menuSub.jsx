@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
-import { Link } from 'react-router-dom';
 import './menuSub.scss';
 
-const MenuSub = () => {
+const MenuSub = ({ pageBtn, setPageBtn }) => {
   const [menuBtn, setMenuBtn] = useState(false);
 
   const wrapTextInSpans = (text) => {
@@ -20,7 +19,25 @@ const MenuSub = () => {
     document.body.style.overflow = '';
   }
 
+  const disableSmoothScroll = () => {
+    document.documentElement.style.scrollBehavior = 'auto';
+  };
+
+  const enableSmoothScroll = () => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  };
+
+  const handlePageChange = () => {
+    setPageBtn(!pageBtn);
+    disableSmoothScroll();
+    setTimeout(() => enableSmoothScroll(), 100);
+  };
+
   useEffect(() => {
+    if (menuBtn) {
+      gsap.killTweensOf(".menuSub span");
+      gsap.set(".menuSub span", { opacity: 0 });
+
       gsap.fromTo(".menuSub span",
         {
           opacity: 0,
@@ -34,15 +51,21 @@ const MenuSub = () => {
             from: 'random'
           },
         }
-      )
-  }, [menuBtn])
+      );
+    } else {
+      gsap.killTweensOf(".menuSub span");
+      gsap.set(".menuSub span", { opacity: 0 });
+    }
+  }, [menuBtn]);
 
   return (
     <div className='menuSub'>
       <div className={menuBtn ? 'ms-active' : 'ms-inactive'} onClick={menuBtn ? toggleMenu : null}/>
       <div className='ms-btn' onClick={toggleMenu}>
         <div className={`ms-ber-1 ${menuBtn ? 'ms-ber-1-off' : 'ms-ber-1-on'}`}/>
-          <p className={`${menuBtn ? 'text-off' : ''}`}>MENU</p>
+        <div className='ms-dec-ex-1'>
+          <p className={`${menuBtn ? 'ms-text-off' : ''}`} data-notranslate>MENU</p>
+        </div>
         <div className={`ms-ber-2 ${menuBtn ? 'ms-ber-2-off' : 'ms-ber-2-on'}`}/>
       </div>
       <nav className={menuBtn ? 'ms-nav-on' : ''}>
@@ -89,10 +112,10 @@ const MenuSub = () => {
           <dt>FESTIVAL RULES</dt>
           <dd><a href="#attention">{wrapTextInSpans('競技注意事項')}</a></dd>
         </dl>
-        <div className='ms-top-link'>
-          <Link to="/">
+        <div className='ms-top-link' onClick={handlePageChange}>
+          <div>
             <p>TOP<br/><span>に戻ります</span></p><img src='./img/page-btn.png'/>
-          </Link>
+          </div>
         </div>
       </nav>
     </div>

@@ -64,25 +64,25 @@
     margin: auto 0 auto 2%;
     height: fit-content;
     position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      right: 0;
+      aspect-ratio: 247 / 204;
+      top: 0;
+      background-color: #48B4D8;
+      clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%, 10px calc(100% - 10px), calc(100% - 79px) calc(100% - 10px), calc(100% - 10px) calc(100% - 79px), calc(100% - 10px) 10px , 79px 10px , 10px 79px, 10px calc(100% - 10px), 0 100%);
+    }
     img{
       width: 100%;
-      clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%);
+      clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 76px), calc(100% - 75px) calc(100% - 1px), 0 calc(100% - 1px));
     }
     div{
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
-      &::after{
-        position: absolute;
-        content: '';
-        width: 100%;
-        right: 0;
-        aspect-ratio: 247 / 204;
-        top: 0;
-        background-color: #48B4D8;
-        clip-path: polygon(0 75px, 75px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 75px) 100%, 0 100%, 10px calc(100% - 10px), calc(100% - 79px) calc(100% - 10px), calc(100% - 10px) calc(100% - 79px), calc(100% - 10px) 10px , 79px 10px , 10px 79px, 10px calc(100% - 10px), 0 100%);
-      }
     }
   }
 }
@@ -130,13 +130,11 @@
       margin: 120px 0 0 0;
       height: fit-content;
       position: absolute;
-      img{
-        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
+      &::after{
+        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 10px calc(100% - 5px), calc(100% - 54px) calc(100% - 5px), calc(100% - 5px) calc(100% - 54px), calc(100% - 5px) 5px , 54px 5px , 5px 54px, 5px calc(100% - 5px), 0 100%);
       }
-      div{
-        &::after{
-          clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 10px calc(100% - 5px), calc(100% - 54px) calc(100% - 5px), calc(100% - 5px) calc(100% - 54px), calc(100% - 5px) 5px , 54px 5px , 5px 54px, 5px calc(100% - 5px), 0 100%);
-        }
+      img{
+        clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 51px), calc(100% - 50px) calc(100% - 1px), 0 calc(100% - 1px));
       }
     }
   }

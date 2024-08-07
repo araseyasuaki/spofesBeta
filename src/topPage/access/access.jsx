@@ -25,7 +25,7 @@ const Access = () => {
         stagger: 0.1,
         scrollTrigger: {
           trigger: '.access iframe',
-          start: 'top 70%',
+          start: 'top 80%',
         }
       }
     );
@@ -42,7 +42,7 @@ const Access = () => {
         x: 0,
         scrollTrigger: {
           trigger: '.access ul li iframe',
-          start: 'top 70%',
+          start: 'top 80%',
         }
       }
     );
@@ -59,7 +59,7 @@ const Access = () => {
         transformOrigin: '100% 50%',
         scrollTrigger: {
           trigger: '.ac-dec-span',
-          start: 'top 70%',
+          start: 'top 80%',
         }
       }
     );
@@ -71,10 +71,8 @@ const Access = () => {
 
   return (
     <section className='access' id='access'>
-      {acRespon ?
-        <img src='./img/ac-mv-access-text.png' alt='accessのテキスト画像'/> :
-        <img src='./img/ac-pc-access-text.png' alt='accessのテキスト画像'/>
-      }
+      <img className='ac-dec-img-pc' src='./img/ac-pc-access-text.png' alt='accessのテキスト画像'/>
+      <img className='ac-dec-img-mv' src='./img/ac-mv-access-text.png' alt='accessのテキスト画像'/>
       <SectionTitle2 url={'./img/as-title-icon.png'} alt={'アクセスのタイトルのアイコン'} title={'アクセス'}/>
       <ul>
         <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.8414881514186!2d139.74941597511426!3d35.70551812864053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c4782eed4f3%3A0x5058b288249e640e!2z5p2x5Lqs44OJ44O844Og!5e0!3m2!1sja!2sjp!4v1721063681281!5m2!1sja!2sjp" title='Google Map' loading="lazy"/></li>

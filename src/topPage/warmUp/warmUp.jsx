@@ -1,5 +1,4 @@
-// 準備体操動画
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { SectionTitle1 } from '../../common/sectionTitle/sectionTitle'
 import { LinkBtn1 } from '../../common/linkBtn/linkBtn'
 import { gsap } from 'gsap';
@@ -10,10 +9,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const WarmUp = () => {
 
-  const [wuRespon, setWuRespon] = useState(window.innerWidth <= 800);
-
   useEffect(() => {
-    gsap.fromTo('.wu-dec-text',
+    gsap.fromTo('.wu-dec-text-1',
       {
         x: '-100%',
         opacity: 0,
@@ -24,12 +21,12 @@ const WarmUp = () => {
         ease: 'power4.out',
         direction: .8,
         scrollTrigger: {
-          trigger: '.wu-dec-text p',
+          trigger: '.wu-dec-text-1 p',
           start: 'top 70%',
         }
       }
     );
-    gsap.fromTo('.wu-dec-text div',
+    gsap.fromTo('.wu-dec-text-1 div',
       {
         scaleX: 1,
       },
@@ -40,8 +37,8 @@ const WarmUp = () => {
         direction: .5,
         transformOrigin: '100% 50%',
         scrollTrigger: {
-          trigger: '.wu-dec-text div',
-          start: 'top 70%',
+          trigger: '.wu-dec-text-1 div',
+          start: 'top 80%',
         }
       }
     );
@@ -56,14 +53,10 @@ const WarmUp = () => {
         stagger: 0.1,
         scrollTrigger: {
           trigger: '.warmUp iframe',
-          start: 'top 70%',
+          start: 'top 80%',
         }
       }
     );
-
-    const handleResize = () => setWuRespon(window.innerWidth <= 800);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
@@ -73,8 +66,9 @@ const WarmUp = () => {
         <div/>
       </div>
       <SectionTitle1 title={'準備体操動画'}/>
-      <div className='wu-dec-text'>
-        <p>スポフェス前に体を動かして{wuRespon ? <br/> : ''}怪我を予防しよう！！</p>
+      <div className='wu-dec-text-1'>
+        <p className='wu-dec-text-pc'>スポフェス前に体を動かして怪我を予防しよう！！</p>
+        <p className='wu-dec-text-mv'>スポフェス前に体を動かして<br/>怪我を予防しよう！！</p>
         <div/>
       </div>
       <iframe src="https://www.youtube-nocookie.com/embed/mh93A87stAY?si=HjEc_G5KKaOGmuuc&amp;start=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>

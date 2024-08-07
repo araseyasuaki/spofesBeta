@@ -1,5 +1,4 @@
-  // 開催日
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { SectionTitle2 } from '../../common/sectionTitle/sectionTitle'
 import { LinkBtn1 } from '../../common/linkBtn/linkBtn'
 import { gsap } from 'gsap';
@@ -9,8 +8,6 @@ import './openTime.scss'
 gsap.registerPlugin(ScrollTrigger);
 
 const OpenTime = () => {
-
-  const [otMvRespon, setOtMvRespon] = useState();
 
   useEffect(() => {
     gsap.fromTo('.openTime ul li',
@@ -43,12 +40,6 @@ const OpenTime = () => {
         }
       }
     );
-
-    const otMvNewLine = () => setOtMvRespon(window.innerWidth <= 800);
-    window.addEventListener('resize', otMvNewLine);
-    return () => {
-      window.removeEventListener('resize', otMvNewLine);
-    };
   }, []);
 
   return (
@@ -69,11 +60,13 @@ const OpenTime = () => {
           <div/>
         </li>
         <li>
-          <p>終了時間<span>午後03:00</span></p>
+          <p>終了時間<span>午後04:30</span></p>
+          <small>※進行状況により時間が変更となる可能性があります</small>
           <div/>
         </li>
         <li>
-          <p>会場<span>東京ドーム・22番ゲート</span>{otMvRespon ? <br/> : ""}<span>東京都文京区後楽1-3-61</span></p>
+          <p className='ot-dec-text-pc'>会場<span>東京ドーム・22番ゲート</span><span>東京都文京区後楽1-3-61</span></p>
+          <p className='ot-dec-text-mv'>会場<span>東京ドーム・22番ゲート</span><br/><span>東京都文京区後楽1-3-61</span></p>
           <div/>
         </li>
       </ul>

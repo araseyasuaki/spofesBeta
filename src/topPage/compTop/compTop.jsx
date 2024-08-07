@@ -8,9 +8,24 @@ import './compTop.scss';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const CompTop = () => {
+const CompTop = ({ pageBtn, setPageBtn }) => {
   const [ctRespon, setctRespon] = useState(window.innerWidth <= 800);
   const compTopRef = useRef(null);
+
+
+  const disableSmoothScroll = () => {
+    document.documentElement.style.scrollBehavior = 'auto';
+  };
+
+  const enableSmoothScroll = () => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  };
+
+  const handlePageChange = () => {
+    setPageBtn(!pageBtn);
+    disableSmoothScroll();
+    setTimeout(() => enableSmoothScroll(), 100);
+  };
 
   useEffect(() => {
     gsap.fromTo(compTopRef.current.querySelectorAll('li'),
@@ -60,10 +75,12 @@ const CompTop = () => {
         <CompImg4 classNumber={'13'} titleNumber={'13'} imgNumber={'13'} title={'ベースランニング'} alt={'野球のベースを走っている生徒'}/>
         <CompImg1 classNumber={'14'} titleNumber={'14'} imgNumber={'14'} title={'スピードガン'} alt={'マウンドに立ってボールを投げる生徒'}/>
         <CompImg1 classNumber={'15'} titleNumber={'15'} imgNumber={'15'} title={'応援団長は君だ!'} alt={'色別の旗を振って応援している生徒'}/>
-        <CompImg4 classNumber={'16'} titleNumber={'16'} imgNumber={'16'} title={'謎解き'} alt={'謎解きをしている生徒'}/>
+        <CompImg1 classNumber={'16'} titleNumber={'16'} imgNumber={'16'} title={'謎解き'} alt={'謎解きをしている生徒'}/>
       </ul>
       <small>※準決勝と決勝は競技順番が異なりますので、{ctRespon && <br/>}<span>詳細はスケジュールページをご覧ください</span></small>
-      <LinkBtn2 link={'/schedulePage'} title={'詳しい競技紹介'} imgNumber={'1'}/>
+      <div onClick={handlePageChange}>
+        <LinkBtn2 title={'詳しい競技紹介'} imgNumber={'2'}/>
+      </div>
     </section>
   );
 };

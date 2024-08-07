@@ -3,10 +3,10 @@
   z-index: 10;
   margin-top: -2px;
   background-color: #0055b4;
-  padding: 0 0 300px 0;
+  padding: 0 0 350px 0;
   .cp-dec-box-1{
     width: fit-content;
-    margin: 0 auto 0 18%;
+    margin: 0 auto 0 14%;
     .cp-pc-box{
       p{
         text-align: center;
@@ -63,17 +63,11 @@
     }
   }
 }
-
 @media (max-width: 1300px) {
   .catchCopy{
-    position: relative;
-    z-index: 10;
-    margin-top: -2px;
-    background-color: #0055b4;
-    padding: 0 0 170px 0;
-    overflow: hidden;
+    padding: 0 0 300px 0;
     .cp-dec-box-1{
-      margin: 0 auto;
+      margin: 0 auto 0 auto;
       .cp-pc-box{
         display: none;
       }
@@ -82,12 +76,12 @@
         p{
           text-align: center;
           margin: 0;
-          font-size: 20px;
+          font-size: 18px;
           color: #fff;
-          line-height: 60px;
+          line-height: 57px;
           span{
             color: #F0FC0B;
-            font-size: 32px;
+            font-size: 30px;
             font-weight: bold;
           }
         }
@@ -96,51 +90,10 @@
         display: none;
       }
     }
-    .cp-dec-box-2{
-      position: absolute;
-      width: 100%;
-      height: 370px;
-      bottom: 0;
-      overflow: hidden;
-      .cp-dec-line-1{
-        position: absolute;
-        width: 120%;
-        height: 2px;
-        background-color: #F0FC0B;
-        transform: rotate(-7deg);
-        z-index: 10;
-        bottom: 23%;
-        left: -15px;
-      }
-      .cp-dec-line-1::after{
-        position: absolute;
-        content: '';
-        width: 120%;
-        height: 2px;
-        top: 15px;
-        z-index: 10;
-        background-color: #F0FC0B;
-      }
-      .cp-dec-bg-1{
-        display: none;
-      }
-    }
   }
 }
-
-
-
-
-
-
-
-
 @media (max-width: 800px) {
   .catchCopy{
-    position: relative;
-    z-index: 10;
-    margin-top: -2px;
-    background-color: #0055b4;
     padding: 25% 0 170px 0;
     overflow: hidden;
     .cp-dec-box-1{
@@ -156,12 +109,12 @@
         p{
           text-align: center;
           margin: 0;
-          font-size: 16px;
+          font-size: 14px;
           color: #fff;
-          line-height: 60px;
+          line-height: 45px;
           span{
             color: #F0FC0B;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
           }
         }

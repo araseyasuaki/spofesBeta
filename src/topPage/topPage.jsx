@@ -1,6 +1,4 @@
 import React from 'react'
-import { PageChangeTop } from '../common/pageChange/pageChange'
-import MenuTop from '../common/menuTop/menuTop'
 import FirstViewTop from './firstViewTop/firstViewTop'
 import CatchCopy from './catchCopy/catchCopy'
 import PickUp from './pickUp/pickUp'
@@ -14,17 +12,15 @@ import Notes from './notes/notes'
 import { Footer1 } from '../common/footer/footer'
 import './topPage.scss'
 
-const TopPage = () => {
+const TopPage = ({ pageBtn, setPageBtn }) => {
   return (
     <>
-      <PageChangeTop/>
-      <MenuTop/>
       <FirstViewTop/>
       <CatchCopy/>
       <PickUp/>
       <OpenTime/>
       <AdmissionTime/>
-      <CompTop/>
+      <CompTop pageBtn={pageBtn} setPageBtn={setPageBtn}/>
       <DomeMap/>
       <WarmUp/>
       <Access/>

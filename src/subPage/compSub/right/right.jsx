@@ -11,7 +11,7 @@ const Right0 = ({ idNumber, title, titleNumber, text, imgNumber, alt }) => {
         <p className='rt-dec-text-2'>{text}</p>
       </div>
       <div className='rt-img'>
-        <img src={`./img/ct-content-img-${imgNumber}.jpg`} alt={alt}/>
+        <img src={`./img/cs-content-img-${imgNumber}.jpg`} alt={alt}/>
         <div/>
       </div>
     </li>
@@ -30,7 +30,7 @@ const Right1 = ({ idNumber, title, titleNumber, text, list1, imgNumber, alt }) =
         </div>
       </div>
       <div className='rt-img'>
-        <img src={`./img/ct-content-img-${imgNumber}.jpg`} alt={alt}/>
+        <img src={`./img/cs-content-img-${imgNumber}.jpg`} alt={alt}/>
         <div/>
       </div>
     </li>
@@ -50,7 +50,7 @@ const Right2 = ({ idNumber, title, titleNumber, text, list1, list2, imgNumber, a
         </div>
       </div>
       <div className='rt-img'>
-        <img src={`./img/ct-content-img-${imgNumber}.jpg`} alt={alt}/>
+        <img src={`./img/cs-content-img-${imgNumber}.jpg`} alt={alt}/>
         <div/>
       </div>
     </li>

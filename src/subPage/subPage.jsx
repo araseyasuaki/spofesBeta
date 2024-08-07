@@ -1,6 +1,4 @@
 import React from 'react'
-import { PageChangeSub } from '../common/pageChange/pageChange'
-import MenuSub from '../common/menuSub/menuSub'
 import FirstViewSub from './firstViewSub/firstViewSub'
 import Schedule from './schedule/schedule'
 import CompSub from './compSub/compSub'
@@ -12,8 +10,6 @@ const subPage = () => {
 
   return (
     <>
-      <PageChangeSub/>
-      <MenuSub/>
       <FirstViewSub/>
       <Schedule/>
       <CompSub/>

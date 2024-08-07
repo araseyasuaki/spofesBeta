@@ -8,8 +8,6 @@
       background-color: #fff;
   }
 }
-
-
 .nt-title{
   position: relative;
   width: fit-content;
@@ -47,7 +45,8 @@
   }
 }
 .nt-title-1,
-.nt-title-7{
+.nt-title-7,
+.nt-title-12{
   .nt-title-number{
     left: -27px;
   }
@@ -72,54 +71,45 @@
     left: -23px;
   }
 }
-.nt-title-11{
+.nt-title-11,
+.nt-title-13{
   .nt-title-number{
     left: -20px;
   }
 }
-
-
-
-
-
+.nt-title-14{
+  .nt-title-number{
+    left: -25px;
+  }
+}
+.nt-title-15{
+  .nt-title-number{
+    left: -22px;
+  }
+}
 @media (max-width: 800px) {
   .nt-title{
-    position: relative;
-    display: inline-block;
     margin: 22px 0 6px 25px;
     &::before{
-      position: absolute;
-      content: '';
       width: 50px;
       height: 28px;
-      border-bottom: 3px solid #48B4D8;
-      transform: rotate(-35deg);
       bottom: 17px;
       left: -20px;
     }
     .nt-title-number{
-      position: absolute;
-      font-family: 'Black Ops One', sans-serif;
-      margin: 0;
       top: -15px;
       font-size: 28px;
       line-height: 28px;
-      z-index: 10;
-      color: #48B4D8;
     }
     .nt-title-text{
       line-height: 16px;
       font-size: 16px;
-      padding: 3px 12px 3px 16px;
-      margin: 0;
-      background-color: #fff;
-      border-radius: 2px;
-      border: 3px solid #48B4D8;
-      color: #48B4D8;
+      padding: 5px 12px 5px 16px;
     }
   }
   .nt-title-1,
-  .nt-title-7{
+  .nt-title-7,
+  .nt-title-12{
     .nt-title-number{
       left: -21px;
     }
@@ -139,14 +129,21 @@
       left: -25px;
     }
   }
-  .nt-title-10{
+  .nt-title-10,
+  .nt-title-14{
     .nt-title-number{
       left: -20px;
     }
   }
-  .nt-title-11{
+  .nt-title-11,
+  .nt-title-13{
     .nt-title-number{
       left: -17px;
+    }
+  }
+  .nt-title-15{
+    .nt-title-number{
+      left: -18px;
     }
   }
 }

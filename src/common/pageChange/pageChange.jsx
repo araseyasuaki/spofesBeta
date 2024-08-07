@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './pageChange.scss';
 
 const disableSmoothScroll = () => {
@@ -15,29 +14,16 @@ const handlePageChange = () => {
   setTimeout(() => enableSmoothScroll(), 100);
 };
 
-function PageChangeTop() {
+function PageChange({ text1, text2 }) {
   return (
     <nav className='pageChange'>
-      <Link to="/schedulePage" onClick={handlePageChange}>
-        <p>当日<br/><span>スケジュール</span></p>
+      <div onClick={handlePageChange}>
+        <p>{text1}<br/><span>{text2}</span></p>
         <img src='./img/page-btn.png' alt='ページ遷移ボタンの装飾画像'/>
-      </Link>
-      <div className='pc-box-1'/>
+      </div>
     </nav>
   );
 }
 
-function PageChangeSub() {
-  return (
-    <nav className='pageChange'>
-      <Link to="/" onClick={handlePageChange}>
-        <p>TOP<br/><span>に戻ります</span></p>
-        <img src='./img/page-btn.png' alt='ページ遷移ボタンの装飾画像'/>
-      </Link>
-      <div className='pc-box-1'/>
-    </nav>
-  );
-}
-
-export { PageChangeTop, PageChangeSub };
+export default PageChange;
 
