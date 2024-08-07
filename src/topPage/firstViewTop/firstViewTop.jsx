@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import './firstViewTop.scss'
 
 const FirstViewTop = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false); // ビデオのロード状態を管理するステート
 
   useEffect(() => {
     const ftDecEx1 = document.querySelector('.ft-dec-ex-1');
@@ -80,6 +81,10 @@ const FirstViewTop = () => {
     );
   }, []);
 
+  const handleVideoLoaded = () => {
+    setVideoLoaded(true); // ビデオがロードされたらステートを更新
+  };
+
   return (
     <section className='firstViewTop'>
       <div className='ft-dec-ex-1' style={{ display: 'none' }} />
@@ -90,11 +95,9 @@ const FirstViewTop = () => {
           <span className='ft-dec-text-ex-1'>スポーツフェスティバル<span className='ft-dec-text-ex-2'/></span>
           <span className='ft-dec-text-ex-1 ft-dec-text-ex-3'>Sports Festival<span className='ft-dec-text-ex-2'/></span>
         </h1>
-        {/* <div className='ft-video-img'>
-          <img src="./img/ft-video-img.jpg" alt="スポフェスのビデオの写真" />
-        </div> */}
         <div className='ft-video-img'>
-          <video loop autoPlay muted playsInline>
+          {!videoLoaded && <img src="./img/ft-video-img.jpg" alt="スポフェスのビデオの写真" />}
+          <video loop autoPlay muted playsInline onLoadedData={handleVideoLoaded} style={{ display: videoLoaded ? 'block' : 'none' }}>
             <source src="./video/2024-digest.mp4" type="video/mp4" />
           </video>
         </div>
@@ -116,7 +119,7 @@ const FirstViewTop = () => {
       </div>
       <div className='ft-dec-box-3'/>
     </section>
-  )
+  );
 }
 
-export default FirstViewTop
+export default FirstViewTop;
