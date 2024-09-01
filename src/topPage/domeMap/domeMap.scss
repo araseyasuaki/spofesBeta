@@ -25,13 +25,15 @@
 }
 @media (max-width: 800px) {
   .domeMap{
-    padding: 0 0 30vw 0;
+    padding: 60px 0 30vw 0;
     .dm-dec-text-pc{
       display: none;
     }
     .dm-dec-text-mv{
+      position: absolute;
+      top: -1.5px;
+      left: 0;
       display: block;
-      margin: -2px 0 0 0;
       width: 100%;
     }
     >div{
