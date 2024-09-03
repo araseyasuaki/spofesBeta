@@ -64,8 +64,8 @@
         }
       }
     }
-    #cs-content-4{
-      .rt-img{
+    #cs-content-5{
+      .lt-img{
         div{
           &::before{
             position: absolute;
@@ -91,7 +91,7 @@
         }
       }
     }
-    #cs-content-10{
+    #cs-content-12{
       .rt-img{
         div{
           &::before{
@@ -109,7 +109,7 @@
         }
       }
     }
-    #cs-content-13{
+    #cs-content-15{
       .lt-img{
         div{
           &::after{
@@ -138,21 +138,6 @@
           font-weight: bold;
           line-height: 5vw;
           bottom: calc(100% - 1.5vw);
-        }
-      }
-    }
-    #cs-content-16{
-      .rt-img{
-        div{
-          &::after{
-            position: absolute;
-            content: '＊写真はイメージです';
-            font-size: 16px;
-            color: #48B4D8;
-            top: 5%;
-            right: 5%;
-            font-weight: bold;
-          }
         }
       }
     }
