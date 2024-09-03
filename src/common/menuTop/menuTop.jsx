@@ -72,23 +72,23 @@ const MenuSub = ({ pageBtn, setPageBtn }) => {
       <nav className={menuBtn ? 'mt-nav-on' : ''}>
         <dl>
           <dt>CATCH PHRASE</dt>
-          <dd><a href="#catchCopy">{wrapTextInSpans('キャッチフレーズ紹介')}</a></dd>
+          <dd><a href="#catchCopy" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('キャッチフレーズ紹介')}</a></dd>
           <dt>PICK UP</dt>
-          <dd><a href="#pickUp">{wrapTextInSpans('ピックアップ')}</a></dd>
+          <dd><a href="#pickUp" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('ピックアップ')}</a></dd>
           <dt>DATE AND TIME</dt>
-          <dd><a href="#openTime">{wrapTextInSpans('開催日時')}</a></dd>
+          <dd><a href="#openTime" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('開催日時')}</a></dd>
           <dt>ENTRY TIME</dt>
-          <dd><a href="#admissionTime">{wrapTextInSpans('入場時間')}</a></dd>
+          <dd><a href="#admissionTime" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('入場時間')}</a></dd>
           <dt>SPORTS DISCIPLINES</dt>
-          <dd><a href="#compTop">{wrapTextInSpans('競技紹介')}</a></dd>
+          <dd><a href="#compTop" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('競技紹介')}</a></dd>
           <dt>TOKYO DOME</dt>
-          <dd><a href="#domeMap">{wrapTextInSpans('ドーム内地図')}</a></dd>
+          <dd><a href="#domeMap" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('ドーム内地図')}</a></dd>
           <dt>WARM-UP VIDEO</dt>
-          <dd><a href="#warmUp">{wrapTextInSpans('準備体操動画')}</a></dd>
+          <dd><a href="#warmUp" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('準備体操動画')}</a></dd>
           <dt>ACCESS</dt>
-          <dd><a href="#access">{wrapTextInSpans('アクセス')}</a></dd>
+          <dd><a href="#access" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('アクセス')}</a></dd>
           <dt>FESTIVAL RULES</dt>
-          <dd><a href="#notes">{wrapTextInSpans('ドーム内注意事項')}</a></dd>
+          <dd><a href="#notes" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('ドーム内注意事項')}</a></dd>
         </dl>
         <div>
           <div onClick={handlePageChange}>
