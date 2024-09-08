@@ -102,7 +102,7 @@ const MenuSub = ({ pageBtn, setPageBtn }) => {
         <dl className='ms-pdf-link'>
           <dt>Competition Manual</dt>
           <dd>
-            <a href="/manual.pdf" rel="noopener noreferrer">
+            <a href="/spofes/manual.pdf" rel="noopener noreferrer">
               {wrapTextInSpans('競技マニュアル')}
               <img src="./img/link-btn-img-2.png" alt="リンクボタンの装飾画像" />
             </a>

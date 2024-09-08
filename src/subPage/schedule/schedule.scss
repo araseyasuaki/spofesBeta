@@ -100,6 +100,11 @@
         span{
           color: #48B4D8;
         }
+        .sd-dec-text-ex-1{
+          font-weight: bold;
+          width: auto;
+          font-size: 24px;
+        }
       }
       .sd-dec-text-1{
         font-size: 32px;
@@ -189,6 +194,11 @@
         padding: 15px 0 0 5vw;
         font-size: 12px;
         font-weight: bold;
+        a{
+          .sd-dec-text-ex-1{
+            font-size: 12px;
+          }
+        }
         .sd-dec-text-1{
           font-size: 18px;
           width: 25px;
