@@ -82,7 +82,7 @@ const FirstViewTop = () => {
   }, []);
 
   const handleVideoLoaded = () => {
-    setVideoLoaded(true); // ビデオがロードされたらステートを更新
+    setVideoLoaded(true);
   };
 
   return (

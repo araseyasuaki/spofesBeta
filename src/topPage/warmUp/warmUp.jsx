@@ -34,7 +34,7 @@ const WarmUp = () => {
         delay: .4,
         scaleX: 0,
         ease: 'power4.out',
-        direction: .5,
+        direction: 1,
         transformOrigin: '100% 50%',
         scrollTrigger: {
           trigger: '.wu-dec-text-1 div',

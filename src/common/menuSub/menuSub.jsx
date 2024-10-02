@@ -79,11 +79,12 @@ const MenuSub = ({ pageBtn, setPageBtn }) => {
         </dl>
         <div className='ms-nav-list'>
           <ol>
-            <li><a href="#cs-content-1" onClick={menuBtn ? toggleMenu : null}><p>01</p>{wrapTextInSpans('クラス対抗リレー')}</a></li>
+            <li className='ms-dec-text-nav-1'><a href="#cs-content-1" onClick={menuBtn ? toggleMenu : null}><p>01</p>{wrapTextInSpans('クラス対抗リレー')}<span className='ms-dec-text-nav-2'>{wrapTextInSpans('(予選)')}</span></a></li>
             <li><a href="#cs-content-2" onClick={menuBtn ? toggleMenu : null}><p>02</p>{wrapTextInSpans('運命共同体')}</a></li>
             <li><a href="#cs-content-3" onClick={menuBtn ? toggleMenu : null}><p>03</p>{wrapTextInSpans('だるま運びレース')}</a></li>
-            <li><a href="#cs-content-5" onClick={menuBtn ? toggleMenu : null}><p>04</p>{wrapTextInSpans('借り物競争')}</a></li>
-            <li><a href="#cs-content-6" onClick={menuBtn ? toggleMenu : null}><p>05</p>{wrapTextInSpans('ウルトラクイズ')}</a></li>
+            <li className='ms-dec-text-nav-1'><a href="#cs-content-4" onClick={menuBtn ? toggleMenu : null}><p>04</p>{wrapTextInSpans('クラス対抗リレー')}<span className='ms-dec-text-nav-2'>{wrapTextInSpans('(準決勝)')}</span></a></li>
+            <li><a href="#cs-content-5" onClick={menuBtn ? toggleMenu : null}><p>05</p>{wrapTextInSpans('借り物競争')}</a></li>
+            <li><a href="#cs-content-6" onClick={menuBtn ? toggleMenu : null}><p>--</p>{wrapTextInSpans('ウルトラクイズ')}</a></li>
             <li><a href="#cs-content-7" onClick={menuBtn ? toggleMenu : null}><p>06</p>{wrapTextInSpans('THE 決戦！！')}</a></li>
             <li><a href="#cs-content-8" onClick={menuBtn ? toggleMenu : null}><p>07</p>{wrapTextInSpans('なわ取り合戦')}</a></li>
             <li><a href="#cs-content-9" onClick={menuBtn ? toggleMenu : null}><p>08</p>{wrapTextInSpans('だるま神輿')}</a></li>
@@ -92,11 +93,12 @@ const MenuSub = ({ pageBtn, setPageBtn }) => {
             <li><a href="#cs-content-10" onClick={menuBtn ? toggleMenu : null}><p>09</p>{wrapTextInSpans('一球入魂')}</a></li>
             <li><a href="#cs-content-11" onClick={menuBtn ? toggleMenu : null}><p>10</p>{wrapTextInSpans('玉げた')}</a></li>
             <li><a href="#cs-content-12" onClick={menuBtn ? toggleMenu : null}><p>11</p><span>T</span><span>o</span><span className='ms-dec-text-1'>p</span><span>o</span><span className='ms-dec-text-2'>f</span><span>f</span><span>i</span><span>g</span><span>h</span><span>t</span><span>e</span><span>r</span><span>s</span></a></li>
-            <li><a href="#cs-content-14" onClick={menuBtn ? toggleMenu : null}><p>12</p>{wrapTextInSpans('色別対抗リレー')}</a></li>
-            <li><a href="#cs-content-15" onClick={menuBtn ? toggleMenu : null}><p>13</p>{wrapTextInSpans('ベースランニング')}</a></li>
-            <li><a href="#cs-content-16" onClick={menuBtn ? toggleMenu : null}><p>14</p>{wrapTextInSpans('スピードガン')}</a></li>
-            <li><a href="#cs-content-17" onClick={menuBtn ? toggleMenu : null}><p>15</p>{wrapTextInSpans('応援団長は君だ！')}</a></li>
-            <li><a href="#cs-content-18" onClick={menuBtn ? toggleMenu : null}><p>16</p>{wrapTextInSpans('謎解き')}</a></li>
+            <li className='ms-dec-text-nav-1'><a href="#cs-content-13" onClick={menuBtn ? toggleMenu : null}><p>12</p>{wrapTextInSpans('クラス対抗リレー')}<span className='ms-dec-text-nav-2'>{wrapTextInSpans('(決勝)')}</span></a></li>
+            <li><a href="#cs-content-14" onClick={menuBtn ? toggleMenu : null}><p>13</p>{wrapTextInSpans('色別対抗リレー')}</a></li>
+            <li><a href="#cs-content-15" onClick={menuBtn ? toggleMenu : null}><p>--</p>{wrapTextInSpans('ベースランニング')}</a></li>
+            <li><a href="#cs-content-16" onClick={menuBtn ? toggleMenu : null}><p>--</p>{wrapTextInSpans('スピードガン')}</a></li>
+            <li><a href="#cs-content-17" onClick={menuBtn ? toggleMenu : null}><p>--</p>{wrapTextInSpans('応援団長は君だ！')}</a></li>
+            <li><a href="#cs-content-18" onClick={menuBtn ? toggleMenu : null}><p>--</p>{wrapTextInSpans('謎解き')}</a></li>
           </ol>
         </div>
         <dl className='ms-pdf-link'>

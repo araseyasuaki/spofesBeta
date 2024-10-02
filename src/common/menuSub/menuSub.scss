@@ -163,10 +163,18 @@
           list-style-type: none;
           font-weight: bold;
           position: relative;
+          .ms-dec-text-nav-2{
+            position: absolute;
+            margin-top: 20px;
+            left: 33px;
+            color: #48B4D8;
+            font-size: 11.5px;
+          }
           a{
             display: flex;
             text-decoration: none;
             color: #0055B4;
+            margin: 0 0 25px 0;
             &:hover{
               opacity: 0.5;
             }
@@ -190,7 +198,7 @@
     }
     .ms-pdf-link{
       dt{
-        margin-top: 35px;
+        margin-top: 10px;
       }
       dd{
         width: fit-content;
@@ -359,6 +367,13 @@
           li{
             padding: 0 0 0 35px;
             font-size: 11px;
+            .ms-dec-text-nav-2{
+              position: absolute;
+              margin-top: 16px;
+              left: 33px;
+              color: #48B4D8;
+              font-size: 9px;
+            }
             p{
               position: absolute;
               top: -2px;
