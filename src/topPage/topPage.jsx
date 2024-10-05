@@ -15,17 +15,17 @@ import './topPage.scss'
 const TopPage = ({ pageBtn, setPageBtn }) => {
   return (
     <>
-      <FirstViewTop/>
+      {/* <FirstViewTop/> */}
       <CatchCopy/>
       <PickUp/>
       <OpenTime/>
-      <AdmissionTime/>
+      {/* <AdmissionTime/>
       <CompTop pageBtn={pageBtn} setPageBtn={setPageBtn}/>
       <DomeMap/>
       <WarmUp/>
       <Access/>
       <Notes/>
-      <Footer1/>
+      <Footer1/> */}
     </>
   )
 }
