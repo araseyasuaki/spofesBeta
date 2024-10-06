@@ -74,7 +74,7 @@ const App = () => {
             </li>
             <li>
               <div><img src="./img/pu-slider-img-13.png" alt="道具を準備している実行委員"/></div>
-              <div><img src="./img/pu-slider-img-14.png" alt="人工芝の上にシートを引く実行委員"/></div>
+              <div><img src="./img/pu-slider-img-14.png" alt="ダルマを頭上で運んでいる生徒"/></div>
             </li>
             <li>
               <div><img src="./img/pu-slider-img-15.png" alt="東京ドームで入場待ちしている大勢の学生"/></div>
@@ -88,7 +88,7 @@ const App = () => {
             </li>
             <li>
               <div><img src="./img/pu-slider-img-13.png" alt="道具を準備している実行委員"/></div>
-              <div><img src="./img/pu-slider-img-14.png" alt="人工芝の上にシートを引く実行委員"/></div>
+              <div><img src="./img/pu-slider-img-14.png" alt="ダルマを頭上で運んでいる生徒"/></div>
             </li>
             <li>
               <div><img src="./img/pu-slider-img-15.png" alt="東京ドームで入場待ちしている大勢の学生"/></div>
