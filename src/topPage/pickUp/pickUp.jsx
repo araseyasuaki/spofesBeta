@@ -30,11 +30,11 @@ const App = () => {
     <section className='pickUp' id='pickUp'>
       <div className='pu-dec-box-1'>
         <div className='pu-dec-box-2'>
-          <img src='./img/pu-pick-up-text.png' alt='pickUpのテキスト画像'/>
+          <img src='./img/pu-memories-up-text.png' alt='pickUpのテキスト画像'/>
           <div/>
         </div>
       </div>
-      <SectionTitle1 title={'思い出'}/>
+      <SectionTitle1 title={'メロリーフォト'}/>
       <section className='pu-slider'>
         <div class="pu-wrap" ontouchstart="">
           <ul>
