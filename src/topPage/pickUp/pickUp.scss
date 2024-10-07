@@ -157,53 +157,19 @@
     .pu-slider {
       margin: 5vw 0 0 0;
       padding: 5vw 0;
-      opacity: 0.4;
-      overflow: hidden;
       .pu-wrap {
-        margin: 5vw 0;
         ul {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          position: relative;
-          z-index: 0;
-          &:hover {
-            z-index: 10;
-          }
           li {
-            display: flex;
             flex-direction: column;
             div{
-              overflow: hidden;
-              position: relative;
-              aspect-ratio: 600 / 420;
               width: 30vw;
-              height: auto;
               margin: 3vw;
-              transition: all 0.2s;
               &:hover {
                 transform: scale(2);
-                z-index: 10;
               }
               clip-path: polygon(0 0, calc(100% - 3vw) 0%, 100% calc(0% + 3vw), 100% 100%, calc(0% + 3vw) 100%, 0 calc(100% - 3vw));
               &::after{
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: #48B4D8;
-                top: 0;
-                left: 0;
                 clip-path: polygon(0 0, calc(100% - 3vw) 0%, 100% calc(0% + 3vw), 100% 100%, calc(0% + 3vw) 100%, 0 calc(100% - 3vw), calc(0% + 4px) calc(100% - (3vw + 2px)), calc(0% + (3vw + 2px)) calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) calc(3vw + 2px), calc(100% - (3vw + 2px)) 4px, 4px 4px, 4px calc(100% - (3vw + 2px)), 0px calc(100% - 3vw));
-              }
-              img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translateX(-50%) translateY(-50%);
-                display: block;
-                width: auto;
-                height: 100%;
               }
             }
           }
@@ -212,14 +178,8 @@
       .pu-wrap:nth-child(1) ul{
         animation: loop-slide-r 7s infinite linear;
       }
-      .pu-wrap:nth-child(2){
-        margin-top: -5vw;
-      }
       .pu-wrap:nth-child(2) ul {
         animation: loop-slide-l 7s infinite linear;
-      }
-      .pu-wrap:hover ul {
-        animation-play-state: paused;
       }
     }
   }
