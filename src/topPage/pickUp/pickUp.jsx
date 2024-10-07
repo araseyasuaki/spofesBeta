@@ -34,7 +34,7 @@ const App = () => {
           <div/>
         </div>
       </div>
-      <SectionTitle1 title={'メロリーフォト'}/>
+      <SectionTitle1 title={'photo memories'}/>
       <section className='pu-slider'>
         <div class="pu-wrap" ontouchstart="">
           <ul>

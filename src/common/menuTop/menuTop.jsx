@@ -74,7 +74,7 @@ const MenuSub = ({ pageBtn, setPageBtn }) => {
           <dt>CATCH PHRASE</dt>
           <dd><a href="#catchCopy" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('キャッチフレーズ紹介')}</a></dd>
           <dt>PICK UP</dt>
-          <dd><a href="#pickUp" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('ピックアップ')}</a></dd>
+          <dd><a href="#pickUp" onClick={menuBtn ? toggleMenu : null}><span>p</span><span>h</span><span>o</span><span>t</span><span className='ms-dec-text-1'>o</span><span>m</span><span>e</span><span>m</span><span>o</span><span>r</span><span>i</span><span>e</span><span>s</span></a></dd>
           <dt>DATE AND TIME</dt>
           <dd><a href="#openTime" onClick={menuBtn ? toggleMenu : null}>{wrapTextInSpans('開催日時')}</a></dd>
           <dt>ENTRY TIME</dt>
