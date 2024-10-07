@@ -156,6 +156,7 @@
     }
     .pu-slider {
       margin: 5vw 0 0 0;
+      padding: 5vw 0;
       opacity: 0.4;
       overflow: hidden;
       .pu-wrap {
@@ -181,7 +182,7 @@
               margin: 3vw;
               transition: all 0.2s;
               &:hover {
-                transform: scale(1.5);
+                transform: scale(2);
                 z-index: 10;
               }
               clip-path: polygon(0 0, calc(100% - 3vw) 0%, 100% calc(0% + 3vw), 100% 100%, calc(0% + 3vw) 100%, 0 calc(100% - 3vw));
